@@ -1,5 +1,6 @@
-.d_space {width: 100%; height: 135px;}
+.d_space {width: 100%; height: 95px;}
 .d_decription {width: 100%; text-align: center;}
+.d_decription2 {text-align: left; font-size: 36px; color: #666; padding-left: 100px;}
 .d_decription p{color: #0057b9; font-size: 48px; font-weight: bold; margin: 20px 0 40px 0;}
 .d_decription span{display: block; vertical-align: top; margin: 0 auto; width: 1455px;}
 .d_decription div{text-align: center; margin-top: 80px;}
@@ -14,3 +15,284 @@
 .d_greysmall a:hover{text-decoration:none;}
 .d_one {display: inline-block; text-align: left; margin: 0 auto;}
 .d_one li{margin-bottom: 20px;}
+
+.d_title-line { height: 80px; margin: 50px 0 110px 0; border-bottom: 1px solid #a8a8a8; text-align: center; }
+.d_title-line span { display: inline-block; padding: 0 160px; background: white; font-family: "HelveticaNeue-Medium", Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 60px; line-height: 70px;}
+
+.d_crumbs, .d_crumbs2 {color: #999; font-size: 24px; padding-left: 100px;}
+.d_crumbs2 {padding-left: 830px;}
+.d_crumbs a, .d_crumbs2 a{color: #999; text-decoration: underline;}
+.d_crumbs a:hover, .d_crumbs2 a:hover{text-decoration: none;}
+
+/*----------------------------------------------НАЧАЛО ТАБЫ---------------------------------------*/
+.d_tabs {margin: 50px 0;}
+.domtab {display: block;}
+div.domtab{
+	padding:0em;
+	width:100%;
+	font-size:90%;
+	margin: 0 auto;
+}
+ul.domtabs{
+	float:left;
+	margin:2em 0px 0px 0px;
+	text-align:center;
+
+}
+ul.domtabs li{
+	float:left;
+	padding:0;
+	margin: 0px;
+}
+ul.domtabs a:link,
+ul.domtabs a:visited,
+ul.domtabs a:active,
+ul.domtabs a:hover{
+	display:block;
+	color:#000;
+	font-size: 36px;
+	text-decoration:underline;
+	padding: 30px 100px;
+}
+
+ul.domtabs a:hover{
+	text-decoration: none;
+}
+div.domtab div{
+	clear:both;
+	width:auto;
+	color:#fff;
+	padding: 0;
+}
+
+.d_activetab {color: #0057b9!important; text-decoration: none!important; font-size: 48px; font-weight: bold; background: #e7e7e7;}
+
+.d_sort {height: 100px; background: #e7e7e7; display: block; padding: 60px 0 0 100px; font-size: 36px; color: #666;}
+
+/*============================ СТИЛИ для Селекта Selectric=================================*/
+
+.selectricWrapper {
+  position: relative;
+  margin: 0 0 10px;
+  width: 300px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 30px 0 0;
+}
+
+.selectricResponsive {
+  width: 100%;
+}
+
+.selectric {
+  border: 1px solid #9d9d9d;
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+  height:48px;
+  width: 500px!important;
+}
+
+.selectric .label {
+  display: block;
+  white-space: nowrap;
+  *overflow: hidden;
+  margin: 0 30px 0 0;
+  padding: 15px 0 0 15px;
+  font-size: 33px;
+  line-height: 18px;
+  color: #444;
+  min-height: 18px;
+}
+
+.selectric .button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 38px;
+  color: #595959!important;
+  text-align: center;
+  font: 0/0 a;
+  background: url(../img/select-arrow.jpg) no-repeat 0 5px;
+  /* IE Fix */
+  *font: 20px/30px Lucida Sans Unicode, Arial Unicode MS, Arial;
+}
+
+.selectric .button:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+}
+
+.selectricHover .selectric {
+  border-color: #CCC;
+}
+
+.selectricHover .selectric .button {
+  color: #888;
+}
+
+.selectricHover .selectric .button:after {
+  border-top-color: #888;
+}
+
+.selectricOpen {
+  z-index: 9999;
+}
+
+.selectricOpen .selectric {
+  border-color: #CCC;
+  background: #fff;
+  z-index: 9999;
+}
+
+.selectricOpen .selectricItems {
+  display: block;
+}
+
+.selectricDisabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.selectricHideSelect {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.selectricHideSelect select {
+  position: absolute;
+  left: -100%;
+  display: none;
+
+}
+
+.selectricInput {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+.selectricTempShow {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: block !important;
+}
+
+/* Items box */
+
+.selectricItems {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #9d9d9d;
+  z-index: 9998;
+  -webkit-box-shadow: 0 0 10px -6px;
+  box-shadow: 0 0 10px -6px;
+}
+
+.selectricItems ul,
+.selectricItems li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  line-height: 35px;
+  min-height: 20px;
+}
+
+.selectricItems li {
+  display: block;
+  padding: 5px 0 5px 15px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #EEE;
+  color: #666;
+  cursor: pointer;
+}
+
+.selectricItems li.selected {
+  color: #444;
+  border-top-color: #E0E0E0;
+}
+
+.selectricItems li:hover {
+  background: #F9F9F9;
+  color: #444;
+}
+
+.selectricItems li.disabled {
+  background: #F5F5F5;
+  color: #BBB;
+  border-top-color: #FAFAFA;
+  cursor: default;
+}
+/*============================ КОНЕЦ СТИЛИ для Селекта Selectric=================================*/
+
+.d_tabproducts {margin-top: 50px;}
+.d_tabproducts .product { padding: 0 50px; text-align: center; display: inline-block; vertical-align: top; margin-bottom: 100px; width: 520px;}
+.d_tabproducts .product .product__pic { margin-bottom: 30px; font-size: 0; }
+.d_tabproducts .product .product__pic img { max-width: 100%; }
+.d_tabproducts .product .product__title { margin-bottom: 5px;  color: black; font-size: bold; font-size: 32px; width: 490px;}
+.d_tabproducts .product .product__code { margin-bottom: 15px; font-family: "HelveticaNeue-Light", Arial, sans-serif; color: black;}
+.d_tabproducts .product .product__details { font-size: 0; }
+.d_tabproducts .product .product__price, .product .product__buy { display: inline-block; width: 50%; vertical-align: middle; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.d_tabproducts .product .product__price { padding-right: 20px; text-align: right; font-family: "HelveticaNeue-Medium", Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 48px; color: black;}
+.d_tabproducts .product .product__buy { padding-left: 30px; text-align: left; }
+
+/*----------------------------------------------КОНЕЦ ТАБЫ---------------------------------------*/
+
+.d_textwrapper{width: 1505px; margin: 0 auto; background: url(../img/parag.png) no-repeat; padding-left: 300px;}
+.d_textwrapper h1{color: #0057b9; margin-bottom: 80px;}
+.d_textwrapper h2{color: #0057b9;}
+.d_content {margin: 30px 0 0 40px;}
+.d_content li {margin: 15px 0;}
+.d_content li a{font-size: 36px;}
+.d_text {width: 1805px; margin: 70px auto 0;} 
+.d_preview {margin: 100px 0;}
+.d_forimg, .d_fotext, .d_fotext, .d_preview h2, .d_preview span{display: inline-block; vertical-align: top;} 
+.d_forimg{margin: 15px 100px 0 0; float: left;} 
+.d_fotext {width: 1400px;}
+.d_preview h2{ margin-bottom: 50px;} 
+.d_preview h2 a{color: black;} 
+
+.d_titles {padding: 0px 150px 0 830px; margin: 70px 0;}
+.d_titles h2{margin: 40px 0;}
+.d_titles p{font-size: 36px; font-family: HelveticaNeue-Light;}
+
+.d_textwrapper2{width: 2000px; margin: 0 auto 100px;}
+.d_textwrapper2 div{display: inline-block; vertical-align: top;}
+.d_textimg {width: 540px;}
+.d_textimg div{width: 450px; font-size: 21px; font-style: italic; padding-top: 30px;}
+.d_textimg div a{color: #666;}
+.d_article {width: 1400px; font-size: 28px;}
+
+.d_emptyspace {height: 200px;}
