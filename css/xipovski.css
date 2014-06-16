@@ -48,7 +48,7 @@
     height: 444px;
     margin-bottom: 10px;
 }
-.product-detail__pics .selected {
+.product-detail__pics .selected img {
     outline: 1px solid red;
 }
 .product-detail__pics img {
@@ -148,7 +148,21 @@
 .product-detail__notexist a {
     color: #666666;
 }
-
+.product-detail__currency {
+    position: relative;
+    margin-right: 50px;
+    z-index: 1;
+}
+.product-detail__currency:after {
+    display: block;
+    width: 5px;
+    height: 0;
+    border: 3px solid #0057B9;
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 55%;
+}
 
 
 
@@ -275,6 +289,7 @@
     background: #f4f4f4;
     border: 1px solid #b9b9b9;
     padding: 30px;
+    zoom:50%;
 }
 .cabinet__edit input {
     border: 1px solid #b9b9b9;
