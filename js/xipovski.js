@@ -9,19 +9,24 @@ $(function() {
         body.find('.product-detail__image img').attr('src', $(this).attr('href'));  
     });    
     
+    
+    $('.product-detail__image').on('click', function(e){
+        e.preventDefault();
+        
+        $.fancybox.open($('.fancybox'), {helpers: {overlay: {locked: false}}, index: $('.product-detail__pics .selected').closest('li').index()});
+            
+//        $.fancybox.next();
+    });
+    //$(".fancybox").fancybox();
 
     $('.recycle-page input').mask("9?" + "999", { placeholder: ""}).on('focus', function(e) {
-        $(this).data('oldcount', $(this).val());
-//        $(this).closest('td').mousedown(function(e){e.stopPropagation();});             
+        $(this).data('oldcount', $(this).val());             
         if ($(this).closest('tr').hasClass('active')) {
-            $(this).closest('td').mousedown(function(e){e.stopPropagation();});
-            //$(this).closest('tr').addClass('active');               
+            $(this).closest('td').mousedown(function(e){e.stopPropagation();});                           
         }
-        else {
-            //$(this).closest('td').mousedown(function(e){e.stopPropagation();});
+        else {            
             $(this).closest('tr').addClass('active');    
-        }           
-//        $(this).closest('tr').addClass('active');     
+        }                
         
     }).keyup(function() {        
         calcRecycle();
@@ -63,30 +68,19 @@ $(function() {
         var $this = $(this),
             input = $this.closest('div').find('input'),
             val = parseInt(input.val()),
-            cost = input.data('cost');
-            //console.log($this.closest('td'));
-            //$this.closest('td').mousedown(function(e){e.stopPropagation();});            
+            cost = input.data('cost');                                    
         if ($this.hasClass('minus')) {            
-            if (val > 0) {
-                //input.closest('tr').find('.recycle-page__sum span').text((val - 1) * cost);
-                input.val(val - 1)
-            }
+            if (val > 0) {input.val(val - 1)}
         }
-        else {            
-            //input.closest('tr').find('.recycle-page__sum span').text((val + 1) * cost);           
+        else {                                   
             input.val(val + 1);
         }
         calcRecycle();
     });
     
-//    $('html .recycle-page table .recycle-page__calc').mousedown(function(e) {        
-//        if ($(this).closest('tr').hasClass('active')) {
-//            e.stopPropagation();            
-//        }
-//    });
+
     $('html').mousedown(function() {
-        $('.cabinet__edit').remove();  
-        //$('.recycle-page table .active').removeClass('active');              
+        $('.cabinet__edit').remove();          
     });
     
         

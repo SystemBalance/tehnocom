@@ -1,1 +1,1 @@
-head.load("js/lib/jquery.js", "js/lib/cycle2.js", "js/lib/cycle2.carousel.js", "js/lib/jquery.mousewheel.js", "js/common.js", "js/lib/jquery.maskedinput.min.js", "js/xipovski.js");
+head.load("js/lib/jquery.js", "js/lib/cycle2.js", "js/lib/cycle2.carousel.js", "js/lib/jquery.mousewheel.js", "js/common.js", "js/lib/fancybox/jquery.fancybox.pack.js", "js/lib/jquery.maskedinput.min.js", "js/xipovski.js");
