@@ -1,9 +1,9 @@
-.clear:before, .clear:after {
+.clearfix:before, .clearfix:after {
     content: "";
     display: table;
     line-height: 0;
 }
-.clear:after {
+.clearfix:after {
     clear: both;
 }
 .fr {
