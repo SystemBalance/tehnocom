@@ -1,0 +1,16 @@
+.d_space {width: 100%; height: 135px;}
+.d_decription {width: 100%; text-align: center;}
+.d_decription p{color: #0057b9; font-size: 48px; font-weight: bold; margin: 20px 0 40px 0;}
+.d_decription span{display: block; vertical-align: top; margin: 0 auto; width: 1455px;}
+.d_decription div{text-align: center; margin-top: 80px;}
+.d_sertificat, .d_discount {display: inline-block; vertical-align: top; margin: 0 30px; font-size: 33px;}
+.d_sertificat {background: url(../img/link-image1.png) no-repeat; padding: 10px 0 20px 80px;}
+.d_discount {background: url(../img/link-image2.png) no-repeat; padding: 10px 0 20px 110px; color: #ff7e00;}
+
+.d_catalog {margin: 80px 0;}
+.d_product {display: inline-block; vertical-align: top; width: 625px; text-align: center; margin-bottom: 100px;}
+.d_greysmall {color:#666; font-size: 24px; margin-bottom: 10px!important;}
+.d_greysmall a{text-decoration: underline; color:#666;}
+.d_greysmall a:hover{text-decoration:none;}
+.d_one {display: inline-block; text-align: left; margin: 0 auto;}
+.d_one li{margin-bottom: 20px;}
