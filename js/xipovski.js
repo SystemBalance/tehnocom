@@ -10,7 +10,7 @@ $(function() {
     });    
     
 
-    $('.recycle-page input').mask("9?" + "9".repeat(3), { placeholder: ""}).on('focus', function(e) {
+    $('.recycle-page input').mask("9?" + "999", { placeholder: ""}).on('focus', function(e) {
         console.log($(this).closest('tr').hasClass('active'));
 //        $(this).closest('td').mousedown(function(e){e.stopPropagation();});             
         if ($(this).closest('tr').hasClass('active')) {
