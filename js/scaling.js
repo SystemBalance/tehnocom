@@ -4,10 +4,10 @@ $( document ).ready(function() {
 		freeWidth = document.body.clientWidth;
 		freeHeight = document.body.clientHeight;
         
-		freeWidth = document.body.clientWidth;
-		freeHeight = document.body.clientHeight;
+//		freeWidth = document.body.clientWidth;
+//		freeHeight = document.body.clientHeight;
 
-        offsetHeight
+//        offsetHeight
 
 //        wHeight = document.hei
 
