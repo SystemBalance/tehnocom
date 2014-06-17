@@ -53,6 +53,7 @@ ul.domtabs a:hover{
 	font-size: 36px;
 	text-decoration:underline;
 	padding: 30px 100px;
+	width: 300px;
 }
 
 ul.domtabs a:hover{
@@ -74,7 +75,7 @@ div.domtab div{
 .selectricWrapper {
   position: relative;
   margin: 0 0 10px;
-  width: 300px;
+  width: 500px;
   cursor: pointer;
   display: inline-block;
   vertical-align: top;

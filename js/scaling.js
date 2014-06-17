@@ -27,7 +27,7 @@ $( document ).ready(function() {
 		$('.out').css({'transform':'scale(' + zoom + ')'});
 	}
 	
-	changeZoom();
+	//changeZoom();
 	
 	window.onresize = function(e){
 		changeZoom();

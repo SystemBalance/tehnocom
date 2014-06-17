@@ -353,7 +353,7 @@
     line-height: 91px;
 }
 .recycle-pic {
-    background: url('../img/icons/basket-pic_big.png');    
+    background: url('../img/icons/basket-pic_big.png') no-repeat;    
     width: 113px;
     height: 91px;
     display: inline-block;
