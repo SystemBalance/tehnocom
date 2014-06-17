@@ -139,41 +139,54 @@
                 <div class="cabinet__call clearfix"><i class="callback__pic"></i><a href="#"><span>Заказать бесплатный обратный звонок</span></a></div>
             </div>
             <div class="cabinet__right">
-            <div class="cabinet__head"><span class="cabinet__name">Пертов Петр</span> <span class="cabinet__data">г. Урюпинск</span> <a class="btn__edit" data-type="city" href="#">изменить</a></div>
+            <div class="cabinet__head"><span class="cabinet__name">Пертов Петр</span> <span class="cabinet__data">г. Урюпинск</span> <span class="cabiten__dialog"><a class="btn__edit" data-type="city" href="#">изменить</a></span></div>
             <div class="cabinet-user clearfix">
                 <div class="cabinet-user__left">
                     <img src="img/temp-user.jpg" />
-                    <div><a data-type="file" class="btn__edit" href="#">изменить фото</a></div>
+                    <div><span class="cabiten__dialog"><a data-type="file" class="btn__edit" href="#">изменить фото</a></span></div>
                 </div>
                 <div class="cabinet-user__right clearfix">
                     <div class="cabinet-user__block" class="clearfix">
                         <div class="cabinet-user__block_title">Ваши контакты:</div>
-                        <div>Тел.: <span class="cabinet__data">+7 (912) 233-22-11</span> <a data-type="tel" class="btn__edit fr" href="#">изменить</a></div>
-                        <div>Почта: <span class="cabinet__data">petya@mail.ru</span> <a data-type="email" class="btn__edit fr" href="#">изменить</a></div>
+                        <div>Тел.: <span class="cabinet__data">+7 (912) 233-22-11</span> <span class="cabiten__dialog fr"><a data-type="tel" class="btn__edit" href="#">изменить</a></span></div>
+                        <div>Почта: <span class="cabinet__data">petya@mail.ru</span> <span class="cabiten__dialog fr"><a data-type="email" class="btn__edit" href="#">изменить</a></span></div>
                     </div>
                     <div class="cabinet-user__block">
                         <div class="cabinet-user__block_title">OOO "Рога и копыта"</div>
                         <div>Реквизиты: <a href="#">rog_rekviz.docx</a></div>
-                        <div><a data-type="file" class="btn__edit" href="#">загрузить новые реквизиты</a></div>
+                        <div><span class="cabiten__dialog"><a data-type="file" class="btn__edit" href="#">загрузить новые реквизиты</a></span></div>
                     </div>
                 </div>
             </div>
             <div class="cabinet__title cabinet__title_middle">Ваши заказы</div>
-            <table class="cabinet__table">
-                <tr><th width="300">№ заказа</th><th width="230">Дата</th><th width="590">Статус</th><th>Оплата</th></tr>
-                <tr>
-                    <td><a href="#">20022</a></td>
-                    <td>12.04.14</td>
-                    <td><span class="green">Оплачен, ждет отгрузку</span></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><a href="#">20022</a></td>
-                    <td>12.04.14</td>
-                    <td>Отгружен, <span class="red">не оплачен</span></td>
-                    <td><span class="red">Оплатить до 25.04.14</span></td>
-                </tr>                
-            </table>
+            
+            <div class="x_tabs">
+                <div class="x_tabs__links">
+                    <a class="selected" href="#">Текущие</a>
+                    <a href="#">Архив</a>
+                </div>
+                
+                <table class="x_tabs__item selected cabinet__table">
+                    <tr><th width="300">№ заказа</th><th width="230">Дата</th><th width="590">Статус</th><th>Оплата</th></tr>
+                    <tr>
+                        <td><a href="#">20022</a></td>
+                        <td>12.04.14</td>
+                        <td><span class="green">Оплачен, ждет отгрузку</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">20022</a></td>
+                        <td>12.04.14</td>
+                        <td>Отгружен, <span class="red">не оплачен</span></td>
+                        <td><span class="red">Оплатить до 25.04.14</span></td>
+                    </tr>                
+                </table>   
+                <div class="x_tabs__item">
+                Архив
+                </div>                               
+            </div>
+                        
+
             <div class="cabinet__title cabinet__title_middle">Ваши сообщения</div>
             <table class="cabinet__table">
                 <tr><th width="530">Тема:</th><th width="590">Отправитель:</th><th>Дата</th></tr>

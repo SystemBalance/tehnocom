@@ -12,19 +12,21 @@ $(function() {
     
     $('.product-detail__image').on('click', function(e){
         e.preventDefault();
-        
         $.fancybox.open($('.fancybox'), {helpers: {overlay: {locked: false}}, index: $('.product-detail__pics .selected').closest('li').index()});
-            
-//        $.fancybox.next();
     });
-    //$(".fancybox").fancybox();
 
-    $('.recycle-page input').mask("9?" + "999", { placeholder: ""}).on('focus', function(e) {
-        $(this).data('oldcount', $(this).val());             
-        if ($(this).closest('tr').hasClass('active')) {
-            $(this).closest('td').mousedown(function(e){e.stopPropagation();});                           
-        }
-        else {            
+    $('.recycle-page input').mask("9?" + "999", { placeholder: ""}).on('focus', function(e) {                     
+        if (!$(this).closest('tr').hasClass('active')) {
+            $(this).data('oldcount', $(this).val());
+            if ($('.recycle-page .active').length) {
+                $('.recycle-page table .active').each(function() {                    
+                    var oldcount = $(this).find('input').data('oldcount');                
+                    if (oldcount) {
+                        $(this).find('input').val(oldcount);            
+                        calcRecycle();                         
+                    }                        
+                }).removeClass('active');                  
+            }        
             $(this).closest('tr').addClass('active');    
         }                
         
@@ -38,7 +40,10 @@ $(function() {
             var oldcount = parseInt($(this).closest('tr').find('input').data('oldcount'));
             $(this).closest('tr').find('input').val(oldcount);            
             calcRecycle();    
-        }        
+        }
+        else {
+            $(this).closest('tr').find('input').data('oldcount', '');
+        }       
         $(this).closest('tr').removeClass('active');
                                 
     });
@@ -48,9 +53,9 @@ $(function() {
     var calcRecycle = function() {
         var sum = 0;
         $('.recycle-page table input').each(function() {
-            var val = parseInt($(this).val()),
+            var val = parseInt($(this).val() ? $(this).val() : 0),
                 cost = parseInt($(this).data('cost')); 
-                $(this).closest('tr').find('.recycle-page__sum span').text(val * cost);
+                $(this).closest('tr').find('.recycle-page__sum span').text(val * cost);                
             sum += val*cost;            
         });
         $('.recycle-page__itogo_sum span').text(sum);
@@ -80,15 +85,37 @@ $(function() {
     
 
     $('html').mousedown(function() {
-        $('.cabinet__edit').remove();          
+        $('.cabinet__edit').remove();
     });
+
+    
+        $(document).keypress(function (e) {
+                        
+            if ((e.which == 0) || (e.keyCode == 27)) {
+                $('.cabinet__edit').remove();
+                if ($('.recycle-page .active').length) {                    
+                    $('.recycle-page').find('.active .btn_cancel').trigger('click');
+                }
+            }
+            else if ((e.which == 13) || (e.keyCode == 13)) {
+                $('.cabinet__edit').find('input[type="submit"]').trigger('click');
+                if ($('.recycle-page .active').length) {                                        
+                    var active = $('.recycle-page').find('.active');                                        
+                    active.find('.recycle-page__buttons a:eq(0)').trigger('click');
+                    active.find('input').blur();                                        
+                }                
+            }
+
+        });    
     
         
     $('body').on('click', '.btn__edit', function(e) {
+        //$('.cabinet__edit').remove();
         e.preventDefault();
         var type = $(this).data('type'),
             data = $(this).closest('div').find('.cabinet__data'),            
             field;
+            
             
         if (type == 'city') {
             field = $('<select class="cabinet__edit_field"><option>г. Москва</option><option>г. Зеленоград</option><option>г. Урюпинск</option></select>')
@@ -101,15 +128,25 @@ $(function() {
             field = $('<input class="cabinet__edit_field" type="text" value="' + data.text() + '" />');
         }
                 
-        var html = $('<div class="cabinet__edit"><form><div><input type="submit" value="Сохранить" /></div></form></div>').css({'left': $(this).offset().left, 'top': $(this).offset().top});
+        var html = $('<div class="cabinet__edit"><form><div class="clear"><input type="submit" value="Сохранить" /><button class="fr cabinet__edit_close">Отмена</button></div></form></div>');//.css({'left': $(this).offset().left, 'top': $(this).offset().top})
                 
-        $('.out').append(html);
+        //$('.out').append(html);
+        
+        $(this).closest('.cabiten__dialog').append(html);
+        
+        html.on('click', '.cabinet__edit_close', function() {
+            $(this).closest('.cabinet__edit').remove();
+        });
         
         html.mousedown(function(e){e.stopPropagation();}).find('form').prepend(field);
+        
+        
         if (type == 'tel') {
             field.mask("+7 (999) 999-99-99");    
         }
-                    
+                
+        html.find('input[type="submit"]').focus();
+            
         html.find('form').off('submit').on('submit', function(e) {
             e.preventDefault();
             var val = $(this).find('.cabinet__edit_field').val()
@@ -126,5 +163,11 @@ $(function() {
             
             $(this).closest('.cabinet__edit').remove();      
         }); 
+    });
+    
+    $('body').on('click', '.x_tabs__links a', function(e) {
+        e.preventDefault();
+        $(this).closest('.x_tabs').find('.selected').removeClass('selected');
+        $(this).addClass('selected').closest('.x_tabs').find('.x_tabs__item:eq(' + $(this).index() + ')').addClass('selected');       
     });
 });

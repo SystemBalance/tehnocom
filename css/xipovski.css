@@ -228,7 +228,7 @@
 }
 
 .cabinet__table th {
-    background: #efefef;
+    background: #f4f4f4;
     text-align: left;
 }
 .cabinet__table_bold {
@@ -283,13 +283,19 @@
     font-weight: bold;
     margin: 30px 0;
 }
+.cabiten__dialog {
+    position: relative;
+}
 .cabinet__edit {
     position: absolute;
+    top: 0;
+    left: 0;
     color: #fff;
     background: #f4f4f4;
     border: 1px solid #b9b9b9;
     padding: 30px;
     zoom:50%;
+    z-index: 100;
 }
 .cabinet__edit input {
     border: 1px solid #b9b9b9;
@@ -300,7 +306,8 @@
 }
 .cabinet__edit select {
     padding: 10px 20px;
-    font-size: 30px;        
+    font-size: 30px;    
+    width: 500px;    
 }
 .cabinet__edit input.error {
     border: 1px solid red;
@@ -309,8 +316,18 @@
     width: auto;
     margin-top: 20px;
     background: #04AB00;
+    height: 40px;
+    font-size: 28px;    
     color: #fff;
     border: none;
+}
+.cabinet__edit button {    
+    margin-top: 20px;
+    background: #999999;
+    color: #fff;    
+    height: 40px;
+    font-size: 28px;
+    padding: 0 20px;        
 }
 .cabinet-user__left {
     text-align: center;
@@ -378,20 +395,29 @@
     font-weight: bold;
     font-size: 36px;
 }
-.recycle__tabs a:first-child {
+.recycle-page .x_tabs__links a:first-child {
     margin-left: 90px;
 }
-.recycle__tabs a {
+.x_tabs__links a {
     padding: 0 60px;
     line-height: 75px;
     display: inline-block;
     color: #333333;
     font-size: 36px;    
 }
-.recycle__tabs a.selected {
-    background: #e7e7e7;    
+.x_tabs__links a.selected {
+    background: #f4f4f4;    
     text-decoration: none;
     font-weight: bold;
+}
+.recycle-page .x_tabs__links a.selected {
+    background: #e7e7e7;
+}
+.x_tabs__item {
+    display: none;
+}
+.x_tabs__item.selected {
+    display: block;
 }
 .recycle-page__calc {
     vertical-align: top;
@@ -479,7 +505,17 @@
 .recycle-page__actions a {
     color: #999999;
 }
-
+.recycle-page__actions_hold a {
+    color: #999999;
+    font-size: 28px;
+}
+.recycle-page__actions_hold {
+    padding: 45px 0 0 60px;
+    color: #999999;    
+}
+.link__green {
+    color: #04ab00 !important;
+}
 .recycle-page__count .minus, .recycle-page__count .plus {
     position: absolute;    
     top: 0;
