@@ -69,8 +69,8 @@
     max-width: 592px;
     max-height: 444px;
 }
-.product-detail__image:after {
-    background: url("../img/icons/zoom.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+.product-detail__image:after {    
+    background: url('../img/icons-sb72f7dbf1b.png') -100px -1160px no-repeat;
     width: 67px;
     height: 68px;
     content: "";
@@ -166,8 +166,8 @@
 
 
 
-.product-detail .question__pic {
-    background: url('../img/icons/question-pic.png');
+.product-detail .question__pic {    
+    background: url('../img/icons-sb72f7dbf1b.png') 100px -1100px no-repeat;
     width: 55px;
     height: 59px;
     display: inline-block;
@@ -353,7 +353,7 @@
     line-height: 91px;
 }
 .recycle-pic {
-    background: url('../img/icons/basket-pic_big.png') no-repeat;    
+    background: url('../img/icons-sb72f7dbf1b.png') -100px -1228px no-repeat;    
     width: 113px;
     height: 91px;
     display: inline-block;
