@@ -1,7 +1,7 @@
 .d_space {width: 100%; height: 95px;}
 .d_decription {width: 100%; text-align: center;}
 .d_decription2 {text-align: left; font-size: 36px; color: #666; padding-left: 100px;}
-.d_decription p{color: #0057b9; font-size: 48px; font-weight: bold; margin: 20px 0 40px 0;}
+.d_decription p{color: #0057b9; font-size: 48px; font-weight: bold; margin: 20px 0 50px 0;}
 .d_decription span{display: block; vertical-align: top; margin: 0 auto; width: 1455px;}
 .d_decription div{text-align: center; margin-top: 80px;}
 .d_sertificat, .d_discount {display: inline-block; vertical-align: top; margin: 0 30px; font-size: 33px;}
@@ -20,7 +20,7 @@
 .d_title-line span { display: inline-block; padding: 0 160px; background: white; font-family: "HelveticaNeue-Medium", Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 60px; line-height: 70px;}
 
 .d_crumbs, .d_crumbs2 {color: #999; font-size: 24px; padding-left: 100px;}
-.d_crumbs2 {padding-left: 830px;}
+.d_crumbs2 {padding-left: 825px;}
 .d_crumbs a, .d_crumbs2 a{color: #999; text-decoration: underline;}
 .d_crumbs a:hover, .d_crumbs2 a:hover{text-decoration: none;}
 
@@ -272,28 +272,82 @@ div.domtab div{
 /*----------------------------------------------КОНЕЦ ТАБЫ---------------------------------------*/
 
 .d_textwrapper{width: 1505px; margin: 0 auto; background: url(../img/parag.png) no-repeat; padding-left: 300px;}
-.d_textwrapper h1{color: #0057b9; margin-bottom: 80px;}
-.d_textwrapper h2{color: #0057b9;}
-.d_content {margin: 30px 0 0 40px;}
+.d_textwrapper h1{color: #0057b9; margin-bottom: 80px; font-size: 72px; font-family: HelveticaNeue-Medium;}
+.d_textwrapper h2{color: #0057b9; font-size: 48px;}
+.d_content {margin: 30px 0 0 55px;}
 .d_content li {margin: 15px 0;}
 .d_content li a{font-size: 36px;}
-.d_text {width: 1805px; margin: 70px auto 0;} 
+.d_text {width: 1805px; margin: 150px auto 255px;} 
+.d_text h1{font-size: 60px; font-family: HelveticaNeue-Medium;} 
 .d_preview {margin: 100px 0;}
 .d_forimg, .d_fotext, .d_fotext, .d_preview h2, .d_preview span{display: inline-block; vertical-align: top;} 
 .d_forimg{margin: 15px 100px 0 0; float: left;} 
-.d_fotext {width: 1400px;}
-.d_preview h2{ margin-bottom: 50px;} 
+.d_fotext {margin-left: 70px;
+    width: 1330px;}
+.d_preview h2{ margin-bottom: 50px; font-size: 36px;} 
 .d_preview h2 a{color: black;} 
 
-.d_titles {padding: 0px 150px 0 830px; margin: 70px 0;}
-.d_titles h2{margin: 40px 0;}
+.d_titles {padding: 0px 400px 0 830px; margin: 90px 0 70px;}
+.d_titles h1{font-size: 60px; font-family: HelveticaNeue-Medium;}
+.d_titles h2{margin: 40px 0; font-size: 36px;}
 .d_titles p{font-size: 36px; font-family: HelveticaNeue-Light;}
 
-.d_textwrapper2{width: 2000px; margin: 0 auto 100px;}
+.d_textwrapper2{width: 2050px; margin: 100px auto 150px;}
 .d_textwrapper2 div{display: inline-block; vertical-align: top;}
-.d_textimg {width: 540px;}
+.d_textimg {width: 570px;}
 .d_textimg div{width: 450px; font-size: 21px; font-style: italic; padding-top: 30px;}
 .d_textimg div a{color: #666;}
 .d_article {width: 1400px; font-size: 28px;}
 
 .d_emptyspace {height: 200px;}
+
+.d_reg-bg {width: 100%; height: 2512px; background: url(../img/reg-bg.jpg) no-repeat bottom;  text-align: center;}
+.d_regtext {width: 100%;}
+.d_regtext div{width: 1140px; display: inline-block; vertical-align: top;}
+.d_regbox1 {background: url(../img/regbox1.png) no-repeat center top; padding: 200px 30px 0;}
+.d_regbox1 p{color: #3bb254; font-size: 48px;}
+.d_regbox1 ul, .d_regbox2 ul{text-align: left; margin-top: 40px;}
+.d_regbox1 ul li, .d_regbox2 ul li{margin: 20px; font-size: 32px; list-style: inside url(../img/regli.png);}
+.d_regbox1 ul li a{color: #3bb254; font-weight: bold; text-decoration: none;}
+.d_regbox2 {background: url(../img/regbox2.png) no-repeat center top;  padding: 200px 30px 0;}
+.d_regbox2 p{color: #0057b9; font-size: 48px;}
+
+.d_regtabs {width: 1490px; margin: 150px auto 0; text-align: center;}
+.d_pushone, .d_pushtwo {display: inline-block; vertical-align: top; width: 735px; height: 262px; color: black; font-size: 48px; text-decoration: underline; text-align: left;}
+.d_pushone {background: url(../img/chel-green.png) no-repeat 140px 50px; padding-left: 240px;}
+.d_green {background: #e7fcec url(../img/chel-green.png) no-repeat 140px 50px; text-decoration: none;}
+.d_pushone:hover {background: #e7fcec url(../img/chel-green.png) no-repeat 140px 50px; text-decoration: none;}
+.d_pushtwo {background: url(../img/chel-blue.png) no-repeat 100px 50px; padding-left: 290px; margin-left: -10px;}
+.d_blue {background: #d9eafc url(../img/chel-blue.png) no-repeat 100px 50px; text-decoration: none;}
+.d_pushtwo:hover {background: #d9eafc url(../img/chel-blue.png) no-repeat 100px 50px; text-decoration: none;}
+.d_box1, .d_box2 {width: 1468px; margin: 0 auto;  display: none;}
+.d_box1 {background: #e7fcec; text-align: center; padding: 70px 0;}
+.d_box1 span{color: #333; font-size: 39px; display: block; margin-bottom: 60px;}
+.d_box1 input[type=text]{border: 2px solid #a4a5a4; width: 846px; height: 102px; padding-left: 50px; margin-bottom: 50px; font-size: 47px;}
+.d_box1 input[type=text]:focus {border: 2px solid #16a433 ;}
+::-webkit-input-placeholder {font-style: italic; font-family: HelveticaNeue-Light; color: #999;}
+::-moz-placeholder          {font-style: italic; font-family: HelveticaNeue-Light;}/* Firefox 19+ */
+::-moz-placeholder           {font-style: italic; font-family: HelveticaNeue-Light;}/* Firefox 18- */
+::-ms-input-placeholder      {font-style: italic; font-family: HelveticaNeue-Light;}
+.d_box1 select {display: inline-block; vertical-align: top; margin: 0 auto;  width: 900px; height: 102px; font-size: 47px; padding: 20px 20px 20px 50px; cursor: pointer; font-style: italic; font-family: HelveticaNeue-Light; color: #999; border: 2px solid #a4a5a4;}
+.d_box1 select option{font-size: 47px; padding: 20px 20px 20px 50px; font-style: normal; cursor: pointer; color: black;}
+.d_box1 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #16a433; margin-top: 50px;}
+.d_box1 div {text-align: right; padding-right: 160px;}
+.d_box1 label {font-size: 48px; display: inline-block; vertical-align: top; line-height: 50px; padding-right: 40px;}
+.d_padtop {padding-top: 25px;}
+.d_short {width: 500px!important;}
+.d_forshort {padding-right: 505px!important;}
+
+.d_box2 {background: #d9eafc; text-align: center; padding: 70px 0;}
+.d_box2 span{color: #333; font-size: 39px; display: block; margin-bottom: 60px;}
+.d_box2 input[type=text]{border: 2px solid #a4a5a4; width: 846px; height: 102px; padding-left: 50px; margin-bottom: 50px; font-size: 47px;}
+.d_box2 input[type=text]:focus {border: 2px solid #0057b9 ;}
+.d_box2 select {display: inline-block; vertical-align: top; margin: 0 auto 50px;  width: 900px; height: 102px; font-size: 47px; padding: 20px 20px 20px 50px; cursor: pointer; font-style: italic; font-family: HelveticaNeue-Light; color: #999; border: 2px solid #a4a5a4;}
+.d_box2 select option{font-size: 47px; padding: 20px 20px 20px 50px; font-style: normal; cursor: pointer; color: black;}
+.d_box2 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #0057b9; margin-top: 50px;}
+.d_box2 div {text-align: right; padding-right: 160px;}
+.d_box2 label {font-size: 48px; display: inline-block; vertical-align: top; line-height: 50px; padding-right: 40px;}
+.d_files {height: 100px; background: url(../img/skrepka.png) no-repeat 270px 0;  padding-left: 400px;}
+.d_filewrap {width: 784px; height: 115px; background: url(../img/addfiles.png) no-repeat;}
+.d_box2 input[type=file]{width: 784px; height: 115px; opacity: 0; cursor: pointer; margin:0; 
+/* фикс = чтобы работало в ИЕ надо указать большой размер шрифта и фильтр*/ filter:alpha(opacity:0); font-size:199px;}

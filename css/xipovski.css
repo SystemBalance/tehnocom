@@ -301,7 +301,7 @@
     background: #f4f4f4;
     border: 1px solid #b9b9b9;
     padding: 30px;
-    zoom:50%;
+    /*zoom:50%;*/
     z-index: 100;
 }
 .cabinet__edit input {
