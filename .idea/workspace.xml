@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8661470-040c-4b8e-96eb-525114be05c4" name="Default" comment="" />
+    <list default="true" id="a8661470-040c-4b8e-96eb-525114be05c4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_animations.scss" afterPath="$PROJECT_DIR$/sass/lib/_animations.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_base.scss" afterPath="$PROJECT_DIR$/sass/lib/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/ceaser-easing/_ceaser.sass" afterPath="$PROJECT_DIR$/sass/lib/ceaser-easing/_ceaser.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_common.sass" afterPath="$PROJECT_DIR$/sass/_common.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_demo.scss" afterPath="$PROJECT_DIR$/sass/lib/_demo.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/ceaser-easing/_ease-types.sass" afterPath="$PROJECT_DIR$/sass/lib/ceaser-easing/_ease-types.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/ceaser-easing/_easing-functions.sass" afterPath="$PROJECT_DIR$/sass/lib/ceaser-easing/_easing-functions.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/ceaser-easing/_easing-vars.sass" afterPath="$PROJECT_DIR$/sass/lib/ceaser-easing/_easing-vars.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_inner.sass" afterPath="$PROJECT_DIR$/sass/_inner.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_keyframes.sass" afterPath="$PROJECT_DIR$/sass/lib/_keyframes.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_layouts.sass" afterPath="$PROJECT_DIR$/sass/_layouts.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_main.sass" afterPath="$PROJECT_DIR$/sass/_main.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_media.scss" afterPath="$PROJECT_DIR$/sass/lib/_media.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_mixins.sass" afterPath="$PROJECT_DIR$/sass/lib/_mixins.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_reset.sass" afterPath="$PROJECT_DIR$/sass/_reset.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_sprites.sass" afterPath="$PROJECT_DIR$/sass/lib/_sprites.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cat_0.html" afterPath="$PROJECT_DIR$/cat_0.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cat_2.html" afterPath="$PROJECT_DIR$/cat_2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common2.js" afterPath="$PROJECT_DIR$/js/common2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.rb" afterPath="$PROJECT_DIR$/config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/cycle2.carousel.js" afterPath="$PROJECT_DIR$/js/lib/cycle2.carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/cycle2.js" afterPath="$PROJECT_DIR$/js/lib/cycle2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/head.js" afterPath="$PROJECT_DIR$/js/lib/head.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/jquery.js" afterPath="$PROJECT_DIR$/js/lib/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/jquery.mousewheel.js" afterPath="$PROJECT_DIR$/js/lib/jquery.mousewheel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration.html" afterPath="$PROJECT_DIR$/registration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.sass" afterPath="$PROJECT_DIR$/sass/screen.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text-1.html" afterPath="$PROJECT_DIR$/text-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text-2.html" afterPath="$PROJECT_DIR$/text-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +69,7 @@
       <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="35" selection-start="786" selection-end="786" vertical-scroll-proportion="0.47692308" vertical-offset="392" max-vertical-offset="799">
+            <state line="13" column="18" selection-start="277" selection-end="277" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -111,6 +145,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -142,7 +179,7 @@
     <option name="width" value="1378" />
     <option name="height" value="780" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -223,7 +260,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.lastSelected" value="web.server" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -250,6 +287,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a8661470-040c-4b8e-96eb-525114be05c4" name="Default" comment="" />
@@ -295,6 +349,7 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -588,7 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="35" selection-start="786" selection-end="786" vertical-scroll-proportion="0.47692308" vertical-offset="392" max-vertical-offset="799">
+        <state line="13" column="18" selection-start="277" selection-end="277" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
