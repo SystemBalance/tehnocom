@@ -30,10 +30,14 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: HelveticaNeue-Medium; src: url("fonts/helveticaneuecyr-medium-webfont.eot"); src: url("fonts/helveticaneuecyr-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneuecyr-medium-webfont.woff") format("woff"), url("fonts/helveticaneuecyr-medium-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+
 body { font-family: "HelveticaNeue-Roman", Arial, sans-serif; font-size: 30px; line-height: 1.4; color: #333333; }
+
 
 a { color: #0057b9; }
 a:hover { text-decoration: none; }
+
+
 
 .out { margin: 0 auto; width: 2560px; }
 
