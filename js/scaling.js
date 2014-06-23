@@ -1,4 +1,11 @@
 var freeHeight = 0;
+var tmpAnchor = '';
+
+if(location.hash){
+	tmpAnchor = location.hash;
+	location.hash = '';
+}
+
 
 $( document ).ready(function() {
 	//пересчитываем зум
@@ -41,4 +48,20 @@ $( document ).ready(function() {
 	$('.out').on('resize', function(e){
 		console.log($('.out').height()); 
 	});
+	
+	$('a').on('click', function() {
+		if ($(this).attr('href').charAt(0) === '#') {
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 500);
+			return false;
+		}
+	});
+
+	if (tmpAnchor !== '') {
+		$('html, body').animate({
+			scrollTop: $(tmpAnchor).offset().top
+		}, 500);
+	}
+
 });
