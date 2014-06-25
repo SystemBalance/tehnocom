@@ -228,6 +228,8 @@ a:hover { text-decoration: none; }
     color: #e1e0e0;}
 .title-not{font-size: 71px; color: #ff0000;}
 .info_search { font-size: 48px; color: #0057b9;}
+.info_search{margin-top:121px;}
+
 .page_not .catalog__top {margin-top: 110px; margin-bottom: 140px;}
 .page_not .catalog__search { position: relative; width: 748px; vertical-align: top; display: inline-block; }
 .page_not .catalog__search:before { position: absolute; content: ""; left: 28px; top: 50%; margin-top: -18px; cursor: pointer; background: url('../img/icons-sb72f7dbf1b.png') 0 -1523px no-repeat; width: 57px; height: 46px; }
@@ -236,7 +238,7 @@ a:hover { text-decoration: none; }
 .not_found
 {
     background: none;
-    padding: 0!important;
+    padding: 0 162px!important; /* центрируем в кавычках */
 }
 .not_found ul li
 {

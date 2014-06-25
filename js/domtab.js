@@ -46,7 +46,7 @@ domtab={
 	checkURL:function(){
 		var id;
 		var loc=window.location.toString();
-		loc=/#/.test(loc)?loc.match(/#(\w.+)/)[1]:'';
+		loc=/#/.test(loc) && loc.match(/#(\w.+)/)!==null ? loc.match(/#(\w.+)/)[1]:'';
 		if(loc==''){return;}
 		var elm=document.getElementById(loc);
 		if(!elm){return;}

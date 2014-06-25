@@ -50,12 +50,14 @@ $( document ).ready(function() {
 	});
 	
 	$('a').on('click', function() {
-		if ($(this).attr('href').charAt(0) === '#') {
-			$('html, body').animate({
-				scrollTop: $($(this).attr('href')).offset().top
-			}, 500);
-			return false;
-		}
+        if($(this).attr('href')!=undefined){
+            if ($(this).attr('href').charAt(0) === '#' && $($(this).attr('href')).length !=0) {
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500);
+                return false;
+            }
+        }
 	});
 
 	if (tmpAnchor !== '') {
