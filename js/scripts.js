@@ -20,6 +20,22 @@ $(document).ready(function(){
 		$('.d_box1').hide();
 		$('.d_pushone').removeClass('d_green');
     });
+	
+	
+	
+	//прокручивание к формам
+	$('.d_pushone').click(function(){
+	 $('html, body').animate({
+							scrollTop: $(this).offset().top
+						}, 500);
+	});
+	 $('.d_pushtwo').click(function(){
+	 $('html, body').animate({
+							scrollTop: $(this).offset().top
+						}, 500);
+	});
 	//END script табы на странице registration.html
 });
+
+
 

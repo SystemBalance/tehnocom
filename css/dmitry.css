@@ -1,6 +1,6 @@
 .d_space {width: 100%; height: 95px;}
 .d_decription {width: 100%; text-align: center;}
-.d_decription2 {text-align: left; font-size: 36px; color: #666; padding-left: 100px;}
+.d_decription2 {text-align: left; font-size: 34px; color: #666; padding: 0 100px;}
 .d_decription p{color: #0057b9; font-size: 48px; font-weight: bold; margin: 20px 0 50px 0;}
 .d_decription span{display: block; vertical-align: top; margin: 0 auto; width: 1455px;}
 .d_decription div{text-align: center; margin-top: 80px;}
@@ -17,7 +17,7 @@
 .d_one li{margin-bottom: 20px;}
 
 .d_title-line { height: 80px; margin: 50px 0 110px 0; border-bottom: 1px solid #a8a8a8; text-align: center; }
-.d_title-line span { display: inline-block; padding: 0 160px; background: white; font-family: "HelveticaNeue-Medium", Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 60px; line-height: 70px;}
+.d_title-line span { display: inline-block; padding: 0 160px; background: white; font-family: HelveticaNeue-Medium, Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 60px; line-height: 70px;}
 
 .d_crumbs, .d_crumbs2 {color: #999; font-size: 24px; padding-left: 100px;}
 .d_crumbs2 {padding-left: 825px;}
@@ -25,7 +25,7 @@
 .d_crumbs a:hover, .d_crumbs2 a:hover{text-decoration: none;}
 
 /*----------------------------------------------НАЧАЛО ТАБЫ---------------------------------------*/
-.d_tabs {margin: 50px 0;}
+.d_tabs {margin: 50px auto; width: 2458px;}
 .domtab {display: block;}
 div.domtab{
 	padding:0em;
@@ -70,6 +70,7 @@ div.domtab div{
 
 .d_sort {height: 100px; background: #e7e7e7; display: block; padding: 60px 0 0 100px; font-size: 36px; color: #666;}
 
+
 /*============================ СТИЛИ для Селекта Selectric=================================*/
 
 .selectricWrapper {
@@ -91,8 +92,9 @@ div.domtab div{
   background: #fff;
   position: relative;
   border-radius: 5px;
-  height:48px;
+  height:58px;
   width: 500px!important;
+  margin-top: -7px;
 }
 
 .selectric .label {
@@ -100,7 +102,7 @@ div.domtab div{
   white-space: nowrap;
   *overflow: hidden;
   margin: 0 30px 0 0;
-  padding: 15px 0 0 15px;
+  padding: 19px 0 0 15px;
   font-size: 33px;
   line-height: 18px;
   color: #444;
@@ -110,8 +112,8 @@ div.domtab div{
 .selectric .button {
   display: block;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 5px;
   width: 70px;
   height: 38px;
   color: #595959!important;
@@ -233,7 +235,7 @@ div.domtab div{
 
 .selectricItems li {
   display: block;
-  padding: 5px 0 5px 15px;
+  padding: 10px 0 10px 15px;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #EEE;
   color: #666;
@@ -242,7 +244,7 @@ div.domtab div{
 
 .selectricItems li.selected {
   color: #444;
-  border-top-color: #E0E0E0;
+  background: #F9F9F9;
 }
 
 .selectricItems li:hover {
@@ -258,8 +260,9 @@ div.domtab div{
 }
 /*============================ КОНЕЦ СТИЛИ для Селекта Selectric=================================*/
 
-.d_tabproducts {margin-top: 50px;}
-.d_tabproducts .product { padding: 0 50px; text-align: center; display: inline-block; vertical-align: top; margin-bottom: 100px; width: 520px;}
+.d_tabproducts {margin-top: 50px; margin: 0 auto; text-align: center;}
+.d_tabproducts .product { /*padding: 0px 10px; text-align: center; display: inline-block; vertical-align: top; margin-bottom: 100px; width: 500px; margin: 50px 20px;*/
+ width: 580px; padding: 80px 0; white-space: normal; display: inline-block; vertical-align:top; margin-left: -8px;}
 .d_tabproducts .product .product__pic { margin-bottom: 30px; font-size: 0; }
 .d_tabproducts .product .product__pic img { max-width: 100%; }
 .d_tabproducts .product .product__title { margin-bottom: 5px;  color: black; font-size: bold; font-size: 32px; width: 490px;}
@@ -272,32 +275,33 @@ div.domtab div{
 /*----------------------------------------------КОНЕЦ ТАБЫ---------------------------------------*/
 
 .d_textwrapper{width: 1505px; margin: 0 auto; background: url(../img/parag.png) no-repeat; padding-left: 300px;}
-.d_textwrapper h1{color: #0057b9; margin-bottom: 80px; font-size: 72px; font-family: HelveticaNeue-Medium;}
-.d_textwrapper h2{color: #0057b9; font-size: 48px;}
+.d_textwrapper h1{color: #0057b9; margin-bottom: 80px; font-size: 72px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased}
+.d_textwrapper h2{color: #0057b9; font-size: 48px; -webkit-font-smoothing: antialiased;}
 .d_content {margin: 30px 0 0 55px;}
 .d_content li {margin: 15px 0;}
-.d_content li a{font-size: 36px;}
+.d_content li a{font-size: 36px; -webkit-font-smoothing: antialiased;}
 .d_text {width: 1805px; margin: 150px auto 255px;} 
-.d_text h1{font-size: 60px; font-family: HelveticaNeue-Medium;} 
+.d_text h1{font-size: 60px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased;} 
 .d_preview {margin: 100px 0;}
 .d_forimg, .d_fotext, .d_fotext, .d_preview h2, .d_preview span{display: inline-block; vertical-align: top;} 
 .d_forimg{margin: 15px 100px 0 0; float: left;} 
-.d_fotext {margin-left: 70px;
-    width: 1330px;}
+.d_fotext {margin-left: 30px;
+    width: 1380px;}
+.d_fotext span{font-size: 28px; line-height: 48px; -webkit-font-smoothing: antialiased}	
 .d_preview h2{ margin-bottom: 50px; font-size: 36px;} 
-.d_preview h2 a{color: black;} 
+.d_preview h2 a{color: black; -webkit-font-smoothing: antialiased;} 
 
 .d_titles {padding: 0px 400px 0 830px; margin: 90px 0 70px;}
-.d_titles h1{font-size: 60px; font-family: HelveticaNeue-Medium;}
-.d_titles h2{margin: 40px 0; font-size: 36px;}
-.d_titles p{font-size: 36px; font-family: HelveticaNeue-Light;}
+.d_titles h1{font-size: 60px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased}
+.d_titles h2{margin: 40px 0; font-size: 36px; -webkit-font-smoothing: antialiased}
+.d_titles p{font-size: 36px; font-family: HelveticaNeue-Light; -webkit-font-smoothing: antialiased}
 
 .d_textwrapper2{width: 2050px; margin: 100px auto 150px;}
-.d_textwrapper2 div{display: inline-block; vertical-align: top;}
+.d_textwrapper2 div{display: inline-block; vertical-align: top; -webkit-font-smoothing: antialiased}
 .d_textimg {width: 570px;}
 .d_textimg div{width: 450px; font-size: 21px; font-style: italic; padding-top: 30px;}
 .d_textimg div a{color: #666;}
-.d_article {width: 1400px; font-size: 28px;}
+.d_article {width: 1400px; font-size: 28px; line-height: 48px;}
 
 .d_emptyspace {height: 200px;}
 
