@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8661470-040c-4b8e-96eb-525114be05c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_animations.scss" afterPath="$PROJECT_DIR$/sass/lib/_animations.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_base.scss" afterPath="$PROJECT_DIR$/sass/lib/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/ceaser-easing/_ceaser.sass" afterPath="$PROJECT_DIR$/sass/lib/ceaser-easing/_ceaser.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_common.sass" afterPath="$PROJECT_DIR$/sass/_common.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_demo.scss" afterPath="$PROJECT_DIR$/sass/lib/_demo.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/ceaser-easing/_ease-types.sass" afterPath="$PROJECT_DIR$/sass/lib/ceaser-easing/_ease-types.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/ceaser-easing/_easing-functions.sass" afterPath="$PROJECT_DIR$/sass/lib/ceaser-easing/_easing-functions.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/ceaser-easing/_easing-vars.sass" afterPath="$PROJECT_DIR$/sass/lib/ceaser-easing/_easing-vars.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_inner.sass" afterPath="$PROJECT_DIR$/sass/_inner.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_keyframes.sass" afterPath="$PROJECT_DIR$/sass/lib/_keyframes.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_layouts.sass" afterPath="$PROJECT_DIR$/sass/_layouts.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_main.sass" afterPath="$PROJECT_DIR$/sass/_main.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_media.scss" afterPath="$PROJECT_DIR$/sass/lib/_media.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_mixins.sass" afterPath="$PROJECT_DIR$/sass/lib/_mixins.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_reset.sass" afterPath="$PROJECT_DIR$/sass/_reset.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/lib/_sprites.sass" afterPath="$PROJECT_DIR$/sass/lib/_sprites.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cat_0.html" afterPath="$PROJECT_DIR$/cat_0.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cat_2.html" afterPath="$PROJECT_DIR$/cat_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common2.js" afterPath="$PROJECT_DIR$/js/common2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.rb" afterPath="$PROJECT_DIR$/config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/cycle2.carousel.js" afterPath="$PROJECT_DIR$/js/lib/cycle2.carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/cycle2.js" afterPath="$PROJECT_DIR$/js/lib/cycle2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/head.js" afterPath="$PROJECT_DIR$/js/lib/head.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/jquery.js" afterPath="$PROJECT_DIR$/js/lib/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib/jquery.mousewheel.js" afterPath="$PROJECT_DIR$/js/lib/jquery.mousewheel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration.html" afterPath="$PROJECT_DIR$/registration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.sass" afterPath="$PROJECT_DIR$/sass/screen.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text-1.html" afterPath="$PROJECT_DIR$/text-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text-2.html" afterPath="$PROJECT_DIR$/text-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
@@ -60,7 +29,7 @@
       <file leaf-file-name="cat_0.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cat_0.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="766" column="0" selection-start="24525" selection-end="24525" vertical-scroll-proportion="-9.692307" vertical-offset="12770" max-vertical-offset="13175">
+            <state line="766" column="0" selection-start="24525" selection-end="24525" vertical-scroll-proportion="0.0" vertical-offset="12770" max-vertical-offset="13175">
               <folding />
             </state>
           </provider>
@@ -69,7 +38,7 @@
       <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="277" selection-end="277" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="799">
+            <state line="30" column="29" selection-start="658" selection-end="658" vertical-scroll-proportion="0.61636364" vertical-offset="171" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
@@ -96,7 +65,7 @@
       <file leaf-file-name="common2.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+            <state line="28" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -174,10 +143,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="780" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -205,6 +174,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,7 +223,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,19 +279,23 @@
       <created>1402788814601</created>
       <updated>1402788814601</updated>
     </task>
+    <task id="LOCAL-00001" summary="SCaleOK">
+      <created>1403534915183</created>
+      <updated>1403534915183</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="780" extended-state="0" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37954545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39586523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -331,7 +304,9 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51132685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35845897" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -346,10 +321,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
+    <MESSAGE value="SCaleOK" />
+    <option name="LAST_COMMIT_MESSAGE" value="SCaleOK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -357,23 +336,17 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cat_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="902" column="54" selection-start="35393" selection-end="35393" vertical-scroll-proportion="0.0" vertical-offset="15059" max-vertical-offset="15623">
-          <folding />
-        </state>
+        <state line="902" column="54" selection-start="35393" selection-end="35393" vertical-scroll-proportion="0.0" vertical-offset="15059" max-vertical-offset="15623" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cabinet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="0" selection-start="13333" selection-end="13333" vertical-scroll-proportion="0.0" vertical-offset="4675" max-vertical-offset="5185">
-          <folding />
-        </state>
+        <state line="275" column="0" selection-start="13333" selection-end="13333" vertical-scroll-proportion="0.0" vertical-offset="4675" max-vertical-offset="5185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="58" selection-start="17312" selection-end="17312" vertical-scroll-proportion="0.0" vertical-offset="5498" max-vertical-offset="5899">
-          <folding />
-        </state>
+        <state line="339" column="58" selection-start="17312" selection-end="17312" vertical-scroll-proportion="0.0" vertical-offset="5498" max-vertical-offset="5899" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/korzina.html">
@@ -530,9 +503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/xipovski.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="298" column="12" selection-start="5939" selection-end="5939" vertical-scroll-proportion="-72.53846" vertical-offset="3180" max-vertical-offset="9639">
-          <folding />
-        </state>
+        <state line="298" column="12" selection-start="5939" selection-end="5939" vertical-scroll-proportion="-72.53846" vertical-offset="3180" max-vertical-offset="9639" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scaling.js">
@@ -580,37 +551,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="54" selection-start="11573" selection-end="11573" vertical-scroll-proportion="0.0" vertical-offset="3655" max-vertical-offset="3791">
-          <folding />
-        </state>
+        <state line="215" column="54" selection-start="11573" selection-end="11573" vertical-scroll-proportion="0.0" vertical-offset="3655" max-vertical-offset="3791" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cat_2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="901" column="0" selection-start="35338" selection-end="35338" vertical-scroll-proportion="0.0" vertical-offset="15042" max-vertical-offset="15623">
-          <folding />
-        </state>
+        <state line="901" column="0" selection-start="35338" selection-end="35338" vertical-scroll-proportion="0.0" vertical-offset="15042" max-vertical-offset="15623" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cat_0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="766" column="0" selection-start="24525" selection-end="24525" vertical-scroll-proportion="-9.692307" vertical-offset="12770" max-vertical-offset="13175">
+        <state line="766" column="0" selection-start="24525" selection-end="24525" vertical-scroll-proportion="0.0" vertical-offset="12770" max-vertical-offset="13175">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cabinet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="0" selection-start="13333" selection-end="13333" vertical-scroll-proportion="0.0" vertical-offset="4675" max-vertical-offset="5185">
-          <folding />
-        </state>
+        <state line="275" column="0" selection-start="13333" selection-end="13333" vertical-scroll-proportion="0.0" vertical-offset="4675" max-vertical-offset="5185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="58" selection-start="17312" selection-end="17312" vertical-scroll-proportion="-18.692308" vertical-offset="5277" max-vertical-offset="5899">
-          <folding />
-        </state>
+        <state line="339" column="58" selection-start="17312" selection-end="17312" vertical-scroll-proportion="-18.692308" vertical-offset="5277" max-vertical-offset="5899" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common2.js">
@@ -629,9 +592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="65265" selection-end="65265" vertical-scroll-proportion="0.13527851" vertical-offset="0" max-vertical-offset="377">
-          <folding />
-        </state>
+        <state line="3" column="30" selection-start="65265" selection-end="65265" vertical-scroll-proportion="0.13527851" vertical-offset="0" max-vertical-offset="377" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
@@ -643,7 +604,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="277" selection-end="277" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="799">
+        <state line="30" column="29" selection-start="658" selection-end="658" vertical-scroll-proportion="0.61636364" vertical-offset="171" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
