@@ -1,21 +1,24 @@
 $(function() {
-    $('.product-detail__pics').find('li:first a').addClass('selected');
+    //$('.product-detail__pics').find('li:first a').addClass('selected');
     
-    $('body').on('click', '.product-detail__pics li a', function(e) {
-        e.preventDefault();
-        var body = $(this).closest('.product-detail__pics');
-        body.find('.selected').removeClass('selected');
-        $(this).addClass('selected');              
-        body.find('.product-detail__image img').attr('src', $(this).attr('href'));  
-    });    
+    //$('body').on('click', '.product-detail__pics li a', function(e) {
+//        e.preventDefault();
+//        var body = $(this).closest('.product-detail__pics');
+//        body.find('.selected').removeClass('selected');
+//        $(this).addClass('selected');              
+//        body.find('.product-detail__image img').attr('src', $(this).attr('href'));  
+//    });    
     
     
-    $('.product-detail__image').on('click', function(e){
-        e.preventDefault();
-        $.fancybox.open($('.fancybox'), {helpers: {overlay: {locked: false}}, index: $('.product-detail__pics .selected').closest('li').index()});
-    });
+    //$('.product-detail__image').on('click', function(e){
+        //e.preventDefault();
+        //$.fancybox.open($('.fancybox'), {helpers: {overlay: {locked: false}}, index: $('.product-detail__pics .selected').closest('li').index()});
+    //});
+    $(".fancybox").fancybox();
 
-    $('.recycle-page input').mask("9?" + "999", { placeholder: ""}).on('focus', function(e) {                     
+    $('.recycle-page input').mask("9?" + "999", { placeholder: ""})
+    
+    $('body').on('focus', '.recycle-page input', function(e) {                     
         if (!$(this).closest('tr').hasClass('active')) {
             $(this).data('oldcount', $(this).val());
             if ($('.recycle-page .active').length) {
@@ -61,11 +64,54 @@ $(function() {
         $('.recycle-page__itogo_sum span').text(sum);
     };
     
+    var calcCount = function() {
+        if ($('.table__recycle tr').length) {
+            $('.count__recycle').text($('.table__recycle tr').length - 2);
+        } 
+        if ($('.table__hold tr').length) {
+            $('.count__hold').text($('.table__hold tr').length - 1);
+        }                       
+    };
+    
     $('body').on('click', '.recycle-page .btn__delete', function(e) {
         e.preventDefault();
         $(this).closest('tr').remove();
+        calcCount();
         calcRecycle();
     });    
+    
+    $('body').on('click', '.recycle-page .btn__hold', function(e) {
+        
+        e.preventDefault();
+        
+        //var clone = $(this).closest('tr').clone();
+        //$(this).closest('tr').remove();
+        var hold = $(this).closest('tr').removeClass('active').appendTo($('.table__hold')),
+            cost = hold.find('input[data-cost]').data('cost'),
+            buttons = '<a class="link__green btn__addrecycle" href="#">Добавить в корзину для оформления заказа</a><br><a href="#" class="btn__delete">Удалить</a>';
+        
+        hold.find('td:eq(2)').remove().end().find('.recycle-page__sum').attr('data-cost', cost).find('> span').text(cost).end().end().find('.recycle-page__actions').addClass('recycle-page__actions_hold').removeClass('.recycle-page__actions').html(buttons);
+        
+        calcCount();
+        calcRecycle();
+    });
+    
+    
+    $('body').on('click', '.recycle-page .btn__addrecycle', function(e) {
+        e.preventDefault();
+        var hold = $(this).closest('tr'),
+            cost = hold.find('[data-cost]').data('cost'),
+            input = '<div class="recycle-page__calc"><div class="recycle-page__title">Изменить количество</div><div class="recycle-page__count"><a href="#" class="btn__recycle minus">-</a><input data-cost="' + cost + '" type="text" value="1"><a href="#" class="btn__recycle plus">+</a></div><div class="recycle-page__buttons"><a class="btn btn_mini btn_green" href="#">сохранить</a> <a class="btn btn_mini btn_silver btn_cancel" href="#">отмена</a></div></div>',
+            buttons = '<a class="btn__hold" href="#">Отложить</a><br><a href="#" class="btn__delete">Удалить</a>';
+        $('.table__recycle tr:last').before(hold);
+        
+        hold.find('td:eq(1)').remove().end().find('td:eq(0)').after('<td><div class="recycle-page__cost">' + cost + ' руб. x</div></td><td>' + input + '</td>').end().find('td:last').removeClass('recycle-page__actions_hold').addClass('recycle-page__actions').html(buttons);
+                
+        calcCount();
+        calcRecycle();
+    });
+    
+    
     
     $('body').on('click', '.btn__recycle', function(e) {
         

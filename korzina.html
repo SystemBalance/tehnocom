@@ -128,11 +128,11 @@
         
         <div class="x_tabs">
             <div class="x_tabs__links">
-                <a class="selected" href="#">Готовые к заказу (2)</a>
-                <a href="#">Отложенные (1)</a>
+                <a class="selected" href="#">Готовые к заказу (<span class="count__recycle">2</span>)</a>
+                <a href="#">Отложенные (<span class="count__hold">1</span>)</a>
             </div>        
             <div class="x_tabs__item selected">
-                <table>
+                <table class="table__recycle">
                     <thead><tr><th width="1130" class="recycle-table__name">Название</th><th width="310"></th><th width="300" class="tac">Количество</th><th width="230">Стоимость</th><th></th></tr></thead>
                     <tbody>
                         <tr>
@@ -146,7 +146,7 @@
                                 </div>
                             </td>
                             <td><div class="recycle-page__sum"><span>6800</span> руб.</div></td>
-                            <td class="recycle-page__actions"><a class="btn__sdfsdf" href="#">Отложить</a><br><a href="#" class="btn__delete">Удалить</a></td>
+                            <td class="recycle-page__actions"><a class="btn__hold" href="#">Отложить</a><br><a href="#" class="btn__delete">Удалить</a></td>
                         </tr>  
                         <tr>
                             <td class="recycle-page__name"><div><img src="img/temp-recycle.jpg"><a href="#">Пильная шина Iggesund Forest R8 2801-55</a><div class="recycle-page__art">арт. А0000020233</div></div></td>
@@ -159,7 +159,7 @@
                                 </div>
                             </td>
                             <td><div class="recycle-page__sum"><span>6800</span> руб.</div></td>
-                            <td class="recycle-page__actions"><a class="btn__sdfsdf" href="#">Отложить</a><br><a href="#" class="btn__delete">Удалить</a></td>
+                            <td class="recycle-page__actions"><a class="btn__hold" href="#">Отложить</a><br><a href="#" class="btn__delete">Удалить</a></td>
                         </tr>  
                         <tr class="recycle-page__bottom">
                             <td colspan="2"></td>
@@ -176,14 +176,14 @@
                 </table>
             </div>
             <div class="x_tabs__item">
-                <table>
+                <table class="table__hold">
                     <thead><tr><th width="1130" class="recycle-table__name">Название</th><th width="230"></th><th>Стоимость</th><th></th></tr></thead>
                     <tbody>
                         <tr>
                             <td class="recycle-page__name"><div><img src="img/temp-recycle.jpg"><a href="#">Пильная шина Iggesund Forest R8 2801-55</a><div class="recycle-page__art">арт. А0000020233</div></div></td>
                             <td></td>                            
-                            <td><div class="recycle-page__sum"><span>3 400</span> руб.</div></td>
-                            <td class="recycle-page__actions_hold"><a class="link__green" href="#">Добавить в корзину для оформления заказа</a><br><a href="#" class="btn__delete">Удалить</a></td>
+                            <td><div data-cost="3400" class="recycle-page__sum"><span>3 400</span> руб.</div></td>
+                            <td class="recycle-page__actions_hold"><a class="link__green btn__addrecycle" href="#">Добавить в корзину для оформления заказа</a><br><a href="#" class="btn__delete">Удалить</a></td>
                         </tr>  
                     </tbody>          
                 </table>
