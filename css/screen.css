@@ -118,7 +118,7 @@ a:hover { text-decoration: none; }
 .btn.btn_small { padding: 0 20px; line-height: 52px; font-size: 32px; }
 .btn.btn_green { background: #04ab00; }
 
-.title-line { height: 40px; margin-bottom: 80px; border-bottom: 1px solid #a8a8a8; text-align: center; }
+.title-line { height: 40px; margin-bottom: 90px; border-bottom: 1px solid #a8a8a8; text-align: center; }
 .title-line span { display: inline-block; padding: 0 160px; background: white; font-family: "HelveticaNeue-Medium", Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 60px; }
 
 .title-bg { padding: 25px 140px; background: #e8e8e8; font-family: "HelveticaNeue-Medium", Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 48px; }

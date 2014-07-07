@@ -1,12 +1,12 @@
 .d_space {width: 100%; height: 95px;}
 .d_decription {width: 100%; text-align: center;}
-.d_decription2 {text-align: left; font-size: 34px; color: #666; padding: 0 100px;}
-.d_decription p{color: #0057b9; font-size: 48px; font-weight: bold; margin: 20px 0 50px 0;}
-.d_decription span{display: block; vertical-align: top; margin: 0 auto; width: 1455px;}
-.d_decription div{text-align: center; margin-top: 80px;}
-.d_sertificat, .d_discount {display: inline-block; vertical-align: top; margin: 0 30px; font-size: 33px;}
-.d_sertificat {background: url(../img/link-image1.png) no-repeat; padding: 10px 0 20px 80px;}
-.d_discount {background: url(../img/link-image2.png) no-repeat; padding: 10px 0 20px 110px; color: #ff7e00;}
+.d_decription2 {text-align: left; font-size: 34px; color: #666; padding: 0 100px; font-family: HelveticaNeue-Light;}
+.d_decription p{color: #0057b9; font-size: 48px; margin: 20px 0 30px 0; font-family: HelveticaNeue-Medium;}
+.d_decription span{display: block; vertical-align: top; margin: 0 auto; width: 1455px; font-family: HelveticaNeue-Light; line-height: 38px;}
+.d_decription div{text-align: center; margin-top: 70px;}
+.d_sertificat, .d_discount {display: inline-block; vertical-align: top; margin: 0 30px; font-size: 34px;}
+.d_sertificat {background: url(../img/link-image1.png) no-repeat; padding: 0px 0 20px 80px;}
+.d_discount {background: url(../img/link-image2.png) no-repeat; padding: 0px 0 20px 110px; color: #ff7e00;}
 
 .d_catalog {margin: 80px 0;}
 .d_product {display: inline-block; vertical-align: top; width: 625px; text-align: center; margin-bottom: 100px;}
@@ -17,7 +17,7 @@
 .d_one li{margin-bottom: 20px;}
 
 .d_title-line { height: 80px; margin: 50px 0 110px 0; border-bottom: 1px solid #a8a8a8; text-align: center; }
-.d_title-line span { display: inline-block; padding: 0 160px; background: white; font-family: HelveticaNeue-Medium, Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 60px; line-height: 70px;}
+.d_title-line span { display: inline-block; padding: 0 160px; background: white; font-family: HelveticaNeue-Medium, Arial; font-size: 60px; line-height: 70px;}
 
 .d_crumbs, .d_crumbs2 {color: #999; font-size: 24px; padding-left: 100px;}
 .d_crumbs2 {padding-left: 825px;}
@@ -88,11 +88,11 @@ div.domtab div{
 }
 
 .selectric {
-  border: 1px solid #9d9d9d;
+  border: 2px solid #999999;
   background: #fff;
   position: relative;
   border-radius: 5px;
-  height:58px;
+  height:62px;
   width: 500px!important;
   margin-top: -7px;
 }
@@ -102,7 +102,7 @@ div.domtab div{
   white-space: nowrap;
   *overflow: hidden;
   margin: 0 30px 0 0;
-  padding: 19px 0 0 15px;
+  padding: 21px 0 0 15px;
   font-size: 33px;
   line-height: 18px;
   color: #444;
@@ -113,7 +113,7 @@ div.domtab div{
   display: block;
   position: absolute;
   right: 10px;
-  top: 5px;
+  top: 7px;
   width: 70px;
   height: 38px;
   color: #595959!important;
@@ -269,37 +269,38 @@ div.domtab div{
 .d_tabproducts .product .product__code { margin-bottom: 15px; font-family: "HelveticaNeue-Light", Arial, sans-serif; color: black;}
 .d_tabproducts .product .product__details { font-size: 0; }
 .d_tabproducts .product .product__price, .product .product__buy { display: inline-block; width: 50%; vertical-align: middle; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.d_tabproducts .product .product__price { padding-right: 20px; text-align: right; font-family: "HelveticaNeue-Medium", Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); font-size: 48px; color: black;}
+.d_tabproducts .product .product__price { padding-right: 20px; text-align: right; font-family: "HelveticaNeue-Medium", Arial; font-size: 48px; color: black;}
 .d_tabproducts .product .product__buy { padding-left: 30px; text-align: left; }
 
 /*----------------------------------------------КОНЕЦ ТАБЫ---------------------------------------*/
 
 .d_textwrapper{width: 1505px; margin: 0 auto; background: url(../img/parag.png) no-repeat; padding-left: 300px;}
-.d_textwrapper h1{color: #0057b9; margin-bottom: 80px; font-size: 72px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased}
+.d_textwrapper h1{color: #0057b9; margin-bottom: 80px; font-size: 72px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased; font-weight: normal;}
 .d_textwrapper h2{color: #0057b9; font-size: 48px; -webkit-font-smoothing: antialiased;}
-.d_content {margin: 30px 0 0 55px;}
-.d_content li {margin: 15px 0;}
+.d_content {margin: 25px 0 0 55px;}
+.d_content li {margin: 10px 0;}
 .d_content li a{font-size: 36px; -webkit-font-smoothing: antialiased;}
 .d_text {width: 1805px; margin: 150px auto 255px;} 
-.d_text h1{font-size: 60px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased;} 
-.d_preview {margin: 100px 0;}
+.d_text h1{font-size: 60px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased; font-weight: normal;}
+.d_preview {margin: 105px 0;} 
+
 .d_forimg, .d_fotext, .d_fotext, .d_preview h2, .d_preview span{display: inline-block; vertical-align: top;} 
 .d_forimg{margin: 15px 100px 0 0; float: left;} 
 .d_fotext {margin-left: 30px;
     width: 1380px;}
-.d_fotext span{font-size: 28px; line-height: 48px; -webkit-font-smoothing: antialiased}	
+.d_fotext span{font-size: 28px; line-height: 48px; -webkit-font-smoothing: antialiased; font-family: HelveticaNeue-Light;}	
 .d_preview h2{ margin-bottom: 50px; font-size: 36px;} 
 .d_preview h2 a{color: black; -webkit-font-smoothing: antialiased;} 
 
 .d_titles {padding: 0px 400px 0 830px; margin: 90px 0 70px;}
-.d_titles h1{font-size: 60px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased}
-.d_titles h2{margin: 40px 0; font-size: 36px; -webkit-font-smoothing: antialiased}
-.d_titles p{font-size: 36px; font-family: HelveticaNeue-Light; -webkit-font-smoothing: antialiased}
+.d_titles h1{font-size: 60px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased; font-weight: normal;}
+.d_titles h2{margin: 30px 0 40px 0; font-size: 36px; -webkit-font-smoothing: antialiased}
+.d_titles p{font-size: 36px; font-family: HelveticaNeue-Light; -webkit-font-smoothing: antialiased; line-height: 42px;}
 
-.d_textwrapper2{width: 2050px; margin: 100px auto 150px;}
-.d_textwrapper2 div{display: inline-block; vertical-align: top; -webkit-font-smoothing: antialiased}
+.d_textwrapper2{width: 2050px; margin: 110px auto 150px;}
+.d_textwrapper2 div{display: inline-block; vertical-align: top; -webkit-font-smoothing: antialiased; font-family: HelveticaNeue-Light;}
 .d_textimg {width: 570px;}
-.d_textimg div{width: 450px; font-size: 21px; font-style: italic; padding-top: 30px;}
+.d_textimg div{width: 450px; font-size: 21px; font-style: italic; padding-top: 40px; color: #666666; line-height: 36px; font-family: HelveticaNeue-Light;}
 .d_textimg div a{color: #666;}
 .d_article {width: 1400px; font-size: 28px; line-height: 48px;}
 
@@ -308,15 +309,15 @@ div.domtab div{
 .d_reg-bg {width: 100%; height: 2512px; background: url(../img/reg-bg.jpg) no-repeat bottom;  text-align: center;}
 .d_regtext {width: 100%;}
 .d_regtext div{width: 1140px; display: inline-block; vertical-align: top;}
-.d_regbox1 {background: url(../img/regbox1.png) no-repeat center top; padding: 200px 30px 0;}
-.d_regbox1 p{color: #3bb254; font-size: 48px;}
+.d_regbox1 {background: url(../img/regbox1.png) no-repeat center top; padding: 215px 30px 0;}
+.d_regbox1 p{color: #3bb254; font-size: 48px; font-family: HelveticaNeue-Medium;}
 .d_regbox1 ul, .d_regbox2 ul{text-align: left; margin-top: 40px;}
 .d_regbox1 ul li, .d_regbox2 ul li{margin: 20px; font-size: 32px; list-style: inside url(../img/regli.png);}
 .d_regbox1 ul li a{color: #3bb254; font-weight: bold; text-decoration: none;}
-.d_regbox2 {background: url(../img/regbox2.png) no-repeat center top;  padding: 200px 30px 0;}
-.d_regbox2 p{color: #0057b9; font-size: 48px;}
+.d_regbox2 {background: url(../img/regbox2.png) no-repeat center top;  padding: 215px 30px 0;}
+.d_regbox2 p{color: #0057b9; font-size: 48px; font-family: HelveticaNeue-Medium;}
 
-.d_regtabs {width: 1490px; margin: 150px auto 0; text-align: center;}
+.d_regtabs {width: 1490px; margin: 125px auto 0; text-align: center;}
 .d_pushone, .d_pushtwo {display: inline-block; vertical-align: top; width: 735px; height: 262px; color: black; font-size: 48px; text-decoration: underline; text-align: left;}
 .d_pushone {background: url(../img/chel-green.png) no-repeat 140px 50px; padding-left: 240px;}
 .d_green {background: #e7fcec url(../img/chel-green.png) no-repeat 140px 50px; text-decoration: none;}
@@ -327,7 +328,7 @@ div.domtab div{
 .d_box1, .d_box2 {width: 1468px; margin: 0 auto;  display: none;}
 .d_box1 {background: #e7fcec; text-align: center; padding: 70px 0;}
 .d_box1 span{color: #333; font-size: 39px; display: block; margin-bottom: 60px;}
-.d_box1 input[type=text]{border: 2px solid #a4a5a4; width: 846px; height: 102px; padding-left: 50px; margin-bottom: 50px; font-size: 47px;}
+.d_box1 input[type=text]{border: 2px solid #a4a5a4; width: 846px; height: 100px; padding-left: 50px; margin-bottom: 45px; font-size: 47px;}
 .d_box1 input[type=text]:focus {border: 2px solid #16a433 ;}
 ::-webkit-input-placeholder {font-style: italic; font-family: HelveticaNeue-Light; color: #999;}
 ::-moz-placeholder          {font-style: italic; font-family: HelveticaNeue-Light;}/* Firefox 19+ */
@@ -335,7 +336,7 @@ div.domtab div{
 ::-ms-input-placeholder      {font-style: italic; font-family: HelveticaNeue-Light;}
 .d_box1 select {display: inline-block; vertical-align: top; margin: 0 auto;  width: 900px; height: 102px; font-size: 47px; padding: 20px 20px 20px 50px; cursor: pointer; font-style: italic; font-family: HelveticaNeue-Light; color: #999; border: 2px solid #a4a5a4;}
 .d_box1 select option{font-size: 47px; padding: 20px 20px 20px 50px; font-style: normal; cursor: pointer; color: black;}
-.d_box1 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #16a433; margin-top: 50px;}
+.d_box1 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #16a433; margin-top: 100px;}
 .d_box1 div {text-align: right; padding-right: 160px;}
 .d_box1 label {font-size: 48px; display: inline-block; vertical-align: top; line-height: 50px; padding-right: 40px;}
 .d_padtop {padding-top: 25px;}
@@ -344,11 +345,11 @@ div.domtab div{
 
 .d_box2 {background: #d9eafc; text-align: center; padding: 70px 0;}
 .d_box2 span{color: #333; font-size: 39px; display: block; margin-bottom: 60px;}
-.d_box2 input[type=text]{border: 2px solid #a4a5a4; width: 846px; height: 102px; padding-left: 50px; margin-bottom: 50px; font-size: 47px;}
+.d_box2 input[type=text]{border: 2px solid #a4a5a4; width: 846px; height: 100px; padding-left: 50px; margin-bottom: 45px; font-size: 47px;}
 .d_box2 input[type=text]:focus {border: 2px solid #0057b9 ;}
 .d_box2 select {display: inline-block; vertical-align: top; margin: 0 auto 50px;  width: 900px; height: 102px; font-size: 47px; padding: 20px 20px 20px 50px; cursor: pointer; font-style: italic; font-family: HelveticaNeue-Light; color: #999; border: 2px solid #a4a5a4;}
 .d_box2 select option{font-size: 47px; padding: 20px 20px 20px 50px; font-style: normal; cursor: pointer; color: black;}
-.d_box2 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #0057b9; margin-top: 50px;}
+.d_box2 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #0057b9; margin-top: 80px;}
 .d_box2 div {text-align: right; padding-right: 160px;}
 .d_box2 label {font-size: 48px; display: inline-block; vertical-align: top; line-height: 50px; padding-right: 40px;}
 .d_files {height: 100px; background: url(../img/skrepka.png) no-repeat 270px 0;  padding-left: 400px;}
