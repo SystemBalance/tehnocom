@@ -217,3 +217,79 @@ $(function() {
         $(this).addClass('selected').closest('.x_tabs').find('.x_tabs__item:eq(' + $(this).index() + ')').addClass('selected');       
     });
 });
+
+
+(function($) {
+        var interval = 0;
+        
+        var slide = function($this, direction) {            
+            $this.sliderConteiner.stop(true, true);            
+            if (direction === 'next') {
+                $this.sliderConteiner.animate({left: '-=' + $this.slideWidth + 'px'}, 500, function() {
+                    $this.sliderConteiner.find('.slider__item:first').appendTo($this.sliderConteiner);                    
+                    $this.sliderConteiner.css({'left': '0'});
+                });
+            }
+            else {
+                $this.sliderConteiner.find('.slider__item:last').prependTo($this.sliderConteiner);                    
+                $this.sliderConteiner.css({'left': '-' + $this.slideWidth + 'px'});
+                    
+                $this.sliderConteiner.animate({left: '0px'}, 500);
+            }                                    
+        };                
+        
+        
+        var methods = {
+            init : function( options ) {
+                this.unbind('xipslider');    
+                return this.each(function(){
+                    var $this = $(this);
+                    
+                    $this.sliderConteiner = $this.find('.slider__list');
+                    $this.slideItems = $this.find('.slider__item');
+                    $this.slideWidth = $this.find('.slider__item:first').width();
+                    $this.find('.x_slider').height($this.find('.x_slider').height());
+                    
+                    if ($this.slideItems.length > 4) {                        
+                        $this.sliderConteiner.css({position: 'absolute'});
+                        
+                        $this
+                            .on('click', '.slider__prev', function(e) {
+                                e.preventDefault();
+                                slide($this, 'prev');    
+                            })
+                            .on('click', '.slider__next', function(e) {
+                                e.preventDefault();
+                                slide($this, 'next');    
+                            });
+                        
+                        
+                        var interval = setInterval(function() {slide($this, 'next');}, 4000);
+                        
+                        $this
+                            .on('mouseenter', function() {
+                                console.log('stop');
+                                clearInterval(interval);                            
+                            })
+                            .on('mouseleave', function() {
+                                console.log('play');
+                                clearInterval(interval);
+                                interval = setInterval(function() {slide($this, 'next');}, 4000);
+                            });                                           
+                    }                                                                                                                                
+                });
+            }
+        };
+    
+    
+    $.fn.xipslider = function( method ) {
+        if (methods[method]) {
+            return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
+        } else if ( typeof method === 'object' || ! method ) {
+            return methods.init.apply( this, arguments );
+        } else {
+            $.error( 'Метод ' +  method + ' не существует в jQuery.xipslider' );
+        }
+    };    
+})(jQuery);
+

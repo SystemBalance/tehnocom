@@ -34,6 +34,12 @@
 .product-detail__head {
     margin-bottom: 60px;
 }
+.product-detail__head a {
+    border-bottom: 2px solid #0057b9;
+}
+.product-detail__head a:hover {
+    border-bottom: none;
+}
 .product-detail__lhead {
     float: left;
     width: 1500px;
@@ -137,6 +143,10 @@
 }
 .product-detail__cost_after a {
     color: #333333;    
+    border-bottom: 2px solid #333333;
+}
+.product-detail__cost_after a:hover {
+    border-bottom: none;
 }
 .product-detail__cost_after span {
     color: #19b000;
@@ -155,13 +165,19 @@
 }
 .product-detail__notexist a {
     color: #666666;
+    border-bottom: 2px solid #666666;
 }
-.product-detail__currency {
+.product-detail__notexist a:hover {
+    border-bottom: none;
+}
+/*.product-detail__currency {
     position: relative;
     margin-right: 50px;
     z-index: 1;
 }
-.product-detail__currency:after {
+*/
+.product-detail__currency { background: url('../img/icons-sb72f7dbf1b.png') -400px -60px no-repeat; width: 49px; height: 54px; display: inline-block;margin-right: 50px;}
+/*.product-detail__currency:after {
     display: block;
     width: 5px;
     height: 0;
@@ -170,7 +186,7 @@
     position: absolute;
     right: 20px;
     top: 55%;
-}
+}*/
 
 
 
@@ -231,13 +247,30 @@
 }
 .cabinet__call {
     position: relative;
-    margin-top: 50px;
+    margin-top: 50px;    
+}
+.cabinet__call a {
+    border-bottom: none;
+}
+.cabinet__call span {
+    border-bottom: 2px solid #0057b9;
+}
+.cabinet__call span:hover {
+    border-bottom: 2px solid #ffa200;
+}
+.cabinet__call a:hover {
+    border-bottom: none !important;
 }
 
 .cabinet__table, .cabinet__table a {
-    color: #333333;
+    color: #333333;    
 }
-
+.cabinet__table a {
+    border-bottom: 2px solid #333333;
+}
+.cabinet__table a:hover {
+    border-bottom: 2px solid #ffa200;
+}
 .cabinet__table th {
     background: #f4f4f4;
     text-align: left;
@@ -355,8 +388,11 @@
     font-family: HelveticaNeue-Light;
     font-style: italic;
     font-size: 24px;
+    border-bottom: 2px solid #666666;
 }
-
+.btn__edit:hover, .cabinet-user__right a:hover {
+    border-bottom: 2px solid #ffa200;
+}
 .recycle-title {
     font-size: 60px;
     margin-top: 100px;
@@ -384,10 +420,14 @@
     box-sizing: border-box;
 }
 .recycle-page__name a {
+    border-bottom: 2px solid #0057b9;
     display: inline-block;
     margin-left: 185px;
     font-size: 36px;
     font-weight: bold;
+}
+.recycle-page__name a:hover {
+    border-bottom: 2px solid #ffa200;
 }
 .recycle-page__art {
     margin-left: 185px;
@@ -415,12 +455,29 @@
     display: inline-block;
     color: #333333;
     font-size: 36px;    
+    border-bottom: none;
+}
+.x_tabs__links a:hover {
+    border-bottom: none !important;
 }
 .x_tabs__links a.selected {
     background: #f4f4f4;    
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold;    
 }
+.x_tabs__links a.selected span {
+    border-bottom: none;
+}
+.x_tabs__links a > span:hover {
+    border-bottom: 2px solid #ffa200;
+}
+.x_tabs__links a.selected span:hover {
+    border-bottom: none;
+}
+.x_tabs__links a > span {
+    border-bottom: 2px solid #333333;    
+}
+
 .recycle-page .x_tabs__links a.selected {
     background: #e7e7e7;
 }

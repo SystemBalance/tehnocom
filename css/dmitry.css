@@ -1,19 +1,29 @@
 .d_space {width: 100%; height: 95px;}
 .d_decription {width: 100%; text-align: center;}
+
 .d_decription2 {text-align: left; font-size: 34px; color: #666; padding: 0 100px; font-family: HelveticaNeue-Light;}
 .d_decription p{color: #0057b9; font-size: 48px; margin: 20px 0 30px 0; font-family: HelveticaNeue-Medium;}
 .d_decription span{display: block; vertical-align: top; margin: 0 auto; width: 1455px; font-family: HelveticaNeue-Light; line-height: 38px;}
 .d_decription div{text-align: center; margin-top: 70px;}
-.d_sertificat, .d_discount {display: inline-block; vertical-align: top; margin: 0 30px; font-size: 34px;}
-.d_sertificat {background: url(../img/link-image1.png) no-repeat; padding: 0px 0 20px 80px;}
-.d_discount {background: url(../img/link-image2.png) no-repeat; padding: 0px 0 20px 110px; color: #ff7e00;}
+.d_sertificat, .d_discount {display: inline-block; vertical-align: top; margin: 0 30px; font-size: 34px; position: relative; margin-left: 80px;}
+.d_sertificat {border-bottom: 2px solid #0057b9;}
+.d_sertificat:hover, .d_discount:hover {border-bottom: 2px solid #ffa200;}
+.d_sertificat:before {background: url(../img/link-image1.png) no-repeat; width: 80px; height: 60px; content: ''; display: inline-block; position: absolute; top: 0; left: -80px;}
+.d_discount {color: #ff7e00; border-bottom: 2px solid #ff7e00;}
+.d_discount:before {background: url(../img/link-image2.png) no-repeat; width: 80px; height: 60px; content: ''; display: inline-block; position: absolute; top: 0; left: -80px;}
 
 .d_catalog {margin: 80px 0;}
 .d_product {display: inline-block; vertical-align: top; width: 625px; text-align: center; margin-bottom: 100px;}
+.d_product a, .d_product a:hover {border-bottom: none !important;}
+
 .d_greysmall {color:#666; font-size: 24px; margin-bottom: 10px!important;}
-.d_greysmall a{text-decoration: underline; color:#666;}
-.d_greysmall a:hover{text-decoration:none;}
-.d_one {display: inline-block; text-align: left; margin: 0 auto;}
+
+
+.d_product .d_one {display: inline-block; text-align: left; margin: 0 auto;}
+.d_product .d_one a {border-bottom: 2px solid #0057b9 !important;}
+.d_product .d_one a:hover {border-bottom: 2px solid #ffa200 !important;}
+.d_product .d_one .d_greysmall a{color:#666; border-bottom: 2px solid #666 !important;}
+.d_product .d_greysmall a:hover{text-decoration:none; border-bottom: 2px solid #ffa200 !important;}
 .d_one li{margin-bottom: 20px;}
 
 .d_title-line { height: 80px; margin: 50px 0 110px 0; border-bottom: 1px solid #a8a8a8; text-align: center; }
@@ -21,8 +31,8 @@
 
 .d_crumbs, .d_crumbs2 {color: #999; font-size: 24px; padding-left: 100px;}
 .d_crumbs2 {padding-left: 825px;}
-.d_crumbs a, .d_crumbs2 a{color: #999; text-decoration: underline;}
-.d_crumbs a:hover, .d_crumbs2 a:hover{text-decoration: none;}
+.d_crumbs a, .d_crumbs2 a{color: #999; border-bottom: 2px solid #999;}
+.d_crumbs a:hover, .d_crumbs2 a:hover{border-bottom: 2px solid #ffa200;}
 
 /*----------------------------------------------НАЧАЛО ТАБЫ---------------------------------------*/
 .d_tabs {margin: 50px auto; width: 2458px;}
@@ -50,14 +60,18 @@ ul.domtabs a:active,
 ul.domtabs a:hover{
 	display:block;
 	color:#000;
-	font-size: 36px;
-	text-decoration:underline;
+	font-size: 36px;	
 	padding: 30px 100px;
 	width: 300px;
 }
 
+ul.domtabs a span {border-bottom: 2px solid #000;}
+
 ul.domtabs a:hover{
 	text-decoration: none;
+}
+ul.domtabs a:hover span{
+    border-bottom: 2px solid #ffa200;
 }
 div.domtab div{
 	clear:both;
@@ -66,8 +80,8 @@ div.domtab div{
 	padding: 0;
 }
 
-.d_activetab {color: #0057b9!important; text-decoration: none!important; font-size: 48px; font-weight: bold; background: #e7e7e7;}
-
+.d_activetab {color: #0057b9!important; font-size: 48px; font-weight: bold; background: #e7e7e7;}
+.d_activetab span {border-bottom:  none !important;}
 .d_sort {height: 100px; background: #e7e7e7; display: block; padding: 60px 0 0 100px; font-size: 36px; color: #666;}
 
 
@@ -265,12 +279,12 @@ div.domtab div{
  width: 580px; padding: 80px 0; white-space: normal; display: inline-block; vertical-align:top; margin-left: -8px;}
 .d_tabproducts .product .product__pic { margin-bottom: 30px; font-size: 0; }
 .d_tabproducts .product .product__pic img { max-width: 100%; }
-.d_tabproducts .product .product__title { margin-bottom: 5px;  color: black; font-size: bold; font-size: 32px; width: 490px;}
+.d_tabproducts .product .product__title { margin-bottom: 5px;  color: black; font-size: bold; font-size: 32px; padding: 0 30px;}
 .d_tabproducts .product .product__code { margin-bottom: 15px; font-family: "HelveticaNeue-Light", Arial, sans-serif; color: black;}
 .d_tabproducts .product .product__details { font-size: 0; }
-.d_tabproducts .product .product__price, .product .product__buy { display: inline-block; width: 50%; vertical-align: middle; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.d_tabproducts .product .product__price { padding-right: 20px; text-align: right; font-family: "HelveticaNeue-Medium", Arial; font-size: 48px; color: black;}
-.d_tabproducts .product .product__buy { padding-left: 30px; text-align: left; }
+.d_tabproducts .product .product__price, .product .product__buy { vertical-align: middle; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  text-align: center;}
+.d_tabproducts .product .product__price { font-family: "HelveticaNeue-Medium", Arial; font-size: 48px; color: black;}
+
 
 /*----------------------------------------------КОНЕЦ ТАБЫ---------------------------------------*/
 
@@ -279,7 +293,8 @@ div.domtab div{
 .d_textwrapper h2{color: #0057b9; font-size: 48px; -webkit-font-smoothing: antialiased;}
 .d_content {margin: 25px 0 0 55px;}
 .d_content li {margin: 10px 0;}
-.d_content li a{font-size: 36px; -webkit-font-smoothing: antialiased;}
+.d_content li a{font-size: 36px; -webkit-font-smoothing: antialiased; border-bottom: 2px solid #0057b9;}
+.d_content li a:hover{border-bottom: 2px solid #ffa200;}
 .d_text {width: 1805px; margin: 150px auto 255px;} 
 .d_text h1{font-size: 60px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased; font-weight: normal;}
 .d_preview {margin: 105px 0;} 
@@ -290,7 +305,8 @@ div.domtab div{
     width: 1380px;}
 .d_fotext span{font-size: 28px; line-height: 48px; -webkit-font-smoothing: antialiased; font-family: HelveticaNeue-Light;}	
 .d_preview h2{ margin-bottom: 50px; font-size: 36px;} 
-.d_preview h2 a{color: black; -webkit-font-smoothing: antialiased;} 
+.d_preview h2 a{color: black; -webkit-font-smoothing: antialiased; border-bottom: 2px solid #000;}
+.d_preview h2 a:hover {border-bottom: 2px solid #ffa200;} 
 
 .d_titles {padding: 0px 400px 0 830px; margin: 90px 0 70px;}
 .d_titles h1{font-size: 60px; font-family: HelveticaNeue-Medium; -webkit-font-smoothing: antialiased; font-weight: normal;}
@@ -301,7 +317,9 @@ div.domtab div{
 .d_textwrapper2 div{display: inline-block; vertical-align: top; -webkit-font-smoothing: antialiased; font-family: HelveticaNeue-Light;}
 .d_textimg {width: 570px;}
 .d_textimg div{width: 450px; font-size: 21px; font-style: italic; padding-top: 40px; color: #666666; line-height: 36px; font-family: HelveticaNeue-Light;}
-.d_textimg div a{color: #666;}
+.d_textimg div a{color: #666; border-bottom: 2px solid #666;}
+.d_textimg div a:hover{border-bottom: 2px solid #ffa200;}
+
 .d_article {width: 1400px; font-size: 28px; line-height: 48px;}
 
 .d_emptyspace {height: 200px;}
@@ -318,7 +336,10 @@ div.domtab div{
 .d_regbox2 p{color: #0057b9; font-size: 48px; font-family: HelveticaNeue-Medium;}
 
 .d_regtabs {width: 1490px; margin: 125px auto 0; text-align: center;}
-.d_pushone, .d_pushtwo {display: inline-block; vertical-align: top; width: 735px; height: 262px; color: black; font-size: 48px; text-decoration: underline; text-align: left;}
+.d_pushone, .d_pushtwo {display: inline-block; vertical-align: top; width: 735px; height: 262px; color: black; font-size: 48px; text-align: left;}
+.d_pushone span, .d_pushtwo span {border-bottom: 2px solid #000;}
+.d_pushone:hover span, .d_pushtwo:hover span {border-bottom: none;}
+
 .d_pushone {background: url(../img/chel-green.png) no-repeat 140px 50px; padding-left: 240px;}
 .d_green {background: #e7fcec url(../img/chel-green.png) no-repeat 140px 50px; text-decoration: none;}
 .d_pushone:hover {background: #e7fcec url(../img/chel-green.png) no-repeat 140px 50px; text-decoration: none;}
