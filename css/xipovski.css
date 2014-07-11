@@ -146,7 +146,8 @@
     border-bottom: 2px solid #333333;
 }
 .product-detail__cost_after a:hover {
-    border-bottom: none;
+    border-bottom: 2px solid #ffa200;
+    color: #ffa200;
 }
 .product-detail__cost_after span {
     color: #19b000;
@@ -168,7 +169,8 @@
     border-bottom: 2px solid #666666;
 }
 .product-detail__notexist a:hover {
-    border-bottom: none;
+    border-bottom: 2px solid #ffa200;
+    color: #ffa200;
 }
 /*.product-detail__currency {
     position: relative;
@@ -257,6 +259,7 @@
 }
 .cabinet__call span:hover {
     border-bottom: 2px solid #ffa200;
+    color: #ffa200;
 }
 .cabinet__call a:hover {
     border-bottom: none !important;
@@ -270,6 +273,7 @@
 }
 .cabinet__table a:hover {
     border-bottom: 2px solid #ffa200;
+    color: #ffa200;
 }
 .cabinet__table th {
     background: #f4f4f4;
@@ -392,6 +396,7 @@
 }
 .btn__edit:hover, .cabinet-user__right a:hover {
     border-bottom: 2px solid #ffa200;
+    color: #ffa200;
 }
 .recycle-title {
     font-size: 60px;
@@ -428,6 +433,7 @@
 }
 .recycle-page__name a:hover {
     border-bottom: 2px solid #ffa200;
+    color: #ffa200;
 }
 .recycle-page__art {
     margin-left: 185px;
@@ -470,6 +476,7 @@
 }
 .x_tabs__links a > span:hover {
     border-bottom: 2px solid #ffa200;
+    color: #ffa200;
 }
 .x_tabs__links a.selected span:hover {
     border-bottom: none;

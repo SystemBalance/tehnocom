@@ -175,6 +175,7 @@ input.vik-btn-large::-moz-focus-inner, button.vik-btn-large::-moz-focus-inner{pa
 }
 .vik-order__form-col_btn-sm a:hover {
     border-bottom: 2px solid #ffa200;
+    color: #ffa200;
 }
 
 .vik-have-registr{
