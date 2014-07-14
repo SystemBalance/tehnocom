@@ -126,7 +126,7 @@
         <div class="vik-order-identification">
             <div class="vik-order__title">Идентификация</div>
             <div class="vik-order-identification_bg">
-                <form action="/">
+                <form class="form-validate" action="/">
                     <div class="vik-order__title-sm">Я уже зарегистрирован</div>
                     <p>Введите логин(совпадает с электронной почтой) и пароль,<br>которые были получены при регистрации.</p>
 
@@ -164,7 +164,7 @@
         <div class="vik-order-fast">
             <div class="vik-order__title">Быстрый заказ за 1 минуту!</div>
             <div class="vik-order-fast__bg">
-                <form action="/">
+                <form class="form-validate" action="/">
                     <div class="vik-order__title-sm"><strong>Заказать звонок</strong> нашего менеджера</div>
                     <p>Просто заполните форму ниже и наш менеджер позвонит<br> Вам в удобное время и уточнит детали по оплате и доставке!</p>
 
@@ -175,17 +175,17 @@
 
                     <div class="vik-order__form-col clearfix">
                         <label for="/">Телефон:</label>
-                        <input type="text" class="vik-inptxt-style vik-numb-phone-mask" placeholder="+7 (900) 555-55-55">
+                        <input type="text" class="vik-inptxt-style vik-numb-phone-mask mask-tel" placeholder="+7 (900) 555-55-55">
                     </div>
 
                     <div class="vik-order__form-col clearfix">
                         <label for="/">Электорнная почта:</label>
-                        <input type="text" class="vik-inptxt-style" placeholder="k.konstantinopolskiy@mail.ru">
+                        <input type="text" class="vik-inptxt-style valid-email" placeholder="k.konstantinopolskiy@mail.ru">
                     </div>
 
                     <div class="vik-order__form-col clearfix">
                         <label for="/">Удобное для звонка время:</label>
-                        <input type="text" class="vik-inptxt-style vik-inptxt-style__small" placeholder="12 - 18">
+                        <input type="text" class="vik-inptxt-style vik-inptxt-style__small mask-time" placeholder="12 - 18">
                         <span class="vik-order__form-col__sm-txt">с понедельника по пятницу</span>
                     </div>
 

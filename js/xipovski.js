@@ -1,19 +1,7 @@
+(function(e){e.event.special.textchange={setup:function(t,n){e(this).data("lastValue",this.contentEditable==="true"?e(this).html():e(this).val());e(this).bind("keyup.textchange",e.event.special.textchange.handler);e(this).bind("cut.textchange paste.textchange input.textchange",e.event.special.textchange.delayedHandler)},teardown:function(t){e(this).unbind(".textchange")},handler:function(t){e.event.special.textchange.triggerIfChanged(e(this))},delayedHandler:function(t){var n=e(this);setTimeout(function(){e.event.special.textchange.triggerIfChanged(n)},25)},triggerIfChanged:function(e){var t=e[0].contentEditable==="true"?e.html():e.val();if(t!==e.data("lastValue")){e.trigger("textchange",[e.data("lastValue")]);e.data("lastValue",t)}}};e.event.special.hastext={setup:function(t,n){e(this).bind("textchange",e.event.special.hastext.handler)},teardown:function(t){e(this).unbind("textchange",e.event.special.hastext.handler)},handler:function(t,n){if(n===""&&n!==e(this).val()){e(this).trigger("hastext")}}};e.event.special.notext={setup:function(t,n){e(this).bind("textchange",e.event.special.notext.handler)},teardown:function(t){e(this).unbind("textchange",e.event.special.notext.handler)},handler:function(t,n){if(e(this).val()===""&&e(this).val()!==n){e(this).trigger("notext")}}}})(jQuery)
+
 $(function() {
-    //$('.product-detail__pics').find('li:first a').addClass('selected');
-    
-    //$('body').on('click', '.product-detail__pics li a', function(e) {
-//        e.preventDefault();
-//        var body = $(this).closest('.product-detail__pics');
-//        body.find('.selected').removeClass('selected');
-//        $(this).addClass('selected');              
-//        body.find('.product-detail__image img').attr('src', $(this).attr('href'));  
-//    });    
-    
-    
-    //$('.product-detail__image').on('click', function(e){
-        //e.preventDefault();
-        //$.fancybox.open($('.fancybox'), {helpers: {overlay: {locked: false}}, index: $('.product-detail__pics .selected').closest('li').index()});
-    //});
+
     $(".fancybox").fancybox();
 
     $('.recycle-page input').mask("9?" + "999", { placeholder: ""})
@@ -216,11 +204,60 @@ $(function() {
         $(this).closest('.x_tabs').find('.selected').removeClass('selected');
         $(this).addClass('selected').closest('.x_tabs').find('.x_tabs__item:eq(' + $(this).index() + ')').addClass('selected');       
     });
+    $('.mask-tel').mask("+7 (999) 999-99-99").on('textchange', function() {        
+        if ($(this).val().replace(/[^0-9]/g, '').length < 11) {
+            $(this).addClass('form-error');
+        }
+        else {
+            $(this).removeClass('form-error');
+        }
+    });   
+    
+    $('.mask-time').mask("99 - 99").on('textchange', function() {
+        
+        if ($(this).val().replace(/[^0-9]/g, '').length < 4) {            
+            $(this).addClass('form-error');
+        }
+        else {
+            $(this).removeClass('form-error');
+        }
+    });
+    
+    $('.valid-email').on('textchange', function() {
+        var val = $(this).val();    
+        if (/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(val)) {
+            $(this).removeClass('form-error');
+        }
+        else {
+            $(this).addClass('form-error');
+        }
+        
+    });
+    
+    $('.form-validate input:not([type="submit"]):not([type="file"])').on('textchange', function(e) {
+                
+            var form = $(this).closest('form'),
+                count = $('input:not([type="submit"]):not([type="file"])', form).length,
+                valid = 0;
+                   
+            $('input:not([type="submit"]):not([type="file"])', form).each(function() {
+                if ($(this).val() != '' && !$(this).hasClass('form-error')) {
+                    valid++;
+                }
+            });
+
+            if (count == valid) {
+                $('input[type="submit"]', form).removeClass('vik-btn-disable').addClass('vik-btn-green');
+            }
+            else {                
+                $('input[type="submit"]', form).removeClass('vik-btn-green').addClass('vik-btn-disable');
+            }
+        
+    });
 });
 
 
-(function($) {
-        var interval = 0;
+(function($) {        
         
         var slide = function($this, direction) {            
             $this.sliderConteiner.stop(true, true);            
@@ -267,12 +304,10 @@ $(function() {
                         var interval = setInterval(function() {slide($this, 'next');}, 4000);
                         
                         $this
-                            .on('mouseenter', function() {
-                                console.log('stop');
+                            .on('mouseenter', function() {                                
                                 clearInterval(interval);                            
                             })
-                            .on('mouseleave', function() {
-                                console.log('play');
+                            .on('mouseleave', function() {                                
                                 clearInterval(interval);
                                 interval = setInterval(function() {slide($this, 'next');}, 4000);
                             });                                           

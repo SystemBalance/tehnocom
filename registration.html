@@ -157,67 +157,77 @@
 			<button class="d_pushone"><span>Я частное лицо</span></button>
 			<button class="d_pushtwo"><span>Я представляю <br/>организацию</span></button>
 			<div class="d_box1">
-				<span>Пожалуйста, заполните все поля и нажмите “Зарегистрироваться!”</span>
-				<div>
-					<label class="d_padtop">Имя:</label>
-					<input type="text" placeholder="Константин Константинопольский" name="">
-				</div>
-				<div class="d_forshort">
-					<label class="d_padtop">Телефон:</label>
-					<input type="text" placeholder="+7 (900) 555-55-55" name="" class="d_short">
-				</div>
-				<div>
-					<label>Электронная <br/>почта:</label>
-					<input type="text" placeholder="k.konstantinopolskiy@mail.ru" name="">
-				</div>
-				<div>
-					<label class="d_padtop">Город:</label>
-					<select>
-						<option>Выберите из списка Ваш город</option>
-						<option>Москва</option>
-						<option>Питер</option>
-						<option>Оренбург</option>
-						<option>Казань</option>
-						<option>Нижний Новгород</option>
-					</select>
-				</div>
-				<button>Зарегистрироваться!</button>
+                <form class="form-validate" action="/">
+    				<span>Пожалуйста, заполните все поля и нажмите “Зарегистрироваться!”</span>
+    				<div>
+    					<label class="d_padtop">Имя:</label>
+    					<input type="text" placeholder="Константин Константинопольский" name="">
+    				</div>
+    				<div class="d_forshort">
+    					<label class="d_padtop">Телефон:</label>
+    					<input type="text" placeholder="+7 (900) 555-55-55" name="" class="d_short mask-tel">
+    				</div>
+    				<div>
+    					<label>Электронная <br/>почта:</label>
+    					<input type="text" placeholder="k.konstantinopolskiy@mail.ru" name="">
+    				</div>
+    				<div>
+    					<label class="d_padtop">Город:</label>
+    					<select>
+    						<option>Выберите из списка Ваш город</option>
+    						<option>Москва</option>
+    						<option>Питер</option>
+    						<option>Оренбург</option>
+    						<option>Казань</option>
+    						<option>Нижний Новгород</option>
+    					</select>
+    				</div>
+                    
+    				
+                    <div class="clearfix">
+                        <input type="submit" class="vik-btn-large vik-btn-disable" value="Зарегистрироваться!">
+                    </div>
+                </form>
 			</div>
 			<div class="d_box2">
-				<span>Пожалуйста, заполните все поля и нажмите “Зарегистрироваться!”</span>
-				<div>
-					<label class="d_padtop">Имя:</label>
-					<input type="text" placeholder="Константин Константинопольский" name="">
-				</div>
-				<div class="d_forshort">
-					<label class="d_padtop">Телефон:</label>
-					<input type="text" placeholder="+7 (900) 555-55-55" name="" class="d_short">
-				</div>
-				<div>
-					<label>Электронная <br/>почта:</label>
-					<input type="text" placeholder="k.konstantinopolskiy@mail.ru" name="">
-				</div>
-				<div>
-					<label class="d_padtop">Город:</label>
-					<select>
-						<option>Выберите из списка Ваш город</option>
-						<option>Москва</option>
-						<option>Питер</option>
-						<option>Оренбург</option>
-						<option>Казань</option>
-						<option>Нижний Новгород</option>
-					</select>
-				</div>
-				<div>
-					<label class="d_padtop">Компания:</label>
-					<input type="text" placeholder="Название Вашей организации" name="">
-				</div>
-				<div class="d_files">
-					<div class="d_filewrap">
-						<input type="file" name="" accept=".docx/.pdf/jpeg,image/png" style="margin: 13px;">
-					</div>	
-				</div>
-				<button>Зарегистрироваться!</button>
+                <form class="form-validate" action="/">
+    				<span>Пожалуйста, заполните все поля и нажмите “Зарегистрироваться!”</span>
+    				<div>
+    					<label class="d_padtop">Имя:</label>
+    					<input type="text" placeholder="Константин Константинопольский" name="">
+    				</div>
+    				<div class="d_forshort">
+    					<label class="d_padtop">Телефон:</label>
+    					<input type="text" placeholder="+7 (900) 555-55-55" name="" class="d_short mask-tel">
+    				</div>
+    				<div>
+    					<label>Электронная <br/>почта:</label>
+    					<input type="text" class="valid-email" placeholder="k.konstantinopolskiy@mail.ru" name="">
+    				</div>
+    				<div>
+    					<label class="d_padtop">Город:</label>
+    					<select>
+    						<option>Выберите из списка Ваш город</option>
+    						<option>Москва</option>
+    						<option>Питер</option>
+    						<option>Оренбург</option>
+    						<option>Казань</option>
+    						<option>Нижний Новгород</option>
+    					</select>
+    				</div>
+    				<div>
+    					<label class="d_padtop">Компания:</label>
+    					<input type="text" placeholder="Название Вашей организации" name="">
+    				</div>
+    				<div class="d_files">
+    					<div class="d_filewrap">
+    						<input type="file" name="" accept=".docx/.pdf/jpeg,image/png" style="margin: 13px;">
+    					</div>	
+    				</div>
+                    <div class="clearfix">
+                        <input type="submit" class="vik-btn-large vik-btn-disable" value="Зарегистрироваться!">
+                    </div>
+                </form>
 			</div>
 		</div>
 	</div>

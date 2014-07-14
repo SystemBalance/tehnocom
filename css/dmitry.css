@@ -359,6 +359,8 @@ div.domtab div{
 .d_box1 select {display: inline-block; vertical-align: top; margin: 0 auto;  width: 900px; height: 102px; font-size: 47px; padding: 20px 20px 20px 50px; cursor: pointer; font-style: italic; font-family: HelveticaNeue-Light; color: #999; border: 2px solid #a4a5a4;}
 .d_box1 select option{font-size: 47px; padding: 20px 20px 20px 50px; font-style: normal; cursor: pointer; color: black;}
 .d_box1 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #16a433; margin-top: 100px;}
+.d_box1 input[type="submit"], .d_box2 input[type="submit"] {margin-top: 100px; float: left; margin-left: 410px;}
+
 .d_box1 div {text-align: right; padding-right: 160px;}
 .d_box1 label {font-size: 48px; display: inline-block; vertical-align: top; line-height: 50px; padding-right: 40px;}
 .d_padtop {padding-top: 25px;}
@@ -378,3 +380,5 @@ div.domtab div{
 .d_filewrap {width: 784px; height: 115px; background: url(../img/addfiles.png) no-repeat;}
 .d_box2 input[type=file]{width: 784px; height: 115px; opacity: 0; cursor: pointer; margin:0; 
 /* фикс = чтобы работало в ИЕ надо указать большой размер шрифта и фильтр*/ filter:alpha(opacity:0); font-size:199px;}
+
+.form-error {border: 2px solid red !important;}
