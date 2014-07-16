@@ -628,3 +628,195 @@
     left: 0;
     top: 0;
 } 
+
+
+.contacts {
+    margin: 0 130px;
+}
+.contacts__left {
+    float: left;
+    width: 560px;
+}
+.contacts__right {
+    width: 1590px;
+    float: right;
+    margin-top: 21px;
+}
+.contacts__text {
+    font-family: "HelveticaNeue-Light";
+    font-size: 36px;    
+    margin-bottom: 60px;
+}
+.contacts__regions {
+    font-size: 40px;
+    margin-bottom: 260px;
+    width: 560px;
+}
+.contacts__regions a {
+    border-bottom: #0057b9 2px solid;
+}
+.contacts__regions a:hover, .contacts__regions > li.selected > ul > li a:hover {
+    color: #ffa200;
+    border-bottom: #ffa200 2px solid;
+}
+.contacts__regions > li.selected > a {
+    font-family: "HelveticaNeue-Bold";
+    color: #ffa200;    
+    border-bottom: none;
+}
+.contacts__regions > li {
+    padding: 21px 0;
+}
+.contacts__regions > li > ul {
+    display: none;
+}
+.contacts__regions > li.selected > ul {
+    display: block;
+}
+.contacts__regions > li.selected > ul > li {
+    margin: 20px;
+    padding-left: 45px;    
+}
+.contacts__regions > li.selected > ul > li.selected {
+    position: relative;
+}
+.contacts__regions > li.selected > ul > li.selected a {
+    border-bottom: none;
+    color: #000;
+    font-family: "HelveticaNeue-Bold";        
+}
+.contacts__regions > li.selected > ul > li.selected:before {
+    background: url('../img/icons-sb72f7dbf1b.png') -400px -125px no-repeat; width: 26px; height: 45px;
+    display: inline-block;
+    vertical-align: middle;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.contacts__regions > li.selected > ul > li a {
+    color: #7f7f7f;
+    font-size: 36px;
+    border-bottom: #7f7f7f 2px solid;
+}
+.contacts__rleft {
+    width: 730px;
+    float: left;
+}
+.contacts__rright {
+    width: 845px;
+    float: right;
+}
+.contacts__rleft > div {
+    position: relative;
+    padding-left: 90px;
+    margin-top: 70px;
+    font-size: 42px;    
+}
+.contacts__rright > div {
+    margin-bottom: 40px;
+}
+.contacts__rleft > div:first-child {
+    margin-top: 0;
+}
+.contacts__loc {    
+    font-family: "HelveticaNeue-Bold"; 
+}
+
+.contacts__loc .small {
+    font-size: 34px;
+    font-family: "HelveticaNeue-Light";
+}
+.contacts__loc:before {
+    background: url('../img/icons-sb72f7dbf1b.png') -400px -170px no-repeat; width: 62px; height: 107px;
+    display: inline-block;
+    vertical-align: middle;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+
+.contacts__tel .small {
+    font-size: 26px;
+    color: #999999;
+    font-style: italic;
+    font-family: "HelveticaNeue-Light";
+}
+.contacts__tel:before {
+    background: url('../img/icons-sb72f7dbf1b.png') -400px -282px no-repeat; width: 61px; height: 63px;
+    display: inline-block;
+    vertical-align: middle;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.contacts__email:before {
+    background: url('../img/icons-sb72f7dbf1b.png') -400px -345px no-repeat; width: 61px; height: 63px;
+    display: inline-block;
+    vertical-align: middle;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.contacts__email a {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.contacts__email a:hover {
+    color: #ffa200;
+    border-bottom: 2px solid #ffa200;
+}
+.contacts__rright a {
+    font-size: 34px;
+    font-family: "HelveticaNeue-Bold";
+    padding: 10px 0 0 100px;
+    position: relative;
+}
+.contacts__rright a:hover span {
+    border-bottom: none !important;
+}
+
+.contacts__online span {
+    color: #16a433;    
+    border-bottom: 2px solid #16a433;
+}
+.contacts__online:before {
+    background: url('../img/icons-sb72f7dbf1b.png') -470px 0px no-repeat; width: 61px; height: 61px;
+    display: inline-block;
+    vertical-align: middle;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.contacts__callback span {
+    border-bottom: 2px solid #0057b9;
+}
+.contacts__callback:before {
+    background: url('../img/icons-sb72f7dbf1b.png') -470px -60px no-repeat; width: 61px; height: 61px;
+    display: inline-block;
+    vertical-align: middle;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.contacts__skype span {
+    color: #00aaf1;
+    border-bottom: #00aaf1 2px solid;
+}
+.contacts__skype:before {
+    background: url('../img/icons-sb72f7dbf1b.png') -470px -124px no-repeat; width: 61px; height: 61px;
+    display: inline-block;
+    vertical-align: middle;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.contacts__map {
+    margin: 60px 0 130px 0;
+}

@@ -234,26 +234,44 @@ $(function() {
         
     });
     
-    $('.form-validate input:not([type="submit"]):not([type="file"])').on('textchange', function(e) {
-                
-            var form = $(this).closest('form'),
-                count = $('input:not([type="submit"]):not([type="file"])', form).length,
-                valid = 0;
-                   
-            $('input:not([type="submit"]):not([type="file"])', form).each(function() {
-                if ($(this).val() != '' && !$(this).hasClass('form-error')) {
+    var xipvalidate = function(form) {    
+            var count = $('input:not([type="submit"]):not([type="file"]):not(.selectricInput)', form).length + $('select', form).length,
+                valid = 0;                                           
+            $('input:not([type="submit"]):not([type="file"]):not(.selectricInput)', form).add($('select', form)).each(function() {
+                if ( ($(this).val() != '' && !$(this).hasClass('form-error') && $(this).is('input')) || ($(this).is('select') && $(this).val() != 0) ) {
                     valid++;
                 }
             });
-
             if (count == valid) {
                 $('input[type="submit"]', form).removeClass('vik-btn-disable').addClass('vik-btn-green');
             }
             else {                
                 $('input[type="submit"]', form).removeClass('vik-btn-green').addClass('vik-btn-disable');
             }
-        
+    }
+    
+    $('.form-validate input:not([type="submit"]):not([type="file"]):not(.selectricInput)').on('textchange', function(e) {                
+        var form = $(this).closest('form');
+        xipvalidate(form);                            
     });
+    
+    $('.form-validate select').on('change', function() {
+        var form = $(this).closest('form');
+        xipvalidate(form);
+    });
+    
+    $('.contacts__regions > li > a').on('click', function(e) {
+        e.preventDefault();
+        $('.contacts__regions > li.selected').removeClass('selected');
+        $(this).closest('li').addClass('selected');
+    });
+    
+    $('.contacts__regions > li > ul > li').on('click', function(e) {
+        e.preventDefault();
+        $('.contacts__regions > li > ul > li.selected').removeClass('selected');
+        $(this).closest('li').addClass('selected');
+    })
+    
 });
 
 
