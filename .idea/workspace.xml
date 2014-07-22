@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8661470-040c-4b8e-96eb-525114be05c4" name="Default" comment="" />
+    <list default="true" id="a8661470-040c-4b8e-96eb-525114be05c4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/durman.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,82 +28,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cat_0.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cat_0.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="766" column="0" selection-start="24525" selection-end="24525" vertical-scroll-proportion="-9.692307" vertical-offset="12770" max-vertical-offset="13175">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="29" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="833">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="scaling.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/scaling.js">
+        <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scaling.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="12" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1258">
+            <state line="69" column="68" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1938">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/screen.css">
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="0" selection-start="23474" selection-end="23474" vertical-scroll-proportion="0.19172932" vertical-offset="3825" max-vertical-offset="5066">
+            <state line="11" column="89" selection-start="638" selection-end="638" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2227">
+              <folding>
+                <marker date="1406038092531" expanded="true" signature="675:5423" placeholder="..." />
+                <marker date="1406038092531" expanded="true" signature="675:720" placeholder="..." />
+                <marker date="1406038092531" expanded="true" signature="726:5423" placeholder="..." />
+                <marker date="1406038092531" expanded="true" signature="751:2284" placeholder="..." />
+                <marker date="1406038092531" expanded="true" signature="2307:5423" placeholder="..." />
+                <marker date="1406038092531" expanded="true" signature="2335:4961" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zoom.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="36" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="527">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common2.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/common2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="646">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text-1.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="330" column="0" selection-start="15655" selection-end="15655" vertical-scroll-proportion="0.0" vertical-offset="5610" max-vertical-offset="5763">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text-2.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="402" column="0" selection-start="19531" selection-end="19531" vertical-scroll-proportion="0.0" vertical-offset="6582" max-vertical-offset="6987">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tovar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tovar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="4253" max-vertical-offset="4641">
+            <state line="134" column="59" selection-start="12366" selection-end="12366" vertical-scroll-proportion="0.35266823" vertical-offset="1974" max-vertical-offset="30804">
               <folding />
             </state>
           </provider>
@@ -136,15 +103,21 @@
         <option value="$PROJECT_DIR$/js/domtab.js" />
         <option value="$PROJECT_DIR$/js/scaling.js" />
         <option value="$PROJECT_DIR$/css/screen.css" />
+        <option value="$PROJECT_DIR$/Technocom current/templates/technocom/tehnocom_functions.php" />
+        <option value="$PROJECT_DIR$/Technocom current/templates/technocom/js/init.js" />
+        <option value="$PROJECT_DIR$/Technocom current/templates/technocom/js/scaling.js" />
+        <option value="$PROJECT_DIR$/Technocom current/templates/technocom/styles.css" />
+        <option value="$PROJECT_DIR$/Technocom current/templates/technocom/header.php" />
+        <option value="$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -172,7 +145,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,22 +163,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tehnocom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Technocom current" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="technocom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tehnocom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Technocom current" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tehnocom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Technocom current/templates/technocom" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\tehnocom\Technocom current\templates\technocom" />
       <recent name="Z:\home\technocom-master\www\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\tehnocom\Technocom current\templates\technocom\include" />
     </key>
   </component>
   <component name="RunManager">
@@ -261,26 +290,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33009708" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35814455" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25497702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51132685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20979765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35845897" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -309,58 +338,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cabinet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="0" selection-start="13333" selection-end="13333" vertical-scroll-proportion="0.0" vertical-offset="4675" max-vertical-offset="5185" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="58" selection-start="17312" selection-end="17312" vertical-scroll-proportion="0.0" vertical-offset="5498" max-vertical-offset="5899" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/korzina.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/dmitry.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5151" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="8398" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="59" selection-start="10141" selection-end="10141" vertical-scroll-proportion="0.0" vertical-offset="3094" max-vertical-offset="5933" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="4692" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/viktor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/xipovski.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/vitponom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/dmitry.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
@@ -436,21 +413,6 @@
         <state line="0" column="0" selection-start="0" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/vitponom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/dmitry.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="5168" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/viktor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/lib/head.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="2" selection-start="9677" selection-end="9677" vertical-scroll-proportion="0.25325885" vertical-offset="0" max-vertical-offset="537" />
@@ -466,11 +428,6 @@
         <state line="10" column="65" selection-start="463" selection-end="463" vertical-scroll-proportion="0.3244275" vertical-offset="0" max-vertical-offset="524" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/xipovski.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="298" column="12" selection-start="5939" selection-end="5939" vertical-scroll-proportion="-72.53846" vertical-offset="3180" max-vertical-offset="9639" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/registration.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="296" column="54" selection-start="12025" selection-end="12025" vertical-scroll-proportion="-8.384615" vertical-offset="4814" max-vertical-offset="5202" />
@@ -483,30 +440,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="0" selection-start="15655" selection-end="15655" vertical-scroll-proportion="0.0" vertical-offset="5610" max-vertical-offset="5763">
+        <state line="332" column="0" selection-start="15989" selection-end="15989" vertical-scroll-proportion="0.0" vertical-offset="5644" max-vertical-offset="5797">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="402" column="0" selection-start="19531" selection-end="19531" vertical-scroll-proportion="0.0" vertical-offset="6582" max-vertical-offset="6987">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tovar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="4253" max-vertical-offset="4641">
+        <state line="407" column="0" selection-start="20246" selection-end="20246" vertical-scroll-proportion="0.0" vertical-offset="6667" max-vertical-offset="7072">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/korzina.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4675">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4675" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/order.html">
@@ -519,13 +467,6 @@
         <state line="901" column="0" selection-start="35338" selection-end="35338" vertical-scroll-proportion="0.0" vertical-offset="15042" max-vertical-offset="15623" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cat_0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="766" column="0" selection-start="24525" selection-end="24525" vertical-scroll-proportion="-9.692307" vertical-offset="12770" max-vertical-offset="13175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cabinet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="275" column="0" selection-start="13333" selection-end="13333" vertical-scroll-proportion="0.0" vertical-offset="4675" max-vertical-offset="5185" />
@@ -536,30 +477,9 @@
         <state line="339" column="58" selection-start="17312" selection-end="17312" vertical-scroll-proportion="-18.692308" vertical-offset="5277" max-vertical-offset="5899" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="30" selection-start="65265" selection-end="65265" vertical-scroll-proportion="0.13527851" vertical-offset="0" max-vertical-offset="377" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="833">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
@@ -578,14 +498,154 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scaling.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="12" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1258">
+        <state line="53" column="12" selection-start="1427" selection-end="1427" vertical-scroll-proportion="1.090566" vertical-offset="612" max-vertical-offset="1258">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="0" selection-start="23474" selection-end="23474" vertical-scroll-proportion="0.19172932" vertical-offset="3825" max-vertical-offset="5066">
+        <state line="333" column="11" selection-start="0" selection-end="28871" vertical-scroll-proportion="0.0" vertical-offset="5407" max-vertical-offset="5967">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dmitry.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="0" selection-end="15528" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6613">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/viktor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="53" selection-start="0" selection-end="5132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4199">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/vitponom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/.styles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="2" selection-start="22" selection-end="22" vertical-scroll-proportion="0.21338913" vertical-offset="0" max-vertical-offset="239">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="29" selection-start="1081" selection-end="1081" vertical-scroll-proportion="1.2792453" vertical-offset="392" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat_0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="785" column="0" selection-start="25546" selection-end="25546" vertical-scroll-proportion="1.1150442" vertical-offset="13093" max-vertical-offset="13498">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/xipovski.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="315" column="18" selection-start="0" selection-end="17573" vertical-scroll-proportion="1.2142857" vertical-offset="5049" max-vertical-offset="14059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.35849056" vertical-offset="381" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tovar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-18.818584" vertical-offset="4253" max-vertical-offset="7412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="492" selection-end="492" vertical-scroll-proportion="0.28301886" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="29" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.6415094" vertical-offset="136" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="623" selection-end="623" vertical-scroll-proportion="0.22104019" vertical-offset="0" max-vertical-offset="846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="9" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.34285715" vertical-offset="482" max-vertical-offset="19567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scaling.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="68" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/include/geo_ip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="37" selection-start="621" selection-end="621" vertical-scroll-proportion="0.29142857" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="89" selection-start="638" selection-end="638" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2227">
+          <folding>
+            <marker date="1406038092531" expanded="true" signature="675:5423" placeholder="..." />
+            <marker date="1406038092531" expanded="true" signature="675:720" placeholder="..." />
+            <marker date="1406038092531" expanded="true" signature="726:5423" placeholder="..." />
+            <marker date="1406038092531" expanded="true" signature="751:2284" placeholder="..." />
+            <marker date="1406038092531" expanded="true" signature="2307:5423" placeholder="..." />
+            <marker date="1406038092531" expanded="true" signature="2335:4961" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="36" selection-start="397" selection-end="397" vertical-scroll-proportion="0.20754717" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="59" selection-start="12366" selection-end="12366" vertical-scroll-proportion="0.35266823" vertical-offset="1974" max-vertical-offset="30804">
           <folding />
         </state>
       </provider>
