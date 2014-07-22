@@ -1,4 +1,8 @@
 <?php
+/**
+ * ADVScale
+ * EFFECT!
+ */
 header("X-Content-Type-Options: nosniff");
 header("Content-type: text/css");
 header("Expires: 0");

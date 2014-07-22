@@ -1,6 +1,4 @@
 .sass-cache/
 *.sublime-project
 *.sublime-workspace
-.idea/workspace.xml
-.idea/deployment.xml
-.idea/workspace.xml
+.idea/*

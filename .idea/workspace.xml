@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8661470-040c-4b8e-96eb-525114be05c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/durman.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Technocom current/templates/technocom/styles.css" afterPath="$PROJECT_DIR$/Technocom current/templates/technocom/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php" afterPath="$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +31,7 @@
       <file leaf-file-name="scaling.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scaling.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="68" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1938">
+            <state line="44" column="48" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2006">
               <folding />
             </state>
           </provider>
@@ -40,14 +40,14 @@
       <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="89" selection-start="638" selection-end="638" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2227">
+            <state line="9" column="2" selection-start="387" selection-end="387" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="2244">
               <folding>
-                <marker date="1406038092531" expanded="true" signature="675:5423" placeholder="..." />
-                <marker date="1406038092531" expanded="true" signature="675:720" placeholder="..." />
-                <marker date="1406038092531" expanded="true" signature="726:5423" placeholder="..." />
-                <marker date="1406038092531" expanded="true" signature="751:2284" placeholder="..." />
-                <marker date="1406038092531" expanded="true" signature="2307:5423" placeholder="..." />
-                <marker date="1406038092531" expanded="true" signature="2335:4961" placeholder="..." />
+                <marker date="1406040505630" expanded="true" signature="679:5427" placeholder="..." />
+                <marker date="1406040505630" expanded="true" signature="679:724" placeholder="..." />
+                <marker date="1406040505630" expanded="true" signature="730:5427" placeholder="..." />
+                <marker date="1406040505630" expanded="true" signature="755:2288" placeholder="..." />
+                <marker date="1406040505630" expanded="true" signature="2311:5427" placeholder="..." />
+                <marker date="1406040505630" expanded="true" signature="2339:4965" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -56,17 +56,84 @@
       <file leaf-file-name="zoom.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="442">
+            <state line="3" column="9" selection-start="25" selection-end="31" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contact.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="133" column="0" selection-start="5930" selection-end="8981" vertical-scroll-proportion="-7.9423075" vertical-offset="828" max-vertical-offset="2703">
+              <folding>
+                <element signature="tag#div#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Technocom current/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="25" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.38857144" vertical-offset="459" max-vertical-offset="1768">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="59" selection-start="12366" selection-end="12366" vertical-scroll-proportion="0.35266823" vertical-offset="1974" max-vertical-offset="30804">
+            <state line="100" column="53" selection-start="9807" selection-end="9807" vertical-scroll-proportion="-23.461538" vertical-offset="1090" max-vertical-offset="31994">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="durman.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/durman.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="43" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/components/bitrix/news/news/news.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.5" vertical-offset="247" max-vertical-offset="1122">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/components/bitrix/news/news/bitrix/news.list/.default/template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="952">
+              <folding>
+                <marker date="1406032908040" expanded="true" signature="192:1439" placeholder="..." />
+                <marker date="1406032908040" expanded="true" signature="292:1428" placeholder="..." />
+                <marker date="1406032908040" expanded="true" signature="846:1235" placeholder="..." />
+                <marker date="1406032908040" expanded="true" signature="1053:1218" placeholder="..." />
+                <marker date="1406032908040" expanded="false" signature="1372:1389" placeholder="..." />
+                <marker date="1406032908040" expanded="true" signature="1490:2696" placeholder="..." />
+                <marker date="1406032908040" expanded="true" signature="1518:2687" placeholder="..." />
+                <marker date="1406032908040" expanded="true" signature="2092:2481" placeholder="..." />
+                <marker date="1406032908040" expanded="true" signature="2299:2464" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,9 +173,11 @@
         <option value="$PROJECT_DIR$/Technocom current/templates/technocom/tehnocom_functions.php" />
         <option value="$PROJECT_DIR$/Technocom current/templates/technocom/js/init.js" />
         <option value="$PROJECT_DIR$/Technocom current/templates/technocom/js/scaling.js" />
-        <option value="$PROJECT_DIR$/Technocom current/templates/technocom/styles.css" />
         <option value="$PROJECT_DIR$/Technocom current/templates/technocom/header.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Technocom current/templates/technocom/styles.css" />
         <option value="$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php" />
+        <option value="$PROJECT_DIR$/Technocom current/index.php" />
       </list>
     </option>
   </component>
@@ -176,42 +245,6 @@
               <option name="myItemId" value="Technocom current" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="technocom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tehnocom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Technocom current" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tehnocom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -231,6 +264,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\tehnocom\Technocom current\templates\technocom\js" />
+      <recent name="C:\OpenServer\domains\tehnocom\Technocom current\templates\technocom\components\bitrix\catalog\catalog\bitrix\catalog.section\.default" />
       <recent name="C:\OpenServer\domains\tehnocom\Technocom current\templates\technocom" />
       <recent name="Z:\home\technocom-master\www\js" />
     </key>
@@ -286,7 +321,11 @@
       <created>1403681526820</created>
       <updated>1403681526820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add js">
+      <created>1406039129779</created>
+      <updated>1406039129779</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -302,6 +341,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20979765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -309,7 +349,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -332,62 +371,13 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="SCaleOK" />
     <MESSAGE value="fix map error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix map error" />
+    <MESSAGE value="add js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/dmitry.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="64" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8381" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="59" selection-start="10141" selection-end="10141" vertical-scroll-proportion="0.0" vertical-offset="3094" max-vertical-offset="5933" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="4692" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/xipovski.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/vitponom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/dmitry.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="8" selection-start="7617" selection-end="7910" vertical-scroll-proportion="0.0" vertical-offset="3009" max-vertical-offset="8330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="59" selection-start="10141" selection-end="10141" vertical-scroll-proportion="0.0" vertical-offset="3094" max-vertical-offset="5933" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="0" selection-start="25415" selection-end="25415" vertical-scroll-proportion="0.0" vertical-offset="4471" max-vertical-offset="4573" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -401,11 +391,6 @@
     <entry file="file://$PROJECT_DIR$/js/lib/tabs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="9" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lib/tabs.js">
@@ -573,23 +558,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="492" selection-end="492" vertical-scroll-proportion="0.28301886" vertical-offset="0" max-vertical-offset="901">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="29" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.6415094" vertical-offset="136" max-vertical-offset="1037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="623" selection-end="623" vertical-scroll-proportion="0.22104019" vertical-offset="0" max-vertical-offset="846">
           <folding />
         </state>
       </provider>
@@ -601,37 +572,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scaling.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="68" selection-start="2018" selection-end="2018" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1938">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/include/geo_ip.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="37" selection-start="621" selection-end="621" vertical-scroll-proportion="0.29142857" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="89" selection-start="638" selection-end="638" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2227">
-          <folding>
-            <marker date="1406038092531" expanded="true" signature="675:5423" placeholder="..." />
-            <marker date="1406038092531" expanded="true" signature="675:720" placeholder="..." />
-            <marker date="1406038092531" expanded="true" signature="726:5423" placeholder="..." />
-            <marker date="1406038092531" expanded="true" signature="751:2284" placeholder="..." />
-            <marker date="1406038092531" expanded="true" signature="2307:5423" placeholder="..." />
-            <marker date="1406038092531" expanded="true" signature="2335:4961" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="442">
           <folding />
         </state>
       </provider>
@@ -643,9 +586,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scaling.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="48" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="387" selection-end="387" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="2244">
+          <folding>
+            <marker date="1406040505630" expanded="true" signature="679:5427" placeholder="..." />
+            <marker date="1406040505630" expanded="true" signature="679:724" placeholder="..." />
+            <marker date="1406040505630" expanded="true" signature="730:5427" placeholder="..." />
+            <marker date="1406040505630" expanded="true" signature="755:2288" placeholder="..." />
+            <marker date="1406040505630" expanded="true" signature="2311:5427" placeholder="..." />
+            <marker date="1406040505630" expanded="true" signature="2339:4965" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/description.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="2" selection-start="110" selection-end="110" vertical-scroll-proportion="0.09714286" vertical-offset="0" max-vertical-offset="875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/components/bitrix/news/news/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.5" vertical-offset="247" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/components/bitrix/news/news/bitrix/news.list/.default/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding>
+            <marker date="1406032908040" expanded="true" signature="192:1439" placeholder="..." />
+            <marker date="1406032908040" expanded="true" signature="292:1428" placeholder="..." />
+            <marker date="1406032908040" expanded="true" signature="846:1235" placeholder="..." />
+            <marker date="1406032908040" expanded="true" signature="1053:1218" placeholder="..." />
+            <marker date="1406032908040" expanded="false" signature="1372:1389" placeholder="..." />
+            <marker date="1406032908040" expanded="true" signature="1490:2696" placeholder="..." />
+            <marker date="1406032908040" expanded="true" signature="1518:2687" placeholder="..." />
+            <marker date="1406032908040" expanded="true" signature="2092:2481" placeholder="..." />
+            <marker date="1406032908040" expanded="true" signature="2299:2464" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/components/bitrix/catalog/catalog/bitrix/catalog.section/list/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="498" selection-end="498" vertical-scroll-proportion="0.23665893" vertical-offset="0" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/components/bitrix/catalog/catalog/bitrix/catalog.section/.default/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/components/bitrix/catalog/catalog/bitrix/catalog.section/.default/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1162" column="34" selection-start="27678" selection-end="27678" vertical-scroll-proportion="0.43618202" vertical-offset="19361" max-vertical-offset="23069">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="628" selection-end="628" vertical-scroll-proportion="0.24528302" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/domtab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="75" selection-start="643" selection-end="643" vertical-scroll-proportion="0.3018868" vertical-offset="0" max-vertical-offset="4420">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/js/durman.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="43" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="7" selection-start="58" selection-end="58" vertical-scroll-proportion="0.05821918" vertical-offset="0" max-vertical-offset="876">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="59" selection-start="12366" selection-end="12366" vertical-scroll-proportion="0.35266823" vertical-offset="1974" max-vertical-offset="30804">
+        <state line="100" column="53" selection-start="9807" selection-end="9807" vertical-scroll-proportion="-23.461538" vertical-offset="1090" max-vertical-offset="31994">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/templates/technocom/zoom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="9" selection-start="25" selection-end="31" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="5930" selection-end="8981" vertical-scroll-proportion="-7.9423075" vertical-offset="828" max-vertical-offset="2703">
+          <folding>
+            <element signature="tag#div#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Technocom current/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="25" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.38857144" vertical-offset="459" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>

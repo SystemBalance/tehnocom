@@ -79,7 +79,7 @@ a:hover { text-decoration: none; /*border-bottom: 2px solid #ffa200 !important;*
 
 .header .user__link span:hover { text-decoration: none; }
 .header .user__link:first-child { margin-left: 0; }
-.header .user__link.user__link_pad { margin-left: 70px; }
+.header .user__link.user__link_pad { margin-left: 72px; }
 .header .user__link.user__link_grey { color: #999999; }
 .header .user__link.user__link_company { font-family: "HelveticaNeue-Medium", Arial, sans-seriffont(HelveticaNeue-Roman, helveticaneuecyr-roman-webfont); }
 .header .user__link_basket:before { top: -2px; background: url('./img/icons-sb72f7dbf1b.png') 0 -1832px no-repeat; width: 46px; height: 37px; }
