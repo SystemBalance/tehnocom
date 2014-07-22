@@ -70,7 +70,7 @@
       </div>
       <div class="footer__info">
         <div class="footer__logo"></div>
-        <div class="footer__contacts"><span><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/city.php");?></span>, <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/address.php");?> (<a href="#">схема проезда</a>) <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/phone.php");?> <a href="mailto:<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/mail.php");?>"><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/mail.php");?></a></div>
+        <div class="footer__contacts"><span><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/city.php");?></span>, <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/address.php");?> (<a href="/contacts/">схема проезда</a>) <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/phone.php");?> <a href="mailto:<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/mail.php");?>"><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/mail.php");?></a></div>
       </div>
     </footer>
     <?endif;?>

@@ -30,7 +30,6 @@ function setCookie(name, value, options) {
             updatedCookie += "=" + propValue;
         }
     }
-    console.log(updatedCookie);
 
     document.cookie = updatedCookie;
 }

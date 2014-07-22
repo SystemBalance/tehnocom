@@ -26,24 +26,30 @@
         </div>
         <div class="header__phone"><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/phone.php");?></div>
       </div>
+
+        <!-- contacts block. center -->
       <div class="header__center">
         <a class="online-assist"><i class="online-assist__pic"></i><span>Онлайн-консультант</span></a><br />
         <a class="callback"><i class="callback__pic"></i><span>Заказать обратный звонок</span></a><br />
-        <a class="skype"><i class="skype__pic"></i><span>tehnocom.spb</span></a>
+        <a class="skype" href="skype:tehnocom.spb"><i class="skype__pic"></i><span>tehnocom.spb</span></a>
       </div>
-      <div class="header__right user">
+
+        <!-- User block. center -->
+        <div class="header__right user">
         <div class="user__row">
-          <a class="user__link user__link_company" href="#"><span>ООО «Техстройгазалмазнефтеуголь Северо-Запад»</span></a>
+          <a class="user__link user__link_company" href="/profile/"><span>ООО «Техстройгазалмазнефтеуголь Северо-Запад»</span></a>
         </div>
         <div class="user__row user__row_mod">
-          <a class="user__link user__link_basket" href="#"><span>Корзина</span> (3)</a>
-          <a class="user__link user__link_mail" href="#"><span>Сообщения</span> (4)</a>
-          <a class="user__link user__link_grey" href="#"><span>Выход</span></a>
+          <a class="user__link user__link_basket" href="/cart/"><span>Корзина</span> (3)</a>
+          <a class="user__link user__link_mail" href="/profile/"><span>Сообщения</span> (4)</a>
+          <a class="user__link user__link_grey" href="/logout/"><span>Выход</span></a>
         </div>
         <div class="user__row">
-          <a class="user__link user__link_grey user__link_pad" href="#"><span>Отложено</span> (4)</a>
+          <a class="user__link user__link_grey user__link_pad" href="/cart/"><span>Отложено</span> (4)</a>
         </div>
       </div>
+
+
     </div>
     <div class="menu">
       <div class="catalog">
