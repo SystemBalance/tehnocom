@@ -74,6 +74,7 @@ if(!isset($contacts)){
 //PROPERTY_177   skype
 //NAME           Город
 
+$_SESSION['CONTACTS'] = $contacts;
 
 //Выводим ближайшие контактные данные
 ?><div class="header__left">

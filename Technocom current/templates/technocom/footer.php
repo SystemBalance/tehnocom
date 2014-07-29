@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-    <?if(ERROR_404 != "Y"):?>
+<?if(ERROR_404 != "Y"):?>
     <footer class="footer">
       <?$APPLICATION->IncludeComponent("bitrix:menu","footer",Array(
           "ROOT_MENU_TYPE" => "footer",
@@ -66,11 +66,20 @@
             "MENU_CACHE_USE_GROUPS" => "Y",
             "MENU_CACHE_GET_VARS" => ""
           )
-        );?>
+        );?><?php
+        $contacts = $_SESSION['CONTACTS'];
+        //$contacts
+        //PROPERTY_43    Телефон
+        //PROPERTY_44    Адрес
+        //PROPERTY_45    e-mail
+        //PROPERTY_177   skype
+        //NAME           Город
+//        print_r($contacts);
+        ?>
       </div>
       <div class="footer__info">
         <div class="footer__logo"></div>
-        <div class="footer__contacts"><span><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/city.php");?></span>, <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/address.php");?> (<a href="/contacts/">схема проезда</a>) <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/phone.php");?> <a href="mailto:<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/mail.php");?>"><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/mail.php");?></a></div>
+        <div class="footer__contacts"><span><?=$contacts['NAME'];//Имя города?></span>, <?=$contacts['PROPERTY_44'];//Адрес офиса?> (<a href="/contacts/">схема проезда</a>) <?=$contacts['PROPERTY_43'][0];//Телефон (первый) ?> <a href="mailto:<?=$contacts['PROPERTY_45'];//e-mail ?>"><?=$contacts['PROPERTY_45'];//e-mail ?></a></div>
       </div>
     </footer>
     <?endif;?>
