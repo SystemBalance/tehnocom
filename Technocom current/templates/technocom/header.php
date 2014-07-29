@@ -18,21 +18,8 @@
   <div class="out">
     <div class="header">
       <a href="/" class="logo"></a>
-      <div class="header__left">
-        <div class="header__address">
-          <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/city.php");?>
-          <p><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/address.php");?></p>
-          <a href="/contacts/">Все филиалы компании</a>
-        </div>
-        <div class="header__phone"><?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/text/phone.php");?></div>
-      </div>
 
-        <!-- contacts block. center -->
-      <div class="header__center">
-        <a class="online-assist"><i class="online-assist__pic"></i><span>Онлайн-консультант</span></a><br />
-        <a class="callback"><i class="callback__pic"></i><span>Заказать обратный звонок</span></a><br />
-        <a class="skype" href="skype:tehnocom.spb"><i class="skype__pic"></i><span>tehnocom.spb</span></a>
-      </div>
+          <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/header_address.php");?>
 
         <!-- User block. center -->
         <div class="header__right user">
