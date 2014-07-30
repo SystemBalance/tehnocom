@@ -40,10 +40,6 @@ while($cont = $contactList->GetNext()){
     $sectionList[$cont['PROPERTY_REGION_VALUE']] = $cont['PROPERTY_REGION_VALUE'];
 }
 
-
-$c = array_pop($cityArray);
-
-
 ?>
 <div class="d_space"></div>
  
@@ -53,8 +49,10 @@ $c = array_pop($cityArray);
  
 <!-- BEGIN contacts -->
 <?
- $currentFilial = $_SESSION['contacts'];
-var_dump($currentFilial);
+//var_dump($_SESSION);
+$c = $currentFilial = $_SESSION['CONTACTS'];
+
+
  ?>
 <div class="contacts"> 
   <div class="contacts__text">¬ыберите в списке интересующий вас регион и город, чтобы узнать адреса и телефоны филиала.</div>
@@ -65,11 +63,11 @@ var_dump($currentFilial);
           <?    //¬ыводим филиалы по городам
           $sections = CIBlockSection::GetList(array("SORT"=>"ASC"), array('IBLOCK_ID' => 27, 'ID' => $sectionList),  true);
           while($sect = $sections->GetNext()){
-          echo '<li'.($currentFilial['PROPERTY_REGION_VALUE'] == $sect['ID']? 'selected':'').'><a href="#'.$sect['ID'].'" >'.$sect['NAME'].'</a>';
+          echo '<li'.($currentFilial['PROPERTY_REGION_VALUE'] == $sect['ID'] ? ' class="selected"':'').'><a href="#'.$sect['ID'].'" >'.$sect['NAME'].'</a>';
               echo '<ul> ';
 
                   foreach($contactArray[$sect['ID']] as $conts){
-                      echo '<li><a href="#'.$conts['ID'].'" >'.$conts['NAME'].'</a></li>';
+                      echo '<li'.($currentFilial['ID'] == $conts['ID'] ? ' class="selected"':'').'><a href="#'.$conts['ID'].'" >'.$conts['NAME'].'</a></li>';
                   }
                   echo '           </ul>
           </li>';

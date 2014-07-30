@@ -1,6 +1,9 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
-echo ShowError($arResult["ERROR_MESSAGE"]);
+
+
+
+//echo ShowError($arResult["ERROR_MESSAGE"]);
 
 $bDelayColumn  = false;
 $bDeleteColumn = false;
@@ -10,81 +13,57 @@ $bPriceType    = false;
 
 if ($normalCount > 0):
 ?>
-<div id="basket_items_list">
-	<div class="bx_ordercart_order_table_container">
-		<table id="basket_items">
-			<thead>
-				<tr>
-					<td class="margin"></td>
-					<?
-					foreach ($arResult["GRID"]["HEADERS"] as $id => $arHeader):
+<!--<div id="basket_items_list">-->
+<!--	<div class="bx_ordercart_order_table_container">-->
+    <table class="table__recycle">
+        <thead><tr><th width="1130" class="recycle-table__name">Название</th><th width="310"></th><th width="300" class="tac">Количество</th><th width="230">Стоимость</th><th></th></tr></thead>
+            <tbody>
 
-						$arHeaders[] = $arHeader["id"];
-
-						// remember which values should be shown not in the separate columns, but inside other columns
-						if (in_array($arHeader["id"], array("TYPE")))
-						{
-							$bPriceType = true;
-							continue;
-						}
-						elseif ($arHeader["id"] == "PROPS")
-						{
-							$bPropsColumn = true;
-							continue;
-						}
-						elseif ($arHeader["id"] == "DELAY")
-						{
-							$bDelayColumn = true;
-							continue;
-						}
-						elseif ($arHeader["id"] == "DELETE")
-						{
-							$bDeleteColumn = true;
-							continue;
-						}
-						elseif ($arHeader["id"] == "WEIGHT")
-						{
-							$bWeightColumn = true;
-						}
-
-						if ($arHeader["id"] == "NAME"):
-						?>
-							<td class="item" colspan="2" id="col_<?=getColumnId($arHeader)?>">
-						<?
-						elseif ($arHeader["id"] == "PRICE"):
-						?>
-							<td class="price" id="col_<?=getColumnId($arHeader)?>">
-						<?
-						else:
-						?>
-							<td class="custom" id="col_<?=getColumnId($arHeader)?>">
-						<?
-						endif;
-						?>
-							<?=getColumnName($arHeader)?>
-							</td>
-					<?
-					endforeach;
-
-					if ($bDeleteColumn || $bDelayColumn):
-					?>
-						<td class="custom"></td>
-					<?
-					endif;
-					?>
-						<td class="margin"></td>
-				</tr>
-			</thead>
-
-			<tbody>
 				<?
 				foreach ($arResult["GRID"]["ROWS"] as $k => $arItem):
-
 					if ($arItem["DELAY"] == "N" && $arItem["CAN_BUY"] == "Y"):
+
+                        $arItem["PRICE"] = (int)$arItem["PRICE"];
+
+//                        print_r($arItem);
+//                        print_r($arResult);
+//                        die();
 				?>
 					<tr id="<?=$arItem["ID"]?>">
-						<td class="margin"></td>
-						<?
+                            <?
+                            //Check photo
+                            if (strlen($arItem["PREVIEW_PICTURE_SRC"]) > 0):
+                                $url = $arItem["PREVIEW_PICTURE_SRC"];
+                            elseif (strlen($arItem["DETAIL_PICTURE_SRC"]) > 0):
+                                $url = $arItem["DETAIL_PICTURE_SRC"];
+                            else:
+                                $url = $templateFolder."/images/no_photo.png";
+                            endif;
+                            ?>
+                        <td class="recycle-page__name">
+                            <div>
+                                <img src="<?=$url?>"><a href="<?=$arItem["DETAIL_PAGE_URL"] ?>"><?=$arItem["NAME"];?></a>
+                                <div class="recycle-page__art"><?=$arItem["PROPERTY_ARTICLE_VALUE"]?></div>
+                            </div>
+                        </td>
+                        <td><div class="recycle-page__cost"><?=$arItem["PRICE_FORMATED"]?> руб. x</div></td>
+
+                        <td>
+                            <div class="recycle-page__calc">
+                                <div class="recycle-page__title">Изменить количество</div>
+                                <div class="recycle-page__count"><a href="#" class="btn__recycle minus">-</a><input data-cost="<?=$arItem["PRICE"];?>" type="text" value="<?=$arItem["QUANTITY"];?>"><a href="#" class="btn__recycle plus">+</a></div>
+                                <div class="recycle-page__buttons"><a class="btn btn_mini btn_green" href="#">сохранить</a> <a class="btn btn_mini btn_silver btn_cancel" href="#">отмена</a></div>
+                            </div>
+                        </td>
+                        <td><div class="recycle-page__sum"><span><?=$arItem["SUM"]?></span>  руб.</div></td>
+                        <td class="recycle-page__actions"><a class="btn__hold" href="#">Отложить</a><br><a href="#" class="btn__delete">Удалить</a></td>
+                    </tr>
+                        <?
+
+/*
+
+
+
 						foreach ($arResult["GRID"]["HEADERS"] as $id => $arHeader):
 
 							if (in_array($arHeader["id"], array("PROPS", "DELAY", "DELETE", "TYPE"))) // some values are not shown in the columns in this template
@@ -94,15 +73,7 @@ if ($normalCount > 0):
 							?>
 								<td class="itemphoto">
 									<div class="bx_ordercart_photo_container">
-										<?
-										if (strlen($arItem["PREVIEW_PICTURE_SRC"]) > 0):
-											$url = $arItem["PREVIEW_PICTURE_SRC"];
-										elseif (strlen($arItem["DETAIL_PICTURE_SRC"]) > 0):
-											$url = $arItem["DETAIL_PICTURE_SRC"];
-										else:
-											$url = $templateFolder."/images/no_photo.png";
-										endif;
-										?>
+
 
 										<?if (strlen($arItem["DETAIL_PAGE_URL"]) > 0):?><a href="<?=$arItem["DETAIL_PAGE_URL"] ?>"><?endif;?>
 											<div class="bx_ordercart_photo" style="background-image:url('<?=$url?>')"></div>
@@ -418,12 +389,28 @@ if ($normalCount > 0):
 							<td class="margin"></td>
 					</tr>
 					<?
+                    */
 					endif;
 				endforeach;
 				?>
+
+                <tr class="recycle-page__bottom">
+                    <td colspan="2"></td>
+                    <td><div class="recycle-page__itogo">Итого:</div></td>
+                    <td colspan="2">
+                        <div class="recycle-page__itogo_sum">
+                            <span><?=$arResult['allSum_FORMATED'];?></span> руб.
+                        </div>
+                        <div class="recycle-page__nds">(с учетом НДС)</div>
+                        <div><a href="#" class="btn btn_green btn_big">Оформить заказ</a></div>
+                    </td>
+                </tr>
+
 			</tbody>
 		</table>
-	</div>
+<!--	</div>-->
+
+<?php /*
 	<input type="hidden" id="column_headers" value="<?=CUtil::JSEscape(implode($arHeaders, ","))?>" />
 	<input type="hidden" id="offers_props" value="<?=CUtil::JSEscape(implode($arParams["OFFERS_PROPS"], ","))?>" />
 	<input type="hidden" id="action_var" value="<?=CUtil::JSEscape($arParams["ACTION_VARIABLE"])?>" />
@@ -508,6 +495,7 @@ if ($normalCount > 0):
 	</div>
 </div>
 <?
+ */
 else:
 ?>
 <div id="basket_items_list">

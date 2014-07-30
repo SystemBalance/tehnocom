@@ -1638,6 +1638,7 @@ input.vik-inptxt-style__small, .vik-order-fast input.vik-inptxt-style__small{
 }
 .recycle-page__actions a {
     color: #999999;
+    border-bottom-color: #999999;
 }
 .recycle-page__actions_hold a {
     color: #999999;
