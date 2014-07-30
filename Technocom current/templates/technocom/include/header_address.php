@@ -78,9 +78,7 @@ $_SESSION['CONTACTS'] = $contacts;
 
 //Выводим ближайшие контактные данные
 ?><div class="header__left">
-    <div class="header__address">
-
-        <?=$contacts['NAME'];//Имя города?>
+    <div class="header__address"><?=$contacts['NAME'];//Имя города?>
         <p><?=$contacts['PROPERTY_44'];//Адрес офиса?></p>
         <a href="/contacts/">Все филиалы компании</a>
     </div>
