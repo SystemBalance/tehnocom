@@ -7,14 +7,8 @@ var section = {
   },
 
   init: function() {
-    if (section.checkHashExist())
-      section.showSection(localStorage['hash']);
+    if (window.location.hash) section.showSection(window.location.hash);
     section.tabsHandler();
-  },
-
-  checkHashExist: function() {
-    if (localStorage['hash']) return true;
-    else return false;
   },
 
   showSection: function(hash) {
@@ -34,6 +28,4 @@ var section = {
 
 };
 
-$(function() {
-  section.init();
-});
+section.init();
