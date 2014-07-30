@@ -44,15 +44,7 @@ while($cont = $contactList->GetNext()){
 $c = array_pop($cityArray);
 
 
-
-
-$cMapData = explode(',',$c['PROPERTY_MAP_VALUE']);
-
-////ћало ли родными средствами получитс€
-//CModule::IncludeModule('sale');
-//$arLocs = CSaleLocation::GetByID(22, LANGUAGE_ID);
-//echo $arLocs["COUNTRY_NAME"]." - ".$arLocs["CITY_NAME"];
-?> 
+?>
 <div class="d_space"></div>
  
 <div class="title-line"> 
@@ -60,7 +52,10 @@ $cMapData = explode(',',$c['PROPERTY_MAP_VALUE']);
  </div>
  
 <!-- BEGIN contacts -->
- 
+<?
+ $currentFilial = $_SESSION['contacts'];
+var_dump($currentFilial);
+ ?>
 <div class="contacts"> 
   <div class="contacts__text">¬ыберите в списке интересующий вас регион и город, чтобы узнать адреса и телефоны филиала.</div>
  
@@ -70,7 +65,7 @@ $cMapData = explode(',',$c['PROPERTY_MAP_VALUE']);
           <?    //¬ыводим филиалы по городам
           $sections = CIBlockSection::GetList(array("SORT"=>"ASC"), array('IBLOCK_ID' => 27, 'ID' => $sectionList),  true);
           while($sect = $sections->GetNext()){
-          echo '<li><a href="#'.$sect['ID'].'" >'.$sect['NAME'].'</a>';
+          echo '<li'.($currentFilial['PROPERTY_REGION_VALUE'] == $sect['ID']? 'selected':'').'><a href="#'.$sect['ID'].'" >'.$sect['NAME'].'</a>';
               echo '<ul> ';
 
                   foreach($contactArray[$sect['ID']] as $conts){
