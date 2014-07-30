@@ -52,7 +52,7 @@ var add2basket = {
         cached: false,
         success: function() {
           add2basket.modalShow();
-          setTimeout(add2basket.modalHide, 3000);
+          setTimeout(add2basket.modalHide, 2000);
         }
       });
       return false;
