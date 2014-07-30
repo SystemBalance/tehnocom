@@ -79,7 +79,7 @@
       </div>
       <div class="footer__info">
         <div class="footer__logo"></div>
-        <div class="footer__contacts"><span><?=$contacts['NAME'];//Имя города?></span>, <?=$contacts['PROPERTY_44'];//Адрес офиса?> (<a href="/contacts/">схема проезда</a>) <?=$contacts['PROPERTY_43'][0];//Телефон (первый) ?> <a href="mailto:<?=$contacts['PROPERTY_45'];//e-mail ?>"><?=$contacts['PROPERTY_45'];//e-mail ?></a></div>
+        <div class="footer__contacts"><span><?=$contacts['NAME'];//Имя города?></span>, <?=$contacts['PROPERTY_ADDRESS_VALUE'];//Адрес офиса?> (<a href="/contacts/">схема проезда</a>) <?=$contacts['PROPERTY_PHONES_VALUE'][0];//Телефон (первый) ?> <a href="mailto:<?=$contacts['PROPERTY_EMAIL_VALUE'];//e-mail ?>"><?=$contacts['PROPERTY_EMAIL_VALUE'];//e-mail ?></a></div>
       </div>
     </footer>
     <?endif;?>
