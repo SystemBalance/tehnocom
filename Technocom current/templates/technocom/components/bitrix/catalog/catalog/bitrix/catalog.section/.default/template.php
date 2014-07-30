@@ -12,16 +12,11 @@ if (count($arResult["ITEMS"]) != 0) {
         Сортировать по
         <select>
           <option>цене, сначала дешевые</option>
-          <option>Выбор 2</option>
-          <option>Выбор 3</option>
-          <option>Выбор 4</option>
+          <option>цене, сначала дороже</option>
         </select>
 
         <select class="one">
           <option>показать все бренды</option>
-          <option>Выбор 2</option>
-          <option>Выбор 3</option>
-          <option>Выбор 4</option>
         </select>
       </a>
       <div class="d_tabproducts">
@@ -38,7 +33,7 @@ if (count($arResult["ITEMS"]) != 0) {
           <div class="product__details">
             <div class="product__price"><?=$arItem["DISPLAY_PROPERTIES"]["PRICE1"]["VALUE"]?> Р</div>
             <div class="product__buy">
-              <a class="btn btn_small btn_green" href="#">Купить</a>
+              <a class="btn btn_small btn_green" href="<?=$arItem["ADD_URL"]?>">Купить</a>
             </div>
           </div>
         </div>
@@ -72,7 +67,7 @@ if (count($arResult["ITEMS"]) != 0) {
         <div class="product__details">
           <div class="product__price"><?=$arItem["DISPLAY_PROPERTIES"]["PRICE1"]["VALUE"]?> Р</div>
           <div class="product__buy">
-            <a class="btn btn_small btn_green" href="#">Купить</a>
+            <a class="btn btn_small btn_green" href="<?=$arItem["ADD_URL"]?>">Купить</a>
           </div>
         </div>
       </div>
