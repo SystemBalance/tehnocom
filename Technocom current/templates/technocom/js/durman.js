@@ -33,3 +33,7 @@ var section = {
   }
 
 };
+
+$(function() {
+  section.init();
+});
