@@ -65,7 +65,7 @@ var add2basket = {
     modal += '<div class="add2basket-modal__in">';
     modal += 'Товар успешно добавлен в корзину!';
     modal += '</div></div>';
-    $('body').appendTo($(modal));
+    $(modal).appendTo($('body'));
   },
 
   modalHandler: function() {
