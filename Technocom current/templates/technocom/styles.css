@@ -1879,6 +1879,11 @@ input.vik-inptxt-style__small, .vik-order-fast input.vik-inptxt-style__small{
 .contacts__map {
     margin: 60px 0 130px 0;
 }
+.contacts__online,
+.contacts__online:hover{
+    cursor: pointer;
+}
+
 
 .contacts__online,
 .contacts__online:hover,

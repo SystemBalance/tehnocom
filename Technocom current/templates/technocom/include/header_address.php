@@ -87,7 +87,7 @@ $_SESSION['CONTACTS'] = $contacts;
 
 <!-- contacts block. center -->
 <div class="header__center">
-    <a class="online-assist"><i class="online-assist__pic"></i><span>Онлайн-консультант</span></a><br />
+    <a class="online-assist" onclick="javascript:jivo_api.open();"><i class="online-assist__pic"></i><span>Онлайн-консультант</span></a><br />
     <a class="callback"><i class="callback__pic"></i><span>Заказать обратный звонок</span></a><br />
     <a class="skype" href="skype:<?=$contacts['PROPERTY_177'];//Скайп?>"><i class="skype__pic"></i><span><?=$contacts['PROPERTY_177'];//Скайп?></span></a>
 </div>
