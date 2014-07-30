@@ -4,6 +4,8 @@ $(document).ready(function(){
     e.preventDefault();
     $(".domtabs li a").removeClass('d_activetab');
     $(this).addClass('d_activetab');
+    $('.js-section').css('display', 'none');
+    $(this).parents('.domtab').find('.js-section[data-id=' + $(this).attr('href') + ']');
   });
 	//END script табы на странице cat_2.html
   	
