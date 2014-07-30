@@ -39,7 +39,8 @@ if(CModule::IncludeModule("altasib.geoip"))
             //Получаем инфоблок контакты по региону
             $arSelect = Array("*", "PROPERTY_*");
             $arFilter = Array("IBLOCK_ID"=>19, "ACTIVE_DATE"=>"Y", "ACTIVE"=>"Y",
-                "PROPERTY_REGION"=>$city['IBLOCK_SECTION_ID']
+                "PROPERTY_REGION"=>$city['IBLOCK_SECTION_ID'],
+                "PROPERTY_178" =>"323"  //Центральный филиал региона => Да
             );
             $res = CIBlockElement::GetList(Array(), $arFilter, false, Array("nPageSize"=>50), $arSelect);
 
@@ -66,6 +67,8 @@ if(!isset($contacts)){
         $contacts = $contacts->GetFields();
     }
 }
+
+//print_r($contacts);
 
 //$contacts
 //PROPERTY_43    Телефон
