@@ -30,6 +30,26 @@ var section = {
 
 section.init();
 
+var add2basket = {
+
+  opts: {
+    product: '.js-add2basket'
+  },
+
+  init: function() {
+    add2basket.add2basketHandler();
+  },
+
+  add2basketHandler: function() {
+    $(add2basket.opts.product).click(function() {
+      alert(1);
+    });
+  }
+
+};
+
+add2basket.init();
+
 $(function() {
   if ($('select').length) $('select').selectric();
 });
