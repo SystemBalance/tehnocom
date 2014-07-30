@@ -35,6 +35,16 @@ $(document).ready(function(){
 						}, 500);
 	});
 	//END script табы на странице registration.html
+
+    $('.change_contact').click(function(){
+        var r = $(this).data('reg-id');
+        var i = $(this).data('id');
+        console.log(i);
+        var newCont = contactList[r][i];
+        console.log(newCont);
+//        @todo replace data on page contacts
+    });
+
 });
 
 
