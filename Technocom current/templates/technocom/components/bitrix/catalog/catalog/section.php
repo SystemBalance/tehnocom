@@ -219,6 +219,16 @@ $intSectionID = 0;
 	),
 	$component
 );?>
+<?$APPLICATION->IncludeComponent(
+  "bitrix:sale.basket.basket.line",
+  "",
+  array(
+    "PATH_TO_BASKET" => "/user/cart/",
+    "PATH_TO_PERSONAL" => "/user/",
+    "SHOW_PERSONAL_LINK" => "N",
+  ),
+  false
+);?>
   <div class="clearfix"></div></div></div>
 <?
 CModule::IncludeModule("iblock");
