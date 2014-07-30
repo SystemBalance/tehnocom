@@ -33,17 +33,51 @@ section.init();
 var add2basket = {
 
   opts: {
-    product: '.js-add2basket'
+    buy: '.js-add2basket',
+    modal: '.js-add2basket-modal'
   },
 
   init: function() {
-    add2basket.add2basketHandler();
+    add2basket.buyHandler();
+    add2basket.modalCreate();
+    add2basket.modalHandler();
   },
 
-  add2basketHandler: function() {
-    $(add2basket.opts.product).click(function() {
-      alert(1);
+  buyHandler: function() {
+    $(add2basket.opts.buy).click(function() {
+      var url = $(this).attr('href');
+      $.ajax({
+        type: 'post',
+        url: url,
+        cached: false,
+        success: function() {
+          add2basket.modalShow();
+          setTimeout(add2basket.modalHide, 3000);
+        }
+      });
+      return false;
     });
+  },
+
+  modalCreate: function() {
+    var modal = '';
+    modal += '<div class="add2basket-modal js-add2basket-modal">';
+    modal += '<div class="add2basket-modal__in">';
+    modal += 'Товар успешно добавлен в корзину!';
+    modal += '</div></div>';
+    $('body').appendTo($(modal));
+  },
+
+  modalHandler: function() {
+    $(add2basket.opts.modal).click(add2basket.modalHide);
+  },
+
+  modalShow: function() {
+    $(add2basket.opts.modal).css('display', 'block');
+  },
+
+  modalHide: function() {
+    $(add2basket.opts.modal).css('display', 'none');
   }
 
 };
