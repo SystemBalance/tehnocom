@@ -29,3 +29,7 @@ var section = {
 };
 
 section.init();
+
+$(function() {
+  if ($('select').length) $('select').selectric();
+});
