@@ -39,7 +39,7 @@
       <?if(!empty($arResult['DISPLAY_PROPERTIES']['H3']['VALUE'])):?>
         <h3><?=$arResult['DISPLAY_PROPERTIES']['H2']['VALUE']?></h3>
       <?endif;?>
-      <div class="product-detail__cost"><span><?=$arResult["DISPLAY_PROPERTIES"]["PRICE1"]["VALUE"]?></span> <span class="product-detail__currency"></span><a class="btn btn_green btn_big">В корзину</a> <a href="#" class="btn btn_silver btn_middle">Отложить</a> <a href="#" class="btn btn_blue btn_middle"><i class="callback__pic"></i>Позвонить мне</a></div>
+      <div class="product-detail__cost"><span><?=$arResult["DISPLAY_PROPERTIES"]["PRICE1"]["VALUE"]?></span> <span class="product-detail__currency"></span><a class="btn btn_green btn_big js-add2basket" href="<?=$arResult['ADD_URL']?>">В корзину</a> <a href="#" class="btn btn_silver btn_middle">Отложить</a> <a href="#" class="btn btn_blue btn_middle"><i class="callback__pic"></i>Позвонить мне</a></div>
       <div class="product-detail__cost_after">Цена после <a href="#">регистрации</a> <span><?=$arResult["DISPLAY_PROPERTIES"]["PRICE2"]["VALUE"]?> P</span></div>
       <?if(!empty($arResult['DISPLAY_PROPERTIES']['COUNT']['VALUE'])):?>
       <!--<div class="product-detail__exist">В наличии: шт.</div>-->

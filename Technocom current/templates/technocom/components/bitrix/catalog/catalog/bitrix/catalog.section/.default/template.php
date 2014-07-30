@@ -33,7 +33,7 @@ if (count($arResult["ITEMS"]) != 0) {
           <div class="product__details">
             <div class="product__price"><?=$arItem["DISPLAY_PROPERTIES"]["PRICE1"]["VALUE"]?> Р</div>
             <div class="product__buy">
-              <a class="btn btn_small btn_green js-add2basket" href="<?=$arItem['ADD_URL']?>">Купить</a>
+              <a class="btn btn_small btn_green js-add2basket" href="<?=$arItem['ADD_URL']?>">В корзину</a>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ if (count($arResult["ITEMS"]) != 0) {
         <div class="product__details">
           <div class="product__price"><?=$arItem["DISPLAY_PROPERTIES"]["PRICE1"]["VALUE"]?> Р</div>
           <div class="product__buy">
-            <a class="btn btn_small btn_green js-add2basket" href="<?=$arItem['ADD_URL']?>">Купить</a>
+            <a class="btn btn_small btn_green js-add2basket" href="<?=$arItem['ADD_URL']?>">В корзину</a>
           </div>
         </div>
       </div>

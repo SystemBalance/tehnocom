@@ -64,6 +64,7 @@ while ($row = $result -> Fetch()) {
   if ($sections[$row["IBLOCK_SECTION_ID"]]["DEPTH_LEVEL"] == 2)
     $section = $sections[$sections[$row["IBLOCK_SECTION_ID"]]["IBLOCK_SECTION_ID"]];
   $row["URL"] = "/catalog/" . $section["CODE"] . "/" . $row["ID"] . "/";
+  $row["ADD_URL"] = "/catalog/" . $section["CODE"] . "/" . $row["ID"] . "/?action=ADD2BASKET&id=" . $row["ID"] . "&clear_cache=Y";
   $products[] = $row;
 }
 
@@ -98,7 +99,7 @@ switch ($CAPTION_TYPE) {
           <div class="product__details">
             <div class="product__price"><?=$product["PROPERTY_PRICE1_VALUE"]?> <i class="icon-rub"></i></div>
             <div class="product__buy">
-              <a class="btn btn_small btn_green" href="#">Купить</a>
+              <a class="btn btn_small btn_green js-add2basket" href="<?=$product["ADD_URL"]?>">В корзину</a>
             </div>
           </div>
         </div>
