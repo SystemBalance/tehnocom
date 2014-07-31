@@ -87,3 +87,8 @@ add2basket.init();
 $(function() {
   if ($('select').length) $('select').selectric();
 });
+
+if ($('.page_not').length) {
+  $('.d_tabs').removeClass('d_tabs');
+  $('.domtab').removeClass('domtab');
+}

@@ -458,6 +458,7 @@ if($this->StartResultCache(false, array($arrFilter, ($arParams["CACHE_GROUPS"]==
 	if(!$bSectionFound)
 	{
 		$this->AbortResultCache();
+    require_once $_SERVER["DOCUMENT_ROOT"] . "/404.php";
 		ShowError(GetMessage("CATALOG_SECTION_NOT_FOUND"));
 		@define("ERROR_404", "Y");
 		if($arParams["SET_STATUS_404"]==="Y")

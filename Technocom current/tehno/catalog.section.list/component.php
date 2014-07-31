@@ -183,11 +183,7 @@ if(true)
 		"SECTION",
 	));
 
-  $url = explode("/", $APPLICATION->GetCurPage());
-  if (empty($url[2]))
-	  $this->IncludeComponentTemplate();
-  else
-    require $_SERVER["DOCUMENT_ROOT"]."/404.php";
+	$this->IncludeComponentTemplate();
 }
 
 if($arResult["SECTIONS_COUNT"] > 0 || isset($arResult["SECTION"]))

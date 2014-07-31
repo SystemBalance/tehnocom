@@ -110,7 +110,7 @@ if ($verticalGrid)
 );?>
   <div class="d_tabs"><div class="domtab">
 <?$APPLICATION->IncludeComponent(
-  "bitrix:catalog.section.list",
+  "tehno:catalog.section.list",
   "",
   array(
     "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
