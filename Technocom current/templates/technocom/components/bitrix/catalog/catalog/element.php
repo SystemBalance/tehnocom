@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);?>
 <?$ElementID = $APPLICATION->IncludeComponent(
-	"bitrix:catalog.element",
+	"tehno:catalog.element",
 	"",
 	array(
 		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],

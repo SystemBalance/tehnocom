@@ -887,6 +887,7 @@ if($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USER
 		else
 		{
 			$this->AbortResultCache();
+      require $_SERVER["DOCUMENT_ROOT"]."/404.php";
 			ShowError(GetMessage("CATALOG_ELEMENT_NOT_FOUND"));
 			@define("ERROR_404", "Y");
 			if($arParams["SET_STATUS_404"]==="Y")
