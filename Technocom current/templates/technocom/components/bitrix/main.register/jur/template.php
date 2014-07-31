@@ -38,7 +38,7 @@ elseif($arResult["USE_EMAIL_CONFIRMATION"] === "Y"):
 <p><?echo GetMessage("REGISTER_EMAIL_WILL_BE_SENT")?></p>
 <?endif?>
 
-<form method="post" action="<?=POST_FORM_ACTION_URI?>" name="regform" enctype="multipart/form-data">
+<form method="post" action="<?=POST_FORM_ACTION_URI?>" name="regform_jur" enctype="multipart/form-data">
 <?
 if($arResult["BACKURL"] <> ''):
 ?>
@@ -150,9 +150,9 @@ document.getElementById('bx_auth_secure').style.display = 'inline-block';
 <?endforeach?>
 <?// ********************* User properties ***************************************************?>
 <?if($arResult["USER_PROPERTIES"]["SHOW"] == "Y"):?>
-	
+
 	<?foreach ($arResult["USER_PROPERTIES"]["DATA"] as $FIELD_NAME => $arUserField):?>
-	<tr><td><?=$arUserField["EDIT_FORM_LABEL"]?>:<?if ($arUserField["MANDATORY"]=="Y"):?><span class="starrequired">*</span><?endif;?></td><td>
+	<tr id="<? echo $arUserField['FIELD_NAME'];?>"><td><?=$arUserField["EDIT_FORM_LABEL"]?>:<?if ($arUserField["MANDATORY"]=="Y"):?><span class="starrequired">*</span><?endif;?></td><td>
 			<?$APPLICATION->IncludeComponent(
 				"bitrix:system.field.edit",
 				$arUserField["USER_TYPE"]["USER_TYPE_ID"],
@@ -186,12 +186,12 @@ if ($arResult["USE_CAPTCHA"] == "Y")
 	</tbody>
 	<tfoot>
 		<tr>
-			<td></td>
-			<td><input type="submit" name="register_submit_button" value="<?=GetMessage("AUTH_REGISTER")?>" /></td>
+
+			<td colspan="2"><input type="submit" name="register_submit_button" value="<?=GetMessage("AUTH_REGISTER")?>" class="vik-btn-large vik-btn-disable"/></td>
 		</tr>
 	</tfoot>
 </table>
-<p><?echo $arResult["GROUP_POLICY"]["PASSWORD_REQUIREMENTS"];?></p>
+
 <p><span class="starrequired">*</span><?=GetMessage("AUTH_REQ")?></p>
 
 </form>
