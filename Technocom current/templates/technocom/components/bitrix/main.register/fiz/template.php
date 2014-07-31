@@ -201,7 +201,7 @@ if ($arResult["USE_CAPTCHA"] == "Y")
 <p><span class="starrequired">*</span><?=GetMessage("AUTH_REQ")?></p>
 
 </form>
-    <? print_r($arResult["VALUES"]);?>
+
 <?endif?>
 </div>
 
