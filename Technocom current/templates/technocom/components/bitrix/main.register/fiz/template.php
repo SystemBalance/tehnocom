@@ -80,7 +80,7 @@ endif;
 		</tr>
 	<?else:?>
 		<tr id="<?php echo $FIELD;?>_fiz">
-			<td ><?=GetMessage("REGISTER_FIELD_".$FIELD)?>:<?if ($arResult["REQUIRED_FIELDS_FLAGS"][$FIELD] == "Y"):?><span class="starrequired">*</span><?endif?></td>
+			<td ><?=GetMessage("REGISTER_FIELD_".$FIELD)?>:<?if ($arResult["REQUIRED_FIELDS_FLAGS"][$FIELD] == "Y"):?><span class="starrequired"></span><?endif?></td>
 			<td><?
 	switch ($FIELD)
 	{
@@ -201,6 +201,7 @@ if ($arResult["USE_CAPTCHA"] == "Y")
 <p><span class="starrequired">*</span><?=GetMessage("AUTH_REQ")?></p>
 
 </form>
-
+    <? print_r($arResult["VALUES"]);?>
 <?endif?>
 </div>
+

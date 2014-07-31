@@ -80,7 +80,7 @@ endif;
 		</tr>
 	<?else:?>
 		<tr id="<?php echo $FIELD;?>_jur">
-			<td ><?=GetMessage("REGISTER_FIELD_".$FIELD)?>:<?if ($arResult["REQUIRED_FIELDS_FLAGS"][$FIELD] == "Y"):?><span class="starrequired">*</span><?endif?></td>
+			<td ><?=GetMessage("REGISTER_FIELD_".$FIELD)?>:<?if ($arResult["REQUIRED_FIELDS_FLAGS"][$FIELD] == "Y"):?><span class="starrequired"></span><?endif?></td>
 			<td><?
 	switch ($FIELD)
 	{
