@@ -133,7 +133,7 @@ if ($verticalGrid)
 <?
 $intSectionID = 0;
 ?><?$intSectionID = $APPLICATION->IncludeComponent(
-	"bitrix:catalog.section",
+	"tehno:catalog.section",
 	"",
 	array(
 		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
