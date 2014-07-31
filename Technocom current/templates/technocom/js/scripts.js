@@ -35,7 +35,7 @@ $(document).ready(function(){
 						}, 500);
 	});
 	//END script табы на странице registration.html
-//TODO TEST
+
     $('.change_contact').click(function(){
         var r = $(this).data('reg-id');
         var i = $(this).data('id');
