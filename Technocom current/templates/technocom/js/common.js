@@ -52,5 +52,13 @@ head.ready(function() {
     }
 
 
+$("#EMAIL_f_jur").change( function() {
+   $("#LOGIN_f_jur").val($("#EMAIL_f_jur").val());
+ });
+
+ $("#EMAIL_f_fiz").change( function() {
+   $("#LOGIN_f_fiz").val($("#EMAIL_f_fiz").val());
+});
+
 
 });

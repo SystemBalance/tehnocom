@@ -39,6 +39,12 @@ elseif($arResult["USE_EMAIL_CONFIRMATION"] === "Y"):
 <?endif?>
 
 <form method="post" action="<?=POST_FORM_ACTION_URI?>" name="regform_jur" enctype="multipart/form-data">
+    <?$pass = randString(7, array(
+        "abcdefghijklnmopqrstuvwxyz",
+        "ABCDEFGHIJKLNMOPQRSTUVWX­YZ",
+        "0123456789",
+        "!@#\$%^&*()",
+    ));//ãåíåðèðóåì ïàðîëü?>
 <?
 if($arResult["BACKURL"] <> ''):
 ?>
@@ -73,13 +79,13 @@ endif;
 			</td>
 		</tr>
 	<?else:?>
-		<tr>
-			<td><?=GetMessage("REGISTER_FIELD_".$FIELD)?>:<?if ($arResult["REQUIRED_FIELDS_FLAGS"][$FIELD] == "Y"):?><span class="starrequired">*</span><?endif?></td>
+		<tr id="<?php echo $FIELD;?>_jur">
+			<td ><?=GetMessage("REGISTER_FIELD_".$FIELD)?>:<?if ($arResult["REQUIRED_FIELDS_FLAGS"][$FIELD] == "Y"):?><span class="starrequired">*</span><?endif?></td>
 			<td><?
 	switch ($FIELD)
 	{
 		case "PASSWORD":
-			?><input size="30" type="password" name="REGISTER[<?=$FIELD?>]" value="<?=$arResult["VALUES"][$FIELD]?>" autocomplete="off" class="bx-auth-input" />
+			?><input size="30" type="hidden" name="REGISTER[<?=$FIELD?>]" value="<?=$pass;?>" autocomplete="off" class="bx-auth-input" />
 <?if($arResult["SECURE_AUTH"]):?>
 				<span class="bx-auth-secure" id="bx_auth_secure" title="<?echo GetMessage("AUTH_SECURE_NOTE")?>" style="display:none">
 					<div class="bx-auth-secure-icon"></div>
@@ -96,7 +102,7 @@ document.getElementById('bx_auth_secure').style.display = 'inline-block';
 <?
 			break;
 		case "CONFIRM_PASSWORD":
-			?><input size="30" type="password" name="REGISTER[<?=$FIELD?>]" value="<?=$arResult["VALUES"][$FIELD]?>" autocomplete="off" /><?
+			?><input size="30" type="hidden" name="REGISTER[<?=$FIELD?>]" value="<?=$pass;?>" autocomplete="off" /><?
 			break;
 
 		case "PERSONAL_GENDER":
@@ -129,7 +135,7 @@ document.getElementById('bx_auth_secure').style.display = 'inline-block';
 			break;
 		default:
 			if ($FIELD == "PERSONAL_BIRTHDAY"):?><small><?=$arResult["DATE_FORMAT"]?></small><br /><?endif;
-			?><input size="30" type="text" name="REGISTER[<?=$FIELD?>]" value="<?=$arResult["VALUES"][$FIELD]?>" /><?
+			?><input size="30" type="text" id="<?=$FIELD?>_f_jur" name="REGISTER[<?=$FIELD?>]" value="<?=$arResult["VALUES"][$FIELD]?>" /><?
 				if ($FIELD == "PERSONAL_BIRTHDAY")
 					$APPLICATION->IncludeComponent(
 						'bitrix:main.calendar',
@@ -152,7 +158,7 @@ document.getElementById('bx_auth_secure').style.display = 'inline-block';
 <?if($arResult["USER_PROPERTIES"]["SHOW"] == "Y"):?>
 
 	<?foreach ($arResult["USER_PROPERTIES"]["DATA"] as $FIELD_NAME => $arUserField):?>
-	<tr id="<? echo $arUserField['FIELD_NAME'];?>"><td><?=$arUserField["EDIT_FORM_LABEL"]?>:<?if ($arUserField["MANDATORY"]=="Y"):?><span class="starrequired">*</span><?endif;?></td><td>
+	<tr id="<? echo $arUserField['FIELD_NAME'];?>_jur"><td><?=$arUserField["EDIT_FORM_LABEL"]?>:<?if ($arUserField["MANDATORY"]=="Y"):?><span class="starrequired">*</span><?endif;?></td><td>
 			<?$APPLICATION->IncludeComponent(
 				"bitrix:system.field.edit",
 				$arUserField["USER_TYPE"]["USER_TYPE_ID"],
@@ -195,5 +201,6 @@ if ($arResult["USE_CAPTCHA"] == "Y")
 <p><span class="starrequired">*</span><?=GetMessage("AUTH_REQ")?></p>
 
 </form>
+
 <?endif?>
 </div>

@@ -48,13 +48,13 @@ $APPLICATION->SetTitle("Регистрация");
 <?$APPLICATION->IncludeComponent("bitrix:main.register","fiz",Array(
         "USER_PROPERTY_NAME" => "", 
         "SEF_MODE" => "Y", 
-        "SHOW_FIELDS" => Array("NAME", "PERSONAL_PHONE", "PERSONAL_CITY"), 
-        "REQUIRED_FIELDS" => Array("NAME", "PERSONAL_PHONE", "PERSONAL_CITY"), 
+        "SHOW_FIELDS" => Array("NAME", "PERSONAL_PHONE"),
+        "REQUIRED_FIELDS" => Array("NAME", "PERSONAL_PHONE"),
         "AUTH" => "Y", 
         "USE_BACKURL" => "Y", 
         "SUCCESS_PAGE" => "", 
         "SET_TITLE" => "Y", 
-        "USER_PROPERTY" => Array(), 
+        "USER_PROPERTY" => Array("UF_CITY"),
         "SEF_FOLDER" => "/", 
         "VARIABLE_ALIASES" => Array()
     )
@@ -65,13 +65,13 @@ $APPLICATION->SetTitle("Регистрация");
 <?$APPLICATION->IncludeComponent("bitrix:main.register","jur",Array(
         "USER_PROPERTY_NAME" => "", 
         "SEF_MODE" => "Y", 
-        "SHOW_FIELDS" => Array("NAME", "PERSONAL_PHONE", "PERSONAL_CITY", "WORK_COMPANY"), 
-        "REQUIRED_FIELDS" => Array("NAME", "PERSONAL_PHONE", "PERSONAL_CITY", "WORK_COMPANY"), 
+        "SHOW_FIELDS" => Array("NAME", "PERSONAL_PHONE", "WORK_COMPANY"),
+        "REQUIRED_FIELDS" => Array("NAME", "PERSONAL_PHONE", "WORK_COMPANY"),
         "AUTH" => "Y", 
         "USE_BACKURL" => "Y", 
         "SUCCESS_PAGE" => "", 
         "SET_TITLE" => "Y", 
-        "USER_PROPERTY" => Array("UF_LEGAL","UF_DETAILS"), 
+        "USER_PROPERTY" => Array("UF_CITY","UF_LEGAL","UF_DETAILS"),
         "SEF_FOLDER" => "/", 
         "VARIABLE_ALIASES" => Array()
     )

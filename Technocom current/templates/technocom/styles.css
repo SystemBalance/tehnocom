@@ -777,14 +777,13 @@ div.domtab div{
 .d_box1, .d_box2 {width: 1468px; margin: 0 auto;  display: none;}
 .d_box1 {background: #e7fcec; text-align: center; padding: 70px 0;}
 .d_box1 span{color: #333; font-size: 39px; margin-bottom: 60px;}
-.d_box1 input[type=text], .d_box1 input[type=password] {border: 2px solid #a4a5a4; width: 600px; height: 100px; padding-left: 50px; margin-bottom: 45px; font-size: 47px;}
+.d_box1 input[type=text], .d_box1 input[type=password] {border: 2px solid #a4a5a4; width: 846px; height: 100px; padding-left: 50px; margin-bottom: 45px; font-size: 47px;}
 .d_box1 input[type=text]:focus {border: 2px solid #16a433 ;}
 ::-webkit-input-placeholder {font-style: italic; font-family: HelveticaNeue-Light; color: #999;}
 ::-moz-placeholder          {font-style: italic; font-family: HelveticaNeue-Light;}/* Firefox 19+ */
 ::-moz-placeholder           {font-style: italic; font-family: HelveticaNeue-Light;}/* Firefox 18- */
 ::-ms-input-placeholder      {font-style: italic; font-family: HelveticaNeue-Light;}
-.d_box1 select {display: inline-block; vertical-align: top; margin: 0 auto;  width: 900px; height: 102px; font-size: 47px; padding: 20px 20px 20px 50px; cursor: pointer; font-style: italic; font-family: HelveticaNeue-Light; color: #999; border: 2px solid #a4a5a4;}
-.d_box1 select option{font-size: 47px; padding: 20px 20px 20px 50px; font-style: normal; cursor: pointer; color: black;}
+
 .d_box1 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #16a433; margin-top: 100px;}
 .d_box1 input[type="submit"], .d_box2 input[type="submit"] {
     display: block;
@@ -799,10 +798,9 @@ div.domtab div{
 
 .d_box2 {background: #d9eafc; text-align: center; padding: 70px 0;}
 .d_box2 span{color: #333; font-size: 39px; margin-bottom: 60px;}
-.d_box2 input[type=text], .d_box2 input[type=password] {border: 2px solid #a4a5a4; width: 600px; height: 100px; padding-left: 50px; margin-bottom: 45px; font-size: 47px;}
+.d_box2 input[type=text], .d_box2 input[type=password] {border: 2px solid #a4a5a4; width: 846px; height: 100px; padding-left: 50px; margin-bottom: 45px; font-size: 47px;}
 .d_box2 input[type=text]:focus {border: 2px solid #0057b9 ;}
-.d_box2 select {display: inline-block; vertical-align: top; margin: 0 auto 50px;  width: 900px; height: 102px; font-size: 47px; padding: 20px 20px 20px 50px; cursor: pointer; font-style: italic; font-family: HelveticaNeue-Light; color: #999; border: 2px solid #a4a5a4;}
-.d_box2 select option{font-size: 47px; padding: 20px 20px 20px 50px; font-style: normal; cursor: pointer; color: black;}
+
 .d_box2 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #0057b9; margin-top: 80px;}
 .d_box2 > div {text-align: right;padding: 0px 50px;}
 .d_box2 label {font-size: 48px; display: inline-block; vertical-align: top; line-height: 50px; padding-right: 40px;}
@@ -817,6 +815,7 @@ div.domtab div{
 .bx-auth-reg td:first-child {
     font-size:48px;
     padding-right:28px;
+    width: 440px;
 }
 .form-error {border: 2px solid red !important;}
 
@@ -1912,4 +1911,6 @@ input.vik-inptxt-style__small, .vik-order-fast input.vik-inptxt-style__small{
 .add2basket-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
 .add2basket-modal__in { position: fixed; top: 50%; left: 50%; width: 400px; height: 100px; line-height: 100px; margin: -50px 0 0 -200px; border-radius: 10px; color: #fff; text-align: center; background: #0055c1; cursor: pointer; font-size: 18px; }
 
-tr#UF_LEGAL {display:none;}
+tr#UF_LEGAL_jur, tr#PASSWORD_jur, tr#CONFIRM_PASSWORD_jur, tr#LOGIN_jur   {display:none;}
+tr#UF_LEGAL_fiz, tr#PASSWORD_fiz, tr#CONFIRM_PASSWORD_fiz, tr#LOGIN_fiz  {display:none;}
+tr#UF_CITY_jur li, tr#UF_CITY_jur p, tr#UF_CITY_fiz li, tr#UF_CITY_fiz p  {text-align:left;}
