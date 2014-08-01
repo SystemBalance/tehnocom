@@ -978,8 +978,9 @@ input.vik-btn-large::-moz-focus-inner, button.vik-btn-large::-moz-focus-inner{pa
 .vik-btn-green:hover{
     background: #17ae36;
 }
-.vik-btn-disable, input.vik-btn-disable{
+.vik-btn-disable, input.vik-btn-disable, .vik-btn-disable:hover, input.vik-btn-disable:hover {
     cursor: default;
+    background: #dedede;
 }
 .vik-btn-blue{
     background: #0057b9;
