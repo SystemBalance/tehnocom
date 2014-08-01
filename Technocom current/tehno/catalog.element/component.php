@@ -27,6 +27,7 @@ $arParams["SECTION_ID"] = intval($arParams["SECTION_ID"]);
 $arParams["ELEMENT_ID"] = intval($arParams["~ELEMENT_ID"]);
 if($arParams["ELEMENT_ID"] > 0 && $arParams["ELEMENT_ID"]."" != $arParams["~ELEMENT_ID"])
 {
+  require $_SERVER["DOCUMENT_ROOT"]."/404.php";
 	ShowError(GetMessage("CATALOG_ELEMENT_NOT_FOUND"));
 	@define("ERROR_404", "Y");
 	if($arParams["SET_STATUS_404"]==="Y")
@@ -887,7 +888,6 @@ if($this->StartResultCache(false, ($arParams["CACHE_GROUPS"]==="N"? false: $USER
 		else
 		{
 			$this->AbortResultCache();
-      require $_SERVER["DOCUMENT_ROOT"]."/404.php";
 			ShowError(GetMessage("CATALOG_ELEMENT_NOT_FOUND"));
 			@define("ERROR_404", "Y");
 			if($arParams["SET_STATUS_404"]==="Y")
