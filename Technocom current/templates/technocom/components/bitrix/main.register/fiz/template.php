@@ -193,7 +193,7 @@ if ($arResult["USE_CAPTCHA"] == "Y")
 	<tfoot>
 		<tr>
 
-			<td colspan="2"><input type="submit" name="register_submit_button" value="<?=GetMessage("AUTH_REGISTER")?>" class="vik-btn-large vik-btn-disable"/></td>
+			<td colspan="2"><input type="submit" name="register_submit_button" value="<?=GetMessage("AUTH_REGISTER")?>" class="vik-btn-large vik-btn-green vik-btn-disable" id="submit_fiz" disabled/></td>
 		</tr>
 	</tfoot>
 </table>

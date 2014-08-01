@@ -294,6 +294,19 @@ $(function() {
         }
     });
 
+    $('#UF_CITY_fiz').find('[name="UF_CITY"]').change(function() {
+        var name = $('#NAME_f_fiz').val();
+        var company = $('#WORK_COMPANY_f_fiz').val();
+        var phone = $('#PERSONAL_PHONE_f_fiz').val();
+        var mail = $('#EMAIL_f_fiz').val();
+        var city = $('#UF_CITY_fiz').find('[name="UF_CITY"]').val();
+
+        if (/[^0-9]{3,}/.test(name) && /[^0-9]{3,}/.test(company) && /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(mail) && phone.replace(/[^0-9]/g, '').length == 11 && city) {
+            $('#submit_fiz').removeClass('vik-btn-disable');
+            $('#submit_fiz').prop("disabled", false);
+        }
+    });
+
     $('#NAME_f_jur,#WORK_COMPANY_f_jur,#PERSONAL_PHONE_f_jur,#EMAIL_f_jur').on('textchange', function() {
         var name = $('#NAME_f_jur').val();
         var company = $('#WORK_COMPANY_f_jur').val();
@@ -308,6 +321,20 @@ $(function() {
 
 
 
+
+    });
+
+    $('#NAME_f_fiz,#WORK_COMPANY_f_fiz,#PERSONAL_PHONE_f_fiz,#EMAIL_f_fiz').on('textchange', function() {
+        var name = $('#NAME_f_jur').val();
+        var company = $('#WORK_COMPANY_f_jur').val();
+        var phone = $('#PERSONAL_PHONE_f_jur').val();
+        var mail = $('#EMAIL_f_jur').val();
+        var city = $('#UF_CITY_jur').find('[name="UF_CITY"]').val();
+
+        if (/[^0-9]{3,}/.test(name) && /[^0-9]{3,}/.test(company) && /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(mail) && phone.replace(/[^0-9]/g, '').length == 11 && city) {
+            $('#submit_jur').removeClass('vik-btn-disable');
+            $('#submit_jur').prop("disabled", false);
+        }
 
     });
     
