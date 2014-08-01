@@ -84,6 +84,26 @@ var add2basket = {
 
 add2basket.init();
 
+var catalogScrolling = {
+
+  opts: {
+    catalog: ''
+  },
+
+  init: function() {
+    catalogScrolling.handler();
+  },
+
+  handler: function() {
+    $(window).scroll(function() {
+
+    });
+  }
+
+};
+
+catalogScrolling.init();
+
 $(function() {
   if ($('select').length) $('select').selectric();
 });
