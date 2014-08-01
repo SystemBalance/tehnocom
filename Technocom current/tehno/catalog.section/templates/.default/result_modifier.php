@@ -401,13 +401,5 @@ if (!empty($arResult['ITEMS']))
   $arResult['ITEMS'] = $arNewItemsList;
   $arResult['SKU_PROPS'] = $arSKUPropList;
   $arResult['DEFAULT_PICTURE'] = $arEmptyPreview;
-  CModule::IncludeModule('iblock');
-  $sections = array();
-  $result = CIBlockSection::GetList(
-    array("SORT"=>"DESC"),
-    array("SECTION_ID"=>$arResult["ID"])
-  );
-  while ($row = $result -> Fetch()) $sections[] = $row;
-  $arResult["SECTIONS"] = $sections;
 }
 ?>

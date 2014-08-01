@@ -455,6 +455,14 @@ if($this->StartResultCache(false, array($arrFilter, ($arParams["CACHE_GROUPS"]==
 		$bSectionFound = true;
 	}
 
+  $sections = array();
+  $result = CIBlockSection::GetList(
+    array("SORT"=>"DESC"),
+    array("SECTION_ID"=>$arResult["ID"])
+  );
+  while ($row = $result -> Fetch()) $sections[$row["ID"]] = $row;
+  $arResult["SECTIONS"] = $sections;
+
 	if(!$bSectionFound)
 	{
 		$this->AbortResultCache();
@@ -686,89 +694,177 @@ if($this->StartResultCache(false, array($arrFilter, ($arParams["CACHE_GROUPS"]==
 	$arCurrencyList = array();
 	$arSections = array();
 
-	//EXECUTE
-	$rsElements = CIBlockElement::GetList($arSort, array_merge($arrFilter, $arFilter), false, $arNavParams, $arSelect);
-	$rsElements->SetUrlTemplates($arParams["DETAIL_URL"]);
-	if($arParams["BY_LINK"]!=="Y" && !$arParams["SHOW_ALL_WO_SECTION"])
-		$rsElements->SetSectionContext($arResult);
-	$arResult["ITEMS"] = array();
-	$arMeasureMap = array();
-	$arElementLink = array();
-	$intKey = 0;
-	while($arItem = $rsElements->GetNext())
-	{
-		$arItem['ID'] = intval($arItem['ID']);
+  if (count($arResult["SECTIONS"]) > 0) {
+    $arResult["ITEMS"] = array();
+    $intKey = 0;
+    foreach ($arResult["SECTIONS"] as $arrSection) {
+      $arFilter["SECTION_ID"] = $arrSection["ID"];
+      $rsElements = CIBlockElement::GetList($arSort, array_merge($arrFilter, $arFilter), false, $arNavParams, $arSelect);
+      $rsElements->SetUrlTemplates($arParams["DETAIL_URL"]);
+      if($arParams["BY_LINK"]!=="Y" && !$arParams["SHOW_ALL_WO_SECTION"])
+        $rsElements->SetSectionContext($arResult);
+      $arMeasureMap = array();
+      $arElementLink = array();
+      while($arItem = $rsElements->GetNext())
+      {
+        $arItem['ID'] = intval($arItem['ID']);
 
-		$arItem['ACTIVE_FROM'] = $arItem['DATE_ACTIVE_FROM'];
-		$arItem['ACTIVE_TO'] = $arItem['DATE_ACTIVE_TO'];
+        $arItem['ACTIVE_FROM'] = $arItem['DATE_ACTIVE_FROM'];
+        $arItem['ACTIVE_TO'] = $arItem['DATE_ACTIVE_TO'];
 
-		if($arResult["ID"])
-			$arItem["IBLOCK_SECTION_ID"] = $arResult["ID"];
+        if($arResult["ID"])
+          $arItem["IBLOCK_SECTION_ID"] = $arResult["ID"];
 
-		$arButtons = CIBlock::GetPanelButtons(
-			$arItem["IBLOCK_ID"],
-			$arItem["ID"],
-			$arResult["ID"],
-			array("SECTION_BUTTONS"=>false, "SESSID"=>false, "CATALOG"=>true)
-		);
-		$arItem["EDIT_LINK"] = $arButtons["edit"]["edit_element"]["ACTION_URL"];
-		$arItem["DELETE_LINK"] = $arButtons["edit"]["delete_element"]["ACTION_URL"];
+        $arButtons = CIBlock::GetPanelButtons(
+          $arItem["IBLOCK_ID"],
+          $arItem["ID"],
+          $arResult["ID"],
+          array("SECTION_BUTTONS"=>false, "SESSID"=>false, "CATALOG"=>true)
+        );
+        $arItem["EDIT_LINK"] = $arButtons["edit"]["edit_element"]["ACTION_URL"];
+        $arItem["DELETE_LINK"] = $arButtons["edit"]["delete_element"]["ACTION_URL"];
 
-		$ipropValues = new \Bitrix\Iblock\InheritedProperty\ElementValues($arItem["IBLOCK_ID"], $arItem["ID"]);
-		$arItem["IPROPERTY_VALUES"] = $ipropValues->getValues();
+        $ipropValues = new \Bitrix\Iblock\InheritedProperty\ElementValues($arItem["IBLOCK_ID"], $arItem["ID"]);
+        $arItem["IPROPERTY_VALUES"] = $ipropValues->getValues();
 
-		$arItem["PREVIEW_PICTURE"] = (0 < $arItem["PREVIEW_PICTURE"] ? CFile::GetFileArray($arItem["PREVIEW_PICTURE"]) : false);
-		if ($arItem["PREVIEW_PICTURE"])
-		{
-			$arItem["PREVIEW_PICTURE"]["ALT"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_ALT"];
-			if ($arItem["PREVIEW_PICTURE"]["ALT"] == "")
-				$arItem["PREVIEW_PICTURE"]["ALT"] = $arItem["NAME"];
-			$arItem["PREVIEW_PICTURE"]["TITLE"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_TITLE"];
-			if ($arItem["PREVIEW_PICTURE"]["TITLE"] == "")
-				$arItem["PREVIEW_PICTURE"]["TITLE"] = $arItem["NAME"];
-		}
-		$arItem["DETAIL_PICTURE"] = (0 < $arItem["DETAIL_PICTURE"] ? CFile::GetFileArray($arItem["DETAIL_PICTURE"]) : false);
-		if ($arItem["DETAIL_PICTURE"])
-		{
-			$arItem["DETAIL_PICTURE"]["ALT"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"];
-			if ($arItem["DETAIL_PICTURE"]["ALT"] == "")
-				$arItem["DETAIL_PICTURE"]["ALT"] = $arItem["NAME"];
-			$arItem["DETAIL_PICTURE"]["TITLE"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_TITLE"];
-			if ($arItem["DETAIL_PICTURE"]["TITLE"] == "")
-				$arItem["DETAIL_PICTURE"]["TITLE"] = $arItem["NAME"];
-		}
+        $arItem["PREVIEW_PICTURE"] = (0 < $arItem["PREVIEW_PICTURE"] ? CFile::GetFileArray($arItem["PREVIEW_PICTURE"]) : false);
+        if ($arItem["PREVIEW_PICTURE"])
+        {
+          $arItem["PREVIEW_PICTURE"]["ALT"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_ALT"];
+          if ($arItem["PREVIEW_PICTURE"]["ALT"] == "")
+            $arItem["PREVIEW_PICTURE"]["ALT"] = $arItem["NAME"];
+          $arItem["PREVIEW_PICTURE"]["TITLE"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_TITLE"];
+          if ($arItem["PREVIEW_PICTURE"]["TITLE"] == "")
+            $arItem["PREVIEW_PICTURE"]["TITLE"] = $arItem["NAME"];
+        }
+        $arItem["DETAIL_PICTURE"] = (0 < $arItem["DETAIL_PICTURE"] ? CFile::GetFileArray($arItem["DETAIL_PICTURE"]) : false);
+        if ($arItem["DETAIL_PICTURE"])
+        {
+          $arItem["DETAIL_PICTURE"]["ALT"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"];
+          if ($arItem["DETAIL_PICTURE"]["ALT"] == "")
+            $arItem["DETAIL_PICTURE"]["ALT"] = $arItem["NAME"];
+          $arItem["DETAIL_PICTURE"]["TITLE"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_TITLE"];
+          if ($arItem["DETAIL_PICTURE"]["TITLE"] == "")
+            $arItem["DETAIL_PICTURE"]["TITLE"] = $arItem["NAME"];
+        }
 
-		$arItem["PROPERTIES"] = array();
-		$arItem["DISPLAY_PROPERTIES"] = array();
-		$arItem["PRODUCT_PROPERTIES"] = array();
-		$arItem['PRODUCT_PROPERTIES_FILL'] = array();
+        $arItem["PROPERTIES"] = array();
+        $arItem["DISPLAY_PROPERTIES"] = array();
+        $arItem["PRODUCT_PROPERTIES"] = array();
+        $arItem['PRODUCT_PROPERTIES_FILL'] = array();
 
-		if ($bIBlockCatalog)
-		{
-			if (!isset($arItem["CATALOG_MEASURE_RATIO"]))
-				$arItem["CATALOG_MEASURE_RATIO"] = 1;
-			if (!isset($arItem['CATALOG_MEASURE']))
-				$arItem['CATALOG_MEASURE'] = 0;
-			$arItem['CATALOG_MEASURE'] = intval($arItem['CATALOG_MEASURE']);
-			if (0 > $arItem['CATALOG_MEASURE'])
-				$arItem['CATALOG_MEASURE'] = 0;
-			if (!isset($arItem['CATALOG_MEASURE_NAME']))
-				$arItem['CATALOG_MEASURE_NAME'] = '';
+        if ($bIBlockCatalog)
+        {
+          if (!isset($arItem["CATALOG_MEASURE_RATIO"]))
+            $arItem["CATALOG_MEASURE_RATIO"] = 1;
+          if (!isset($arItem['CATALOG_MEASURE']))
+            $arItem['CATALOG_MEASURE'] = 0;
+          $arItem['CATALOG_MEASURE'] = intval($arItem['CATALOG_MEASURE']);
+          if (0 > $arItem['CATALOG_MEASURE'])
+            $arItem['CATALOG_MEASURE'] = 0;
+          if (!isset($arItem['CATALOG_MEASURE_NAME']))
+            $arItem['CATALOG_MEASURE_NAME'] = '';
 
-			$arItem['CATALOG_MEASURE_NAME'] = $arDefaultMeasure['SYMBOL_RUS'];
-			$arItem['~CATALOG_MEASURE_NAME'] = $arDefaultMeasure['~SYMBOL_RUS'];
-			if (0 < $arItem['CATALOG_MEASURE'])
-			{
-				if (!isset($arMeasureMap[$arItem['CATALOG_MEASURE']]))
-					$arMeasureMap[$arItem['CATALOG_MEASURE']] = array();
-				$arMeasureMap[$arItem['CATALOG_MEASURE']][] = $intKey;
-			}
-		}
-		$arResult["ITEMS"][$intKey] = $arItem;
-		$arResult["ELEMENTS"][$intKey] = $arItem["ID"];
-		$arElementLink[$arItem['ID']] = &$arResult["ITEMS"][$intKey];
-		$intKey++;
-	}
+          $arItem['CATALOG_MEASURE_NAME'] = $arDefaultMeasure['SYMBOL_RUS'];
+          $arItem['~CATALOG_MEASURE_NAME'] = $arDefaultMeasure['~SYMBOL_RUS'];
+          if (0 < $arItem['CATALOG_MEASURE'])
+          {
+            if (!isset($arMeasureMap[$arItem['CATALOG_MEASURE']]))
+              $arMeasureMap[$arItem['CATALOG_MEASURE']] = array();
+            $arMeasureMap[$arItem['CATALOG_MEASURE']][] = $intKey;
+          }
+        }
+        $arResult["ITEMS"][$intKey] = $arItem;
+        $arResult["ELEMENTS"][$intKey] = $arItem["ID"];
+        $arElementLink[$arItem['ID']] = &$arResult["ITEMS"][$intKey];
+        $intKey++;
+      }
+    }
+  } else {
+    $rsElements = CIBlockElement::GetList($arSort, array_merge($arrFilter, $arFilter), false, $arNavParams, $arSelect);
+    $rsElements->SetUrlTemplates($arParams["DETAIL_URL"]);
+    if($arParams["BY_LINK"]!=="Y" && !$arParams["SHOW_ALL_WO_SECTION"])
+      $rsElements->SetSectionContext($arResult);
+    $arResult["ITEMS"] = array();
+    $arMeasureMap = array();
+    $arElementLink = array();
+    $intKey = 0;
+    while($arItem = $rsElements->GetNext())
+    {
+      $arItem['ID'] = intval($arItem['ID']);
+
+      $arItem['ACTIVE_FROM'] = $arItem['DATE_ACTIVE_FROM'];
+      $arItem['ACTIVE_TO'] = $arItem['DATE_ACTIVE_TO'];
+
+      if($arResult["ID"])
+        $arItem["IBLOCK_SECTION_ID"] = $arResult["ID"];
+
+      $arButtons = CIBlock::GetPanelButtons(
+        $arItem["IBLOCK_ID"],
+        $arItem["ID"],
+        $arResult["ID"],
+        array("SECTION_BUTTONS"=>false, "SESSID"=>false, "CATALOG"=>true)
+      );
+      $arItem["EDIT_LINK"] = $arButtons["edit"]["edit_element"]["ACTION_URL"];
+      $arItem["DELETE_LINK"] = $arButtons["edit"]["delete_element"]["ACTION_URL"];
+
+      $ipropValues = new \Bitrix\Iblock\InheritedProperty\ElementValues($arItem["IBLOCK_ID"], $arItem["ID"]);
+      $arItem["IPROPERTY_VALUES"] = $ipropValues->getValues();
+
+      $arItem["PREVIEW_PICTURE"] = (0 < $arItem["PREVIEW_PICTURE"] ? CFile::GetFileArray($arItem["PREVIEW_PICTURE"]) : false);
+      if ($arItem["PREVIEW_PICTURE"])
+      {
+        $arItem["PREVIEW_PICTURE"]["ALT"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_ALT"];
+        if ($arItem["PREVIEW_PICTURE"]["ALT"] == "")
+          $arItem["PREVIEW_PICTURE"]["ALT"] = $arItem["NAME"];
+        $arItem["PREVIEW_PICTURE"]["TITLE"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_TITLE"];
+        if ($arItem["PREVIEW_PICTURE"]["TITLE"] == "")
+          $arItem["PREVIEW_PICTURE"]["TITLE"] = $arItem["NAME"];
+      }
+      $arItem["DETAIL_PICTURE"] = (0 < $arItem["DETAIL_PICTURE"] ? CFile::GetFileArray($arItem["DETAIL_PICTURE"]) : false);
+      if ($arItem["DETAIL_PICTURE"])
+      {
+        $arItem["DETAIL_PICTURE"]["ALT"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"];
+        if ($arItem["DETAIL_PICTURE"]["ALT"] == "")
+          $arItem["DETAIL_PICTURE"]["ALT"] = $arItem["NAME"];
+        $arItem["DETAIL_PICTURE"]["TITLE"] = $arItem["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_TITLE"];
+        if ($arItem["DETAIL_PICTURE"]["TITLE"] == "")
+          $arItem["DETAIL_PICTURE"]["TITLE"] = $arItem["NAME"];
+      }
+
+      $arItem["PROPERTIES"] = array();
+      $arItem["DISPLAY_PROPERTIES"] = array();
+      $arItem["PRODUCT_PROPERTIES"] = array();
+      $arItem['PRODUCT_PROPERTIES_FILL'] = array();
+
+      if ($bIBlockCatalog)
+      {
+        if (!isset($arItem["CATALOG_MEASURE_RATIO"]))
+          $arItem["CATALOG_MEASURE_RATIO"] = 1;
+        if (!isset($arItem['CATALOG_MEASURE']))
+          $arItem['CATALOG_MEASURE'] = 0;
+        $arItem['CATALOG_MEASURE'] = intval($arItem['CATALOG_MEASURE']);
+        if (0 > $arItem['CATALOG_MEASURE'])
+          $arItem['CATALOG_MEASURE'] = 0;
+        if (!isset($arItem['CATALOG_MEASURE_NAME']))
+          $arItem['CATALOG_MEASURE_NAME'] = '';
+
+        $arItem['CATALOG_MEASURE_NAME'] = $arDefaultMeasure['SYMBOL_RUS'];
+        $arItem['~CATALOG_MEASURE_NAME'] = $arDefaultMeasure['~SYMBOL_RUS'];
+        if (0 < $arItem['CATALOG_MEASURE'])
+        {
+          if (!isset($arMeasureMap[$arItem['CATALOG_MEASURE']]))
+            $arMeasureMap[$arItem['CATALOG_MEASURE']] = array();
+          $arMeasureMap[$arItem['CATALOG_MEASURE']][] = $intKey;
+        }
+      }
+      $arResult["ITEMS"][$intKey] = $arItem;
+      $arResult["ELEMENTS"][$intKey] = $arItem["ID"];
+      $arElementLink[$arItem['ID']] = &$arResult["ITEMS"][$intKey];
+      $intKey++;
+    }
+  }
+
 	$arResult['MODULES'] = $arResultModules;
 	$arResult["NAV_STRING"] = $rsElements->GetPageNavStringEx($navComponentObject, $arParams["PAGER_TITLE"], $arParams["PAGER_TEMPLATE"], $arParams["PAGER_SHOW_ALWAYS"]);
 	$arResult["NAV_CACHED_DATA"] = $navComponentObject->GetTemplateCachedData();
