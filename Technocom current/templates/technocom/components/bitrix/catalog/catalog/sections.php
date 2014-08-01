@@ -1,7 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
-if (LEVEL == 2) require_once $_SERVER["DOCUMENT_ROOT"] . "/404.php";
-?>
+<?if(LEVEL>1)require_once$_SERVER["DOCUMENT_ROOT"]."/404.php";?>
 <?$APPLICATION->IncludeComponent(
 	"tehno:catalog.section.list",
 	"",
