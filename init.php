@@ -2,11 +2,17 @@
 AddEventHandler("main", "OnAfterUserRegister", Array("MyClass", "OnAfterUserRegisterHandler"));
 class MyClass
 {
-   function OnAfterUserRegisterHandler(&$arFields)
-	{
-	     $message = "Информационное сообщение сайта Интернет-магазин\n";
-	     $message.="Ваш логин: ".$arFields["LOGIN"]."\nВаш пароль: ".$arFields["PASSWORD"]."\n";
-	     mail($arFields["EMAIL"], 'Регистрационные данные с сайта shop.ru', $message, 'sale@shop.ru');
-	}
+    function OnAfterUserRegisterHandler(&$arFields)
+    {
+        $arEventFields= array(
+            "LOGIN" => $arFields["LOGIN"],
+            "NAME" => $arFields["NAME"],
+            "LAST_NAME" => $arFields["LAST_NAME"],
+            "PASSWORD" => $arFields["PASSWORD"],
+            "EMAIL" => $arFields["EMAIL"],
+            "SERVER_NAME" => "tehnocom.net",
+        );
+        CEvent::Send("MAIN_USER_INFO", SITE_ID, $arEventFields, "N", 2);
+    }
 }
 ?>
