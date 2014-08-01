@@ -122,7 +122,7 @@ $(function() {
         e.preventDefault();
         var hold = $(this).closest('tr'),
             cost = hold.find('[data-cost]').data('cost'),
-            input = '<div class="recycle-page__calc"><div class="recycle-page__title">Изменить количество</div><div class="recycle-page__count"><a href="#" class="btn__recycle minus">-</a><input data-cost="' + cost + '" type="text" value="1"><a href="#" class="btn__recycle plus">+</a></div><div class="recycle-page__buttons"><a class="btn btn_mini btn_green" href="#">сохранить</a> <a class="btn btn_mini btn_silver btn_cancel" href="#">отмена</a></div></div>',
+            input = '<div class="recycle-page__calc"><div class="recycle-page__title">�?зменить количество</div><div class="recycle-page__count"><a href="#" class="btn__recycle minus">-</a><input data-cost="' + cost + '" type="text" value="1"><a href="#" class="btn__recycle plus">+</a></div><div class="recycle-page__buttons"><a class="btn btn_mini btn_green" href="#">сохранить</a> <a class="btn btn_mini btn_silver btn_cancel" href="#">отмена</a></div></div>',
             buttons = '<a class="btn__hold" href="#">Отложить</a><br><a href="#" class="btn__delete">Удалить</a>';
         $('.table__recycle tr:last').before(hold);
         
@@ -237,15 +237,15 @@ $(function() {
         $(this).closest('.x_tabs').find('.selected').removeClass('selected');
         $(this).addClass('selected').closest('.x_tabs').find('.x_tabs__item:eq(' + $(this).index() + ')').addClass('selected');       
     });
-    $('.mask-tel').mask("+7 (999) 999-99-99").on('textchange', function() {        
+    $('.mask-tel, [name="REGISTER[PERSONAL_PHONE]"]').mask("+7 (999) 999-99-99").on('textchange', function() {
         if ($(this).val().replace(/[^0-9]/g, '').length < 11) {
             $(this).addClass('form-error');
         }
         else {
             $(this).removeClass('form-error');
         }
-    });   
-    
+    });
+
     $('.mask-time').mask("99 - 99").on('textchange', function() {
         
         if ($(this).val().replace(/[^0-9]/g, '').length < 4) {            
@@ -256,7 +256,7 @@ $(function() {
         }
     });
     
-    $('.valid-email').on('textchange', function() {
+    $('.valid-email,[name="REGISTER[EMAIL]"]').on('textchange', function() {
         var val = $(this).val();    
         if (/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(val)) {
             $(this).removeClass('form-error');
@@ -265,6 +265,34 @@ $(function() {
             $(this).addClass('form-error');
         }
         
+    });
+
+
+
+    $('[name="REGISTER[NAME]"],[name="REGISTER[WORK_COMPANY]"]').on('textchange', function() {
+        var val = $(this).val();
+        if (/[^0-9]{3,}/.test(val)) {
+            $(this).removeClass('form-error');
+        }
+        else {
+            $(this).addClass('form-error');
+        }
+
+
+    });
+
+    $('[name="REGISTER[NAME]"],[name="REGISTER[WORK_COMPANY]"],[name="REGISTER[EMAIL]"],[name="REGISTER[PERSONAL_PHONE]"],[name="UF_CITY"]').change(function() {
+        var name = $('#NAME_f_jur').val();
+        var company = $('#WORK_COMPANY_f_jur').val();
+        var phone = $('#PERSONAL_PHONE_f_jur').val();
+        var mail = $('#EMAIL_f_jur').val();
+
+        if (/[^0-9]{3,}/.test(name) && /[^0-9]{3,}/.test(company)) {
+            alert ('ok');
+        }
+
+
+
     });
     
     var xipvalidate = function(form) {    

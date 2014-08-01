@@ -157,12 +157,13 @@ document.getElementById('bx_auth_secure').style.display = 'inline-block';
 <?// ********************* User properties ***************************************************?>
 <?if($arResult["USER_PROPERTIES"]["SHOW"] == "Y"):?>
 
+
 	<?foreach ($arResult["USER_PROPERTIES"]["DATA"] as $FIELD_NAME => $arUserField):?>
-	<tr id="<? echo $arUserField['FIELD_NAME'];?>_jur"><td><?=$arUserField["EDIT_FORM_LABEL"]?>:<?if ($arUserField["MANDATORY"]=="Y"):?><span class="starrequired">*</span><?endif;?></td><td>
+	<tr id="<? echo $arUserField['FIELD_NAME'];?>_jur"><td><? if($FIELD_NAME!=="UF_DETAILS") {echo $arUserField["EDIT_FORM_LABEL"].':';}?><?if ($arUserField["MANDATORY"]=="Y"):?><span class="starrequired"></span><?endif;?></td><td>
 			<?$APPLICATION->IncludeComponent(
 				"bitrix:system.field.edit",
 				$arUserField["USER_TYPE"]["USER_TYPE_ID"],
-				array("bVarsFromForm" => $arResult["bVarsFromForm"], "arUserField" => $arUserField, "form_name" => "regform"), null, array("HIDE_ICONS"=>"Y"));?></td></tr>
+				array("bVarsFromForm" => $arResult["bVarsFromForm"], "arUserField" => $arUserField, "form_name" => "regform_jur"), null, array("HIDE_ICONS"=>"Y"));?></td></tr>
 	<?endforeach;?>
 <?endif;?>
 <?// ******************** /User properties ***************************************************?>
@@ -198,7 +199,7 @@ if ($arResult["USE_CAPTCHA"] == "Y")
 	</tfoot>
 </table>
 
-<p><span class="starrequired">*</span><?=GetMessage("AUTH_REQ")?></p>
+
 
 </form>
 

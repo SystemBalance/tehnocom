@@ -777,7 +777,7 @@ div.domtab div{
 .d_box1, .d_box2 {width: 1468px; margin: 0 auto;  display: none;}
 .d_box1 {background: #e7fcec; text-align: center; padding: 70px 0;}
 .d_box1 span{color: #333; font-size: 39px; margin-bottom: 60px;}
-.d_box1 input[type=text], .d_box1 input[type=password] {border: 2px solid #a4a5a4; width: 846px; height: 100px; padding-left: 50px; margin-bottom: 45px; font-size: 47px;}
+.d_box1 input[type=text], .d_box1 input[type=password] {border: 2px solid #a4a5a4; width: 846px; height: 100px; padding-left: 50px; margin-bottom: 22px;margin-top: 23px; font-size: 47px;}
 .d_box1 input[type=text]:focus {border: 2px solid #16a433 ;}
 ::-webkit-input-placeholder {font-style: italic; font-family: HelveticaNeue-Light; color: #999;}
 ::-moz-placeholder          {font-style: italic; font-family: HelveticaNeue-Light;}/* Firefox 19+ */
@@ -798,7 +798,7 @@ div.domtab div{
 
 .d_box2 {background: #d9eafc; text-align: center; padding: 70px 0;}
 .d_box2 span{color: #333; font-size: 39px; margin-bottom: 60px;}
-.d_box2 input[type=text], .d_box2 input[type=password] {border: 2px solid #a4a5a4; width: 846px; height: 100px; padding-left: 50px; margin-bottom: 45px; font-size: 47px;}
+.d_box2 input[type=text], .d_box2 input[type=password] {border: 2px solid #a4a5a4; width: 846px; height: 100px; padding-left: 50px; margin-bottom: 22px;margin-top: 23px; font-size: 47px;}
 .d_box2 input[type=text]:focus {border: 2px solid #0057b9 ;}
 
 .d_box2 button {color: white; font-size: 48px; width: 646px; height: 117px; background: #0057b9; margin-top: 80px;}
@@ -806,16 +806,23 @@ div.domtab div{
 .d_box2 label {font-size: 48px; display: inline-block; vertical-align: top; line-height: 50px; padding-right: 40px;}
 .d_files {height: 100px; background: url(./img/skrepka.png) no-repeat 270px 0;  padding-left: 400px;}
 .d_filewrap {width: 784px; height: 115px; background: url(./img/addfiles.png) no-repeat;}
-.d_box2 input[type=file]{
+.d_box2 input[type=file] {
+    width: 784px;
+    height: 115px;
+    opacity: 0;
     cursor: pointer;
     margin: 0;
-    font-size: 26px
+    filter: alpha(opacity:0);
+    font-size: 80px;
+    overflow: hidden;
+    display: block;
 }
 
 .bx-auth-reg td:first-child {
     font-size:48px;
     padding-right:28px;
     width: 440px;
+    vertical-align:middle;
 }
 .form-error {border: 2px solid red !important;}
 
@@ -1914,3 +1921,40 @@ input.vik-inptxt-style__small, .vik-order-fast input.vik-inptxt-style__small{
 tr#UF_LEGAL_jur, tr#PASSWORD_jur, tr#CONFIRM_PASSWORD_jur, tr#LOGIN_jur   {display:none;}
 tr#UF_LEGAL_fiz, tr#PASSWORD_fiz, tr#CONFIRM_PASSWORD_fiz, tr#LOGIN_fiz  {display:none;}
 tr#UF_CITY_jur li, tr#UF_CITY_jur p, tr#UF_CITY_fiz li, tr#UF_CITY_fiz p  {text-align:left;}
+
+#main_UF_DETAILS .fields.files {
+    width: 784px;
+    height: 115px;
+    background: url(img/addfiles.png) no-repeat;
+}
+
+#UF_DETAILS_jur td:first-child {
+
+    height: 100px;
+    background: url(img/skrepka.png) no-repeat 270px 0;
+    padding-left: 400px;
+}
+
+#UF_CITY_jur td .selectric, #UF_CITY_fiz td .selectric {
+
+
+}
+
+#UF_CITY_jur td .selectric, #UF_CITY_fiz td .selectric {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px auto 0px;
+    width: 826px!important;
+    font-size: 47px;
+    padding: 20px 20px 20px 50px;
+    cursor: pointer;
+    font-style: italic;
+    font-family: HelveticaNeue-Light;
+    color: #999;
+    border: 2px solid #a4a5a4;
+}
+
+#UF_CITY_jur td .selectricWrapper, #UF_CITY_fiz td .selectricWrapper {
+    width:900px;
+    margin-right:0px;
+}

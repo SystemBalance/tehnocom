@@ -89,7 +89,7 @@ $(function() {
         e.preventDefault();
         var hold = $(this).closest('tr'),
             cost = hold.find('[data-cost]').data('cost'),
-            input = '<div class="recycle-page__calc"><div class="recycle-page__title">Изменить количество</div><div class="recycle-page__count"><a href="#" class="btn__recycle minus">-</a><input data-cost="' + cost + '" type="text" value="1"><a href="#" class="btn__recycle plus">+</a></div><div class="recycle-page__buttons"><a class="btn btn_mini btn_green" href="#">сохранить</a> <a class="btn btn_mini btn_silver btn_cancel" href="#">отмена</a></div></div>',
+            input = '<div class="recycle-page__calc"><div class="recycle-page__title">�?зменить количество</div><div class="recycle-page__count"><a href="#" class="btn__recycle minus">-</a><input data-cost="' + cost + '" type="text" value="1"><a href="#" class="btn__recycle plus">+</a></div><div class="recycle-page__buttons"><a class="btn btn_mini btn_green" href="#">сохранить</a> <a class="btn btn_mini btn_silver btn_cancel" href="#">отмена</a></div></div>',
             buttons = '<a class="btn__hold" href="#">Отложить</a><br><a href="#" class="btn__delete">Удалить</a>';
         $('.table__recycle tr:last').before(hold);
         
@@ -204,7 +204,7 @@ $(function() {
         $(this).closest('.x_tabs').find('.selected').removeClass('selected');
         $(this).addClass('selected').closest('.x_tabs').find('.x_tabs__item:eq(' + $(this).index() + ')').addClass('selected');       
     });
-    $('.mask-tel').mask("+7 (999) 999-99-99").on('textchange', function() {        
+    $('.mask-tel, [name="REGISTER[PERSONAL_PHONE]"]').mask("+7 (999) 999-99-99").on('textchange', function() {
         if ($(this).val().replace(/[^0-9]/g, '').length < 11) {
             $(this).addClass('form-error');
         }
