@@ -162,7 +162,7 @@ document.getElementById('bx_auth_secure').style.display = 'inline-block';
 			<?$APPLICATION->IncludeComponent(
 				"bitrix:system.field.edit",
 				$arUserField["USER_TYPE"]["USER_TYPE_ID"],
-				array("bVarsFromForm" => $arResult["bVarsFromForm"], "arUserField" => $arUserField, "form_name" => "regform"), null, array("HIDE_ICONS"=>"Y"));?></td></tr>
+				array("bVarsFromForm" => $arResult["bVarsFromForm"], "arUserField" => $arUserField, "form_name" => "regform_fiz"), null, array("HIDE_ICONS"=>"Y"));?></td></tr>
 	<?endforeach;?>
 <?endif;?>
 <?// ******************** /User properties ***************************************************?>
@@ -198,7 +198,7 @@ if ($arResult["USE_CAPTCHA"] == "Y")
 	</tfoot>
 </table>
 
-<p><span class="starrequired">*</span><?=GetMessage("AUTH_REQ")?></p>
+
 
 </form>
 
